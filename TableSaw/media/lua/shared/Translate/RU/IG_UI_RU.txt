@@ -1,0 +1,4 @@
+IGUI_RU = {
+    IGUI_CraftCategory_Dyes = "Красители",
+	IGUI_ItemCat_Dye = "Природные красители",
+}

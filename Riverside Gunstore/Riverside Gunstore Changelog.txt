@@ -1,0 +1,28 @@
+Riverside Gunstore Changelog:
+Versión 2.4
+*Agregados nuevos items exclusivos de este mapa.
+*Cambios estructurales del edificio.
+
+Versión 2.3
+*Actualizadas zonas de rebuscar para la build 41.54.
+
+Versión 2.2
+*Agregada expansión general de la zona con nuevos negocios y puntos de interés.
+*Actualizados spawn de vehiculos (Zonas custom).
+*Compatibilidad con build 41.51.
+*Agregado Bowling y Arcade (Próximamente nuevos items).
+
+Versión 2.1
+*Agregadas zonas rebuscables y bosques en las cercanías del negocio.
+
+Versión 2.0 (Build 41)
+*Loot modificado acorde a Build 41.
+
+Versión 1.2
+*Cambio de dimensión de parkinstalls (Desde la build 39.64 cambia la forma en que spawnean los vehículos)
+
+Versión 1.1
+*Agregados spawn de vehiculos.
+
+Versión 1.0
+Release del mapa.

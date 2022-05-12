@@ -1,0 +1,11 @@
+Recipe_RU = {
+    Recipe_Agregar_soporte_a_mochila_Alice = "Добавить каркас к армейскому рюкзаку",
+	Recipe_Agregar_bolsa_de_almacenaje_a_mochila_Alice = "Добавить подсумок к армейскому рюкзаку",
+	Recipe_Quitar_bolsa_de_almacenaje_a_mochila_Alice = "Убрать подсумок с армейского рюкзака",
+	Recipe_Quitar_soporte_a_mochila_Alice = "Убрать каркас с армейского рюкзака",
+	Recipe_Put_12_MRE's_in_a_box = "Сложить сухпайки в коробку",
+	Recipe_Open_MRE_box = "Достать сухпайки из коробки",
+	Recipe_Create_Spear_MK = "Смастерить копьё",
+	Recipe_Attach_Military_Knife_to_Spear = "Закрепить боевой нож к копью",
+	Recipe_Reclaim_Military_Knife_from_Spear = "Снять боевой нож с копья",
+}

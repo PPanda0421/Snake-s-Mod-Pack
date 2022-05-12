@@ -1,0 +1,4 @@
+ItemName_ES = {
+    ItemName_FuelTanks.FuelTanksMag1 = "Revista 'Tanques de Combustible'",
+    ItemName_FuelTanks.FuelMeter = "Varilla de medición de combustible",
+}

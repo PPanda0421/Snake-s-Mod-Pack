@@ -1,0 +1,1325 @@
+module WPA
+{
+imports
+	{
+		Base
+	}
+
+/********** ITEMS **********/
+
+	item SilencerRK
+	{
+		DisplayCategory = Material,
+		Weight	=	0.5,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.2,
+		DisplayName	=	SS Repair Kit,
+		Tooltip = Tooltip_SSRepairKit,
+		Icon	=	WPARepairKit,
+	}
+
+    item SpongeTube
+    {
+		DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Sponge tube,
+        Icon	=	Spongetube,
+		Tooltip = Tooltip_Silencer3,
+    }
+
+    item WeaponsMagazine
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Weapons Magazine,
+        Icon	=	MagazineWeapons1,
+        TeachedRecipes  =   Craft Silencer;Craft Rifle Silencer,
+        ReplaceOnUse    =   WeaponsMagazine,
+		StaticModel = Magazine,
+	}
+
+    item WeaponsMagazine2
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Weapons Magazine 2,
+        Icon	=	MagazineWeapons2,
+        TeachedRecipes  =   Dismantle tactical flashlight;Dismantle laser;Dismantle stealth tactical scope;Dismantle shotgun tactical light,
+        ReplaceOnUse    =   WeaponsMagazine2,
+		StaticModel = Magazine,
+	}
+
+    item WeaponsMagazine3
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Weapons Magazine 3,
+        Icon	=	MagazineWeapons3,
+        TeachedRecipes  =   Make laser light combo;Make military tactical scope;Make shotgun laser light combo,
+        ReplaceOnUse    =   WeaponsMagazine3,
+		StaticModel = Magazine,
+	}
+
+    item WeaponsMagazine4
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Weapons Magazine 4,
+        Icon	=	MagazineWeapons4,
+        TeachedRecipes  =   Dismantle pistol;Make pistol;Dismantle Varmint Rifle;Make Varmint Rifle;Dismantle Hunting Rifle;Make Hunting Rifle;Dismantle Shotgun;Make Shotgun;Dismantle Sawn Off Shotgun;Make Sawn Off Shotgun,
+        ReplaceOnUse    =   WeaponsMagazine4,
+		StaticModel = Magazine,
+		OBSOLETE = true,
+	}
+
+	item BlackBriefcase
+	{
+		DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	12,
+		DisplayName		=	Black briefcase,
+		Icon			=	BlackBriefCase,
+        OpenSound   	=   BBriefcaseOpen,
+        CloseSound   	=   BBriefcaseClose,
+        PutInSound   	=   BToolBoxPutIn,
+        ReplaceInSecondHand = Bag_Briefcase_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Briefcase_RHand holdingbagright,
+	}
+
+/********** WEAPON PARTS **********/
+
+/********** Assault Rifle **********/
+
+    item MilitarySling
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Military Sling,
+        Icon = AkSling,
+        Weight = 0.5,
+        WeightModifier = -0.3,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Sling,
+        Tooltip = Tooltip_MilitarySling,
+    }
+
+    item AkIronSight
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Ak Iron Sight,
+        Icon = AkIronSight,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        MaxRangeModifier = 2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Scope,
+        Tooltip = Tooltip_MilitaryIronSight,
+        MetalValue = 15,
+    }
+
+	item M16TL
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Tactical Light,
+        Icon = M16Flashlight,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		AimingTimeModifier = -2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Sling,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+		Tooltip = Tooltip_weaponpart_M16TL,
+		MetalValue = 5,
+		WorldStaticModel = WPA.AssaultRifle2_ImpLight_Ground,
+    }
+
+    item M16LaserLight
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Laser Light Combo,
+        Icon = M16LLight,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        HitChanceModifier = 5,
+		AimingTimeModifier = -5,
+		MaxRangeModifier = 1,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Sling,
+        Tooltip = Tooltip_M16LaserLight,
+        MetalValue = 15,
+		WorldStaticModel = WPA.AssaultRifle_LaserLight_Ground,
+    }
+
+	item M16Laser
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Laser,
+        Icon = M16Laser,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		HitChanceModifier = 2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Sling,
+		Tooltip = Tooltip_weaponpart_M16Laser,
+		MetalValue = 5,
+    }
+
+	item M16Grip
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Hand Grip,
+        Icon = M16HandGrip,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		HitChanceModifier = 3,
+		AimingTimeModifier = -1,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Sling,
+		Tooltip = Tooltip_weaponpart_M16Handgrip,
+		MetalValue = 5,
+    }
+
+    item M16Reflex
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Reflex Sight,
+        Icon = M16Reflex,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        MaxRangeModifier = 2,
+		AimingTimeModifier = -2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Scope,
+        Tooltip = Tooltip_M16Reflex,
+        MetalValue = 10,
+		WorldStaticModel = WPA.AssaultRifle_Reflex_Ground,
+    }
+
+    item M16x4Scope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 x4 Scope,
+        Icon = M16_4x,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        MaxRangeModifier = 3,
+		AimingTimeModifier = 5,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Scope,
+        Tooltip = Tooltip_M16Scope,
+        MetalValue = 10,
+		WorldStaticModel = WPA.AssaultRifle_x4Scope_Ground,
+    }
+
+	item Silencerm16
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Silencer,
+        Icon = SilencerM16,
+        Weight = 1,
+		MaxRangeModifier = -3,
+		MinRangeModifier = -0.2,
+		DamageModifier = -0.1,
+        WeightModifier = 1.2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Canon,
+		Tooltip = Tooltip_M16Silencer,
+		WorldStaticModel = WPA.AssaultRifleSilencer_Ground,
+    }
+
+    item M16RecoilPad
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Recoil Pad,
+        Icon = M16_RecoilPad,
+        Weight = 0.1,
+		HitChanceModifier = 8,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -3.0,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_M16RecoilPad,
+    }
+
+    item M16HG
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Hand Guard,
+        Icon = M16_HG,
+        Weight = 1,
+        WeightModifier = -0.5,
+        HitChanceModifier = 2,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Stock,
+        Tooltip = Tooltip_M16HandGuardStock,
+    }
+
+    item M16BoltCarrier
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = M16 Bolt Carrier,
+        Icon = M16_BC,
+        Weight = 0.5,
+        HitChanceModifier = 8,
+		DamageModifier = 0.3,
+		RecoilDelayModifier = -1.0,
+        MountOn = AssaultRifle;AssaultRifle2,
+        PartType = Stock,
+        Tooltip = Tooltip_M16BoltCarrier,
+    }
+
+/********** Pistol **********/
+    item PistolPart0
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Pistol lower parts,
+        Icon	=	WPAWP00,
+		Tooltip = Tooltip_PistolPart0,
+		OBSOLETE = true,
+    }
+
+    item PistolPart1
+    {
+        Weight	=	0.8,
+        Type	=	Normal,
+        DisplayName	=	Pistol frame,
+        Icon	=	WPAWP1,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item PistolPart2
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Pistol Recoil Spring,
+        Icon	=	WPAWP2,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item PistolPart3
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Pistol Barrel,
+        Icon	=	WPAWP3,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item PistolPart4
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	Pistol Slide,
+        Icon	=	WPAWP4,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item PistolPart5
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Pistol Magazine Stock,
+        Icon	=	WPAWP5,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+/********** 223 Rifle **********/
+
+    item 223Part0
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	RifleV lower parts,
+        Icon	=	WPAWR2230,
+		Tooltip = Tooltip_PistolPart0,
+		OBSOLETE = true,
+    }
+
+    item 223Part1
+    {
+        Weight	=	0.8,
+        Type	=	Normal,
+        DisplayName	=	RifleV frame,
+        Icon	=	WPAWR2231,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 223Part2
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	RifleV barrel,
+        Icon	=	WPAWR2232,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 223Part3
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	RifleV receive bridge,
+        Icon	=	WPAWR2233,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 223Part4
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	RifleV handle,
+        Icon	=	WPAWR2234,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 223Part5
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	RifleV bolt,
+        Icon	=	WPAWR2235,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+/********** 308 Rifle **********/
+
+    item 308Part0
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Rifle3 lower parts,
+        Icon	=	WPAWR3080,
+		Tooltip = Tooltip_PistolPart0,
+		OBSOLETE = true,
+    }
+
+    item 308Part1
+    {
+        Weight	=	0.8,
+        Type	=	Normal,
+        DisplayName	=	Rifle3 frame,
+        Icon	=	WPAWR3081,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 308Part2
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Rifle3 barrel,
+        Icon	=	WPAWR3082,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 308Part3
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Rifle3 receive bridge(Left),
+        Icon	=	WPAWR3083,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 308Part4
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	Rifle3 receive bridge(Right),
+        Icon	=	WPAWR3084,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item 308Part5
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Rifle3 common canon,
+        Icon	=	WPAWR3085,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+/********** Shotgun **********/
+
+    item ShotPart0
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Shotgun lower parts,
+        Icon	=	WPAShot0,
+		Tooltip = Tooltip_PistolPart0,
+		OBSOLETE = true,
+    }
+
+    item ShotPart1
+    {
+        Weight	=	0.8,
+        Type	=	Normal,
+        DisplayName	=	Shotgun stock,
+        Icon	=	WPAShot1,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item ShotPart2
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Shotgun barrel,
+        Icon	=	WPAShot2,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item ShotPart3
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Shotgun receiver,
+        Icon	=	WPAShot3,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item ShotPart4
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	Shotgun fore-end,
+        Icon	=	WPAShot4,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item ShotPart5
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Shotgun magazine tube,
+        Icon	=	WPAShot5,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    item ShotPart6
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	Shotgun short barrel,
+        Icon	=	WPAShot6,
+		Tooltip = Tooltip_PistolPart1,
+		OBSOLETE = true,
+    }
+
+    /********** WEAPON UPGRADES **********/
+
+
+/***** Pistol *****/
+
+	item Silencer1
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Silencer,
+        Icon = Silencer,
+        Weight = 1,
+		MaxRangeModifier = -3,
+		MinRangeModifier = -0.2,
+		RecoilDelayModifier = -1,
+		DamageModifier = -0.1,
+        WeightModifier = 1.2,
+        MountOn = Pistol; Pistol2,
+        PartType = Canon,
+		Tooltip = Tooltip_Silencer1,
+		WorldStaticModel = WPA.Handgun03Silencer_Ground,
+    }
+	
+	item Silencer2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Home Made Silencer,
+        Icon = HomeSilcencer,
+        Weight = 1.2,
+		MaxRangeModifier = -5,
+		DamageModifier = -0.2,
+		RecoilDelayModifier = -1,
+        WeightModifier = 1.4,
+        MountOn = Pistol; Pistol2,
+        PartType = Canon,
+		Tooltip = Tooltip_Silencer2,
+		WorldStaticModel = WPA.Handgun03Silencer2_Ground,
+    }
+
+    item Supressor1
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Pistol Supressor,
+        Icon = Supressor1,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		HitChanceModifier = 2,
+        MountOn = Pistol; Pistol2,
+        PartType = Canon,
+        Tooltip = Tooltip_Supressor1,
+        MetalValue = 5,
+		WorldStaticModel = WPA.Handgun03Supressor_Ground,
+    }
+
+	item TacticalLight
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Tactical Light,
+        Icon = TacticalLight,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		AimingTimeModifier = -2,
+        MountOn = Pistol; Pistol2; Pistol3,
+        PartType = Sling,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+		Tooltip = Tooltip_weaponpart_TacticalLight,
+		MetalValue = 5,
+		WorldStaticModel = WPA.Handgun_Light_Ground,
+    }
+
+	item PHeavyBarrel
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Pistol heavy barrel,
+        Icon = Barrel,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		DamageModifier = 0.5,
+		AimingTimeModifier = -5,
+		HitChanceModifier = 5,
+        MountOn = Pistol; Pistol2,
+        PartType = Canon,
+		Tooltip = Tooltip_weaponpart_Pistolhbarrel,
+		MetalValue = 5,
+		WorldStaticModel = WPA.PHeavyBarrel_Ground,
+    }
+
+    item Grip1
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Rear Cover Grip,
+        Icon = Grip1,
+        Weight = 0.1,
+        WeightModifier = -0.1,
+        AimingTimeModifier = 5,
+		HitChanceModifier = 1,
+		RecoilDelayModifier = -2.0,
+        MountOn = Pistol,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_RearCoverGrip,
+        MetalValue = 5,
+		WorldStaticModel = WPA.Grip1_Ground,
+    }
+
+    item Grip2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Lightweight Cover Grip,
+        Icon = Grip2,
+        Weight = 0.1,
+        WeightModifier = -0.4,
+		HitChanceModifier = -1,
+		RecoilDelayModifier = 2.0,
+		ReloadTimeModifier = -3,
+        MountOn = Pistol; Pistol2; Pistol3,
+        PartType = Stock,
+        Tooltip = Tooltip_LightweightCoverGrip,
+        MetalValue = 5,
+		WorldStaticModel = WPA.Grip2_Ground,
+    }
+
+    item Pistolx2Scope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Pistol x2 Scope,
+        Icon = PistolScope1,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        MaxRangeModifier = 2,
+		AimingTimeModifier = 5,
+        MountOn = Pistol; Pistol2; Pistol3,
+        PartType = Scope,
+        Tooltip = Tooltip_PScope1,
+        MetalValue = 10,
+		WorldStaticModel = WPA.Handgun03_RedDot2_Ground,
+    }
+
+    item Pistolx2Scope2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Military x2 Scope,
+        Icon = PistolScope2,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        MaxRangeModifier = 3,
+		AimingTimeModifier = 5,
+        MountOn = Pistol; Pistol2; Pistol3,
+        PartType = Scope,
+        Tooltip = Tooltip_PScope2,
+        MetalValue = 10,
+		WorldStaticModel = WPA.Handgun03_RedDot3_Ground,
+    }
+
+    item RecoilCompensator
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Recoil Compensator,
+        Icon = RecoilComp1,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+		RecoilDelayModifier = -7.0,
+		HitChanceModifier = 2,
+        MountOn = Pistol; Pistol2,
+        PartType = Canon,
+        Tooltip = Tooltip_RecoilComp1,
+        MetalValue = 10,
+		WorldStaticModel = WPA.Handgun03_RecoilCompensator_Ground,
+    }
+
+    item LaserLight
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Laser Light Combo,
+        Icon = LaserLight,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+        HitChanceModifier = 5,
+		AimingTimeModifier = -5,
+		MaxRangeModifier = 1,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+        MountOn = Pistol; Pistol2; Pistol3,
+        PartType = Sling,
+        Tooltip = Tooltip_LaserLight,
+        MetalValue = 15,
+		WorldStaticModel = WPA.Handgun03_Light2_Ground,
+    }
+
+    item Slide1
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Polished Slide,
+        Icon = Slide1,
+        Weight = 0.2,
+        WeightModifier = -0.2,
+        RecoilDelayModifier = -5.0,
+		ReloadTimeModifier = -5,
+		MaxRangeModifier = 2,
+        MountOn = Pistol,
+        PartType = Stock,
+        Tooltip = Tooltip_Slide1,
+        MetalValue = 5,
+    }
+
+/********** Varmint Rifle **********/
+
+    item Bipod
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Bipod,
+        Icon = Bipod1,
+        Weight = 0.3,
+        WeightModifier = 0.3,
+		HitChanceModifier = 20,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Sling,
+        Tooltip = Tooltip_Bipod,
+        MetalValue = 5,
+    }
+
+    item x20Scope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = x20 Scope,
+        Icon = 20xScope,
+        Weight = 0.8,
+        WeightModifier = 0.8,
+        MaxRangeModifier = 20,
+        MinRangeModifier = 15,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Scope,
+        Tooltip = Tooltip_20xScope,
+        MetalValue = 22,
+    }
+
+    item x40Scope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = x40 Scope,
+        Icon = 40xScope,
+        Weight = 0.8,
+        WeightModifier = 0.8,
+        MaxRangeModifier = 25,
+        MinRangeModifier = 15,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Scope,
+        Tooltip = Tooltip_40xScope,
+        MetalValue = 22,
+    }
+
+    item StealthTacticalScope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Tactical Scope,
+        Icon = STS1,
+        Weight = 1.5,
+        WeightModifier = 1.5,
+        MaxRangeModifier = 25,
+		MinRangeModifier = 5,
+		HitChanceModifier = 5,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Scope,
+        Tooltip = Tooltip_STS,
+        MetalValue = 22,
+    }
+
+    item StealthTacticalScope2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Military Tactical Scope,
+        Icon = STS2,
+        Weight = 1.5,
+        WeightModifier = 1.5,
+        MaxRangeModifier = 25,
+		HitChanceModifier = 15,
+		AimingTimeModifier = -10,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Scope,
+        Tooltip = Tooltip_STS2,
+        MetalValue = 22,
+    }
+
+    item StraightPullBolt
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Straight pull bolt,
+        Icon = PernoRecto,
+        Weight = 0.5,
+        WeightModifier = 0.5,
+        RecoilDelayModifier = -35.0,
+		ReloadTimeModifier = -10,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Stock,
+        Tooltip = Tooltip_StraightPullBolt,
+        MetalValue = 5,
+    }
+
+	item RHeavyBarrel
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Rifle heavy barrel,
+        Icon = HeavyBarrel,
+        Weight = 1,
+        WeightModifier = 1,
+		DamageModifier = 0.5,
+		AimingTimeModifier = -15,
+		HitChanceModifier = 25,
+		MaxRangeModifier = 5,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Canon,
+		Tooltip = Tooltip_Rhbarrel,
+		MetalValue = 5,
+    }
+
+    item PolymerStock
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Polymer Stock,
+        Icon = PolymerStock,
+        Weight = 1,
+        WeightModifier = -2.5,
+        HitChanceModifier = 10,
+		AimingTimeModifier = -10,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Stock,
+        Tooltip = Tooltip_PolymerStock,
+    }
+
+    item RRecoilCompensator
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Rifle Recoil Compensator,
+        Icon = RifleCompensator,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+		RecoilDelayModifier = -10.0,
+		HitChanceModifier = 5,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Canon,
+        Tooltip = Tooltip_RRecoilComp1,
+        MetalValue = 10,
+    }
+
+    item RecoilPad2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Recoil Pad 2,
+        Icon = RecoilPad2,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -10.0,
+		ReloadTimeModifier = -5,
+        MountOn = Shotgun,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_RecoilPad2,
+    }
+
+    item RecoilPad3
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Recoil Pad 3,
+        Icon = RecoilPad3,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -10.0,
+		ReloadTimeModifier = -5,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_RecoilPad2,
+    }
+
+    item CheekRest
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Cheek Rest,
+        Icon = CheekRest,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        AimingTimeModifier = -10,
+        MountOn = HuntingRifle; VarmintRifle; Shotgun,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_CheekRest,
+    }
+
+	item Silencer3
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Rifle Silencer,
+        Icon = SilencerRifle,
+        Weight = 1,
+		MaxRangeModifier = -5,
+		MinRangeModifier = -0.1,
+		RecoilDelayModifier = -3,
+		DamageModifier = -0.2,
+        WeightModifier = 1,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Canon,
+		Tooltip = Tooltip_Silencer4,
+    }
+
+	item Silencer5
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun Silencer,
+        Icon = ShotgunSilencer,
+        Weight = 1,
+		MaxRangeModifier = -3,
+		MinRangeModifier = -0.1,
+		RecoilDelayModifier = 5,
+		AimingTimeModifier = -1,
+		DamageModifier = -1.1,
+        WeightModifier = 1,
+        MountOn = Shotgun,
+        PartType = Canon,
+		Tooltip = Tooltip_Silencer5,
+    }
+
+	item Silencer6
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Homemade Rifle Silencer,
+        Icon = HomeSilencer2,
+        Weight = 1,
+		MaxRangeModifier = -5,
+		MinRangeModifier = -0.1,
+		RecoilDelayModifier = -3,
+		DamageModifier = -0.2,
+        WeightModifier = 1,
+        MountOn = HuntingRifle; VarmintRifle,
+        PartType = Canon,
+		Tooltip = Tooltip_Silencer2,
+    }
+
+	item TacticalLight2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun Tactical Light,
+        Icon = TacticalLight2,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+		AimingTimeModifier = -3,
+        MountOn = Shotgun,
+        PartType = Sling,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+		Tooltip = Tooltip_weaponpart_TacticalLight2,
+		MetalValue = 5,
+    }
+
+    item ShotgunLaser
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun Laser,
+        Icon = ShotgunLaser,
+        Weight = 0.4,
+        WeightModifier = 0.4,
+        MaxRangeModifier = 3,
+		RecoilDelayModifier = 1.0,
+        MountOn = Shotgun,
+        PartType = Sling,
+        Tooltip = Tooltip_ShotgunLaser,
+        MetalValue = 15,
+    }
+
+	item TacticalLaserLight2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun LaserLight combo,
+        Icon = LaserLight2,
+        Weight = 0.6,
+        WeightModifier = 0.6,
+		AimingTimeModifier = -3,
+        MaxRangeModifier = 3,
+		RecoilDelayModifier = 1.0,
+        MountOn = Shotgun,
+        PartType = Sling,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+		Tooltip = Tooltip_weaponpart_TacticalLight3,
+		MetalValue = 5,
+    }
+
+    item SRTPS
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Military Shotgun Scope,
+        Icon = ShotgunRedDot,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        AimingTimeModifier = 5,
+		MaxRangeModifier = 3,
+        MountOn = Shotgun; ShotgunSawnoff,
+        PartType = Scope,
+        Tooltip = Tooltip_SRTPS,
+        MetalValue = 15,
+    }
+
+    item SRecoilCompensator
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun Recoil Compensator,
+        Icon = muzzlebrake,
+        Weight = 0.7,
+        WeightModifier = 0.7,
+		RecoilDelayModifier = -7.0,
+		AimingTimeModifier = 3,
+		DamageModifier = -0.1,
+        MountOn = Shotgun,
+        PartType = Canon,
+        Tooltip = Tooltip_SRecoilComp1,
+        MetalValue = 10,
+    }
+
+    item ShellHolderStock
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shell Holder Stock,
+        Icon = LightStock,
+        Weight = 0.6,
+        WeightModifier = 0.6,
+		AimingTimeModifier = -2,
+		ReloadTimeModifier = -3,
+		RecoilDelayModifier = -2.0,
+        MountOn = Shotgun,
+        PartType = Stock,
+        Tooltip = Tooltip_ShellHolderStock,
+    }
+
+    item ShotgunPolymerStock
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Shotgun Polymer Stock,
+        Icon = PolymerStock2,
+        Weight = 1,
+		WeightModifier = -0.5,
+		ReloadTimeModifier = -5,
+		RecoilDelayModifier = -1.0,
+        MountOn = Shotgun,
+        PartType = Stock,
+        Tooltip = Tooltip_ShotgunPolymerStock,
+    }
+
+    item FoldingStock
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Folding stock,
+        Icon = FoldingStock,
+        Weight = 1.0,
+        WeightModifier = 1.0,
+        RecoilDelayModifier = -5.0,
+		ReloadTimeModifier = -5,
+		AimingTimeModifier = -5,
+        MountOn = ShotgunSawnoff,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_FoldingStock,
+    }
+
+/********** RECIPES **********/
+
+	recipe Craft Silencer
+    {
+		MetalPipe=1,
+        BlowTorch=5,
+		ScrapMetal=1,
+		keep WeldingMask,
+		keep Saw,
+		
+    	Result:WPA.Silencer2,
+        Category:Engineer,
+		NeedToBeLearn:true,
+		SkillRequired:Aiming=2;MetalWelding=2;,
+		Sound:Blowtorch,
+    	Time:500.0,
+    }
+
+	recipe Craft Rifle Silencer
+    {
+		MetalPipe=1,
+        BlowTorch=5,
+		ScrapMetal=1,
+		keep WeldingMask,
+		
+    	Result:WPA.Silencer6,
+        Category:Engineer,
+		NeedToBeLearn:true,
+		SkillRequired:Aiming=4;MetalWelding=5;,
+		Sound:Blowtorch,
+    	Time:500.0,
+    }
+
+	recipe Dismantle black briefcase
+    {
+		WPA.BlackBriefcase,
+		keep Screwdriver,
+		
+    	Result:SmallSheetMetal=2,
+        Category:Welding,
+	    OnGiveXP:Recipe.OnGiveXP.None,
+	    OnTest:DismantleBlackBriefcase_TestIsValid,
+		Sound:Screwdriveraction,
+    	Time:125.0,
+    }
+
+	recipe Dismantle tactical flashlight
+    {
+		WPA.TacticalLight,
+		keep Screwdriver,
+		
+    	Result:ElectronicsScrap,
+        Category:Engineer,
+		SkillRequired:Electricity=2,
+	    OnGiveXP:WPA_ThreeXP_Electricity,
+		Sound:Screwdriveraction,
+		NeedToBeLearn:true,
+    	Time:125.0,
+    }
+
+	recipe Dismantle laser
+    {
+		Laser/WPA.ShotgunLaser,
+		keep Screwdriver,
+		
+    	Result:ElectronicsScrap,
+        Category:Engineer,
+		SkillRequired:Electricity=2,
+	    OnGiveXP:WPA_ThreeXP_Electricity,
+		Sound:Screwdriveraction,
+		NeedToBeLearn:true,
+    	Time:125.0,
+    }
+
+    recipe Make laser light combo
+    {
+       Laser,
+       WPA.TacticalLight,
+       Glue=2,
+	   ElectronicsScrap=2,
+       keep Screwdriver,
+
+       Result:WPA.LaserLight,
+       Time:150.0,
+       Category:Engineer,
+       SkillRequired:Electricity=4,
+       OnGiveXP:WPA_ThreeXP_Electricity,
+       NeedToBeLearn:true,
+    }
+
+    recipe Make shotgun laser light combo
+    {
+       WPA.ShotgunLaser,
+       WPA.TacticalLight2,
+       Glue=2,
+	   ElectronicsScrap=2,
+       keep Screwdriver,
+
+       Result:WPA.TacticalLaserLight2,
+       Time:150.0,
+       Category:Engineer,
+       SkillRequired:Electricity=5,
+       OnGiveXP:WPA_ThreeXP_Electricity,
+       NeedToBeLearn:true,
+    }
+
+	recipe Dismantle shotgun tactical light
+    {
+		WPA.TacticalLight2,
+		keep Screwdriver,
+		
+    	Result:ElectronicsScrap,
+        Category:Engineer,
+		SkillRequired:Electricity=2,
+	    OnGiveXP:WPA_ThreeXP_Electricity,
+		Sound:Screwdriveraction,
+		NeedToBeLearn:true,
+    	Time:125.0,
+    }
+
+    recipe Make military tactical scope
+    {
+       Laser,
+	   WPA.TacticalLight,
+       WPA.x40Scope,
+       Glue=2,
+	   Screws=3,
+	   ElectronicsScrap=2,
+       keep Screwdriver,
+
+       Result:WPA.StealthTacticalScope2,
+       Time:200.0,
+       Category:Engineer,
+       SkillRequired:Electricity=6,
+       OnGiveXP:WPA_FiveXP_Electricity,
+       NeedToBeLearn:true,
+    }
+
+	recipe Dismantle stealth tactical scope
+    {
+		WPA.StealthTacticalScope,
+		keep Screwdriver,
+		
+    	Result:ElectronicsScrap,
+        Category:Engineer,
+		SkillRequired:Electricity=2,
+	    OnGiveXP:WPA_ThreeXP_Electricity,
+		Sound:Screwdriveraction,
+		NeedToBeLearn:true,
+    	Time:125.0,
+    }
+
+
+/********** ALPHA STATE (Not working) **********/
+/**    item ExtendedClip**/
+/**    {**/
+/**        Type = WeaponPart,**/
+/**        DisplayName = Extended Clip,**/
+/**        Icon = BerettaClip,**/
+/**        Weight = 0.1,**/
+/**        WeightModifier = 0.1,**/
+/**		   ClipSizeModifier = 5,**/
+/**        MountOn = Pistol,**/
+/**        PartType = Stock,**/
+/**        Tooltip = Tooltip_ExtendedClip,**/
+/**        MetalValue = 10,**/
+/**    }**/
+}

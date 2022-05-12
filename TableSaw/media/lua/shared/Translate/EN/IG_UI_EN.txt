@@ -1,0 +1,5 @@
+IGUI_EN = {
+    IGUI_CraftCategory_Dyes = "Dyes",
+	IGUI_ItemCat_Dye = "Natural Dyes",
+	IGUI_SearchMode_Categories_Dyes = "Natural Dyes",
+}

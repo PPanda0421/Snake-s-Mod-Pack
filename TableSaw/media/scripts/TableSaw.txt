@@ -1,0 +1,422 @@
+module TableSaw
+{
+
+    imports
+    {
+        Base
+
+    }
+    /************** Items **************/
+    item ClubSpikes
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Metal Spikes,
+        Icon = ClubSpikes,
+        Weight = 1,
+        WeightModifier = 0.2,
+        DamageModifier = 0.2,
+        MountOn = WoodenClub,
+        PartType = Stock,
+        Tooltip = Tooltip_MetalSpikes,
+    }
+
+    item WoodenClub
+	{
+        MaxRange	=	1.15,
+        WeaponSprite	=	WoodenClub,
+        MinAngle	=	0.65,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	TRUE,
+        SwingAmountBeforeImpact	=	0.04,
+        Categories	=	Improvised;SmallBlunt,
+        ConditionLowerChanceOneIn	=	8,
+        Weight	=	2.0,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Swinging,
+        ConditionMax	=	5,
+        MaxHitCount	=	2,
+        DoorDamage	=	1,
+        SwingAnim	=	Bat,
+        DisplayName	=	Wooden Club,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	WoodenClub,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   0,
+        CriticalChance	=	20,
+        CritDmgMultiplier = 2,
+        MinDamage	=	0.6,
+        MaxDamage	=	1.2,
+        BaseSpeed = 0.93,
+        WeaponLength = 0.3,
+        AttachmentType = Hammer,
+		ImpactSound	=	PlankHit,
+        BreakSound  =   PlankBreak,
+        DoorHitSound = PlankHit,
+		HitSound = PlankHit,
+		HitFloorSound = PlankHit,
+		SwingSound = PlankSwing,
+		ModelWeaponPart = TableSaw.ClubSpikes Base.Spikes,
+  	}
+
+    item Turpentine
+	{
+		DisplayCategory = Material,
+		UnhappyChange	=	99,
+		Weight	=	0.3,
+		Type	=	Food,
+		ThirstChange	=	-60,
+		DisplayName	=	Turpentine,
+		Icon	=	Turpentine,
+		Poison = true,
+		DisplayCategory = Item,
+		PoisonDetectionLevel = 7,
+	    PoisonPower = 40,
+	    UseForPoison = 15,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottle,
+		CantBeFrozen = TRUE,
+		StaticModel = TurpentineBottle,
+		WorldStaticModel = TurpentineBottle,
+	}
+
+	item Engine
+	{
+		DisplayCategory = Electronics,
+		Weight	=	5.0,
+		Type	=	Normal,
+		DisplayName	=	Engine,
+		Icon	=	Engine,
+		Tooltip = Tooltip_SawEngine,
+		WorldStaticModel = OldEngine,
+	}
+
+	item SawBlade
+	{
+		DisplayCategory = Material,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Saw blade,
+		Icon	=	Sawblade,
+		Tooltip = Tooltip_Sawblade,
+		WorldStaticModel = CircleSawBlade_Ground,
+	}
+
+    item BaseballSawBat
+	{
+		MaxRange	=	1.28,
+		WeaponSprite	=	BaseballSawBat,
+		MinAngle	=	0.75,
+		Type	=	Weapon,
+		MinimumSwingTime	=	3,
+		KnockBackOnNoDeath	=	TRUE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	Blunt,
+		ConditionLowerChanceOneIn	=	20,
+		Weight	=	2,
+		SplatNumber	=	3,
+		PushBackMod	=	0.5,
+		SubCategory	=	Swinging,
+		ConditionMax	=	15,
+		MaxHitCount	=	2,
+		DoorDamage	=	5,
+		IdleAnim	=	Idle_Weapon2,
+		SwingAnim	=	Bat,
+		DisplayName	=	Baseball Bat With Saw,
+		MinRange	=	0.61,
+		SwingTime	=	3,
+		HitAngleMod	=	-30,
+		KnockdownMod	=	2,
+		SplatBloodOnNoDeath	=	FALSE,
+		Icon	=	BaseballSawBat,
+		RunAnim	=	Run_Weapon2,
+        TwoHandWeapon = TRUE,
+        BreakSound  =   BreakWoodItem,
+        TreeDamage  =   1,
+		CriticalChance	=	30,
+		critDmgMultiplier = 5,
+		MinDamage	=	1.2,
+		MaxDamage	=	1.7,
+		BaseSpeed = 0.95,
+		WeaponLength = 0.5,
+        DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        AttachmentType = Shovel,
+	}
+
+    item BaseballWireBat
+	{
+		MaxRange	=	1.28,
+		WeaponSprite	=	BaseballWireBat,
+		MinAngle	=	0.75,
+		Type	=	Weapon,
+		MinimumSwingTime	=	3,
+		KnockBackOnNoDeath	=	TRUE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	Blunt,
+		ConditionLowerChanceOneIn	=	20,
+		Weight	=	3,
+		SplatNumber	=	2,
+		PushBackMod	=	0.5,
+		SubCategory	=	Swinging,
+		ConditionMax	=	15,
+		MaxHitCount	=	2,
+		DoorDamage	=	5,
+		IdleAnim	=	Idle_Weapon2,
+		SwingAnim	=	Bat,
+		DisplayName	=	Baseball Bat With Wire,
+		MinRange	=	0.61,
+		SwingTime	=	3,
+		HitAngleMod	=	-30,
+		KnockdownMod	=	2,
+		SplatBloodOnNoDeath	=	FALSE,
+		Icon	=	BaseballWireBat,
+		RunAnim	=	Run_Weapon2,
+        TwoHandWeapon = TRUE,
+        BreakSound  =   BreakWoodItem,
+        TreeDamage  =   1,
+		CriticalChance	=	40,
+		critDmgMultiplier = 5,
+		MinDamage	=	1.1,
+		MaxDamage	=	1.6,
+		BaseSpeed = 0.95,
+		WeaponLength = 0.5,
+        DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        AttachmentType = Shovel,
+	}
+
+    item SawMag1
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Table Saw Magazine,
+        Icon	=	MagazineTableSaw,
+        TeachedRecipes  =   Craft Table Saw,
+        ReplaceOnUse    =   SawMag1,
+        StaticModel = SawTableMag,
+		WorldStaticModel = SawTableMag_Ground,
+    }
+
+	item StickStacks
+	{
+		DisplayCategory = Material,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	Stick Stack,
+		Icon	=	PackStick,
+		Tooltip = Tooltip_StickStacks,
+	}
+
+	item PlankStacks1
+	{
+		DisplayCategory = Material,
+		Weight	=	6,
+		Type	=	Normal,
+		DisplayName	=	6 planks stack,
+		Icon	=	Packplank,
+		WorldStaticModel = PlanksPile6_Ground,
+	}
+
+	item PlankStacks2
+	{
+		DisplayCategory = Material,
+		Weight	=	9,
+		Type	=	Normal,
+		DisplayName	=	9 planks stack,
+		Icon	=	Packplank,
+		WorldStaticModel = PlanksPile9_Ground,
+	}
+
+	item PlankStacks3
+	{
+		DisplayCategory = Material,
+		Weight	=	12,
+		Type	=	Normal,
+		DisplayName	=	12 planks stack,
+		Icon	=	Packplank,
+		WorldStaticModel = PlanksPile12_Ground,
+	}
+
+    recipe Untie 6 planks
+    {
+        PlankStacks1,
+
+        Result:Plank=6,
+		CanBeDoneFromFloor:true,
+        Time:60.0,
+		OnGiveXP:Recipe.OnGiveXP.None,
+        OnCreate:TableSawReturnRope2,
+		Sound:PutItemInBag,
+        Category:Carpentry,
+    }
+
+    recipe Untie 9 planks
+    {
+        PlankStacks2,
+
+        Result:Plank=9,
+		CanBeDoneFromFloor:true,
+        Time:60.0,
+		OnGiveXP:Recipe.OnGiveXP.None,
+        OnCreate:TableSawReturnRope2,
+		Sound:PutItemInBag,
+        Category:Carpentry,
+    }
+
+    recipe Untie 12 planks
+    {
+        PlankStacks3,
+
+        Result:Plank=12,
+		CanBeDoneFromFloor:true,
+        Time:60.0,
+		OnGiveXP:Recipe.OnGiveXP.None,
+        OnCreate:TableSawReturnRope2,
+		Sound:PutItemInBag,
+        Category:Carpentry,
+    }
+
+    recipe Tie 6 planks
+    {
+        Plank=6,
+        Rope=2,
+
+        Result:PlankStacks1,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:TiePlanks_TestIsValid,
+		Sound:PutItemInBag,
+        Time:60.0,
+        Category:Carpentry,
+    }
+
+    recipe Tie 9 planks
+    {
+        Plank=9,
+        Rope=2,
+
+        Result:PlankStacks2,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:TiePlanks_TestIsValid,
+		Sound:PutItemInBag,
+        Time:60.0,
+        Category:Carpentry,
+    }
+
+    recipe Tie 12 planks
+    {
+        Plank=12,
+        Rope=2,
+
+        Result:PlankStacks3,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnTest:TiePlanks_TestIsValid,
+		Sound:PutItemInBag,
+        Time:60.0,
+        Category:Carpentry,
+    }
+
+    recipe Tie 24 Sticks
+    {
+        WoodenStick=24,
+        RippedSheets/Thread/RippedSheetsDirty,
+
+        Result:TableSaw.StickStacks,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		Sound:PutItemInBag,
+        Time:20.0,
+        Category:Carpentry,
+    }
+
+    recipe Untie StickPack
+    {
+        TableSaw.StickStacks,
+
+        Result:WoodenStick=24,
+		CanBeDoneFromFloor:true,
+		OnGiveXP:Recipe.OnGiveXP.None,
+		OnCreate:UntieSticks_OnCreate,
+		Sound:PutItemInBag,
+        Time:20.0,
+        Category:Carpentry,
+    }
+	
+	recipe Build Baseball Saw Bat
+	{
+	   BaseballBat,
+	   TableSaw.SawBlade,
+	   Screws=3,
+	   
+	   keep Saw/GardenSaw,
+	   keep Screwdriver,
+		
+	   Result:TableSaw.BaseballSawBat,
+	   Sound:Hammering,
+	   OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	   Time:250.0,
+	   SkillRequired:Woodwork=3,
+	   Category:Carpentry,
+	   OnCreate:Recipe.OnCreate.SpikedBat,
+	}
+
+    fixing Fix Baseball Bat With Saw
+    {
+       Require : BaseballSawBat,
+
+       Fixer : Woodglue=2; Woodwork=4,
+       Fixer : DuctTape=2,
+       Fixer : Glue=2,
+       Fixer : Scotchtape=4,
+    }
+
+	recipe Build Baseball Wire Bat
+	{
+	   BaseballBat,
+	   BarbedWire,
+	   Screws=2,
+	   
+	   keep [Recipe.GetItemTypes.Hammer],
+	   keep Screwdriver,
+		
+	   Result:TableSaw.BaseballWireBat,
+	   Sound:Hammering,
+	   OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+	   Time:250.0,
+	   Category:Carpentry,
+	   OnCreate:Recipe.OnCreate.SpikedBat,
+	}
+
+    fixing Fix Baseball Bat With Wire
+    {
+       Require : BaseballWireBat,
+
+       Fixer : Woodglue=2; Woodwork=2,
+       Fixer : DuctTape=2,
+       Fixer : Glue=2,
+       Fixer : Scotchtape=4,
+    }
+
+	recipe Make Wooden Club
+	{
+	   Log,
+	   keep Saw/GardenSaw/AxeStone/Axe/HandAxe/WoodAxe,
+
+	   Result:TableSaw.WoodenClub,
+	   Sound:Sawing,
+	   OnGiveXP:Recipe.OnGiveXP.SawLogs,
+	   Time:250.0,
+	   Category:Survivalist,
+	   OnCreate:CreateClub_OnCreate,
+	}
+}

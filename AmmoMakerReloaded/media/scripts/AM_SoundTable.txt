@@ -1,0 +1,346 @@
+module Base
+{
+	sound AM_Blowtorch
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_Blowtorch1.ogg,
+		}
+	}
+
+	sound AM_bulletInRifle
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_BulletInRifle.ogg,
+		}
+	}
+
+	sound AM_firemode
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_Firemode.ogg,
+		}
+	}
+
+	sound AM_M16Supressed
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_M16supressed.ogg,
+		}
+	}
+
+	sound AM_TLonoff
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_TLOnOff.ogg,
+		}
+	}
+
+	sound AMAK47
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK_47.ogg,
+		}
+	}
+
+	sound AMAK47S
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK_47S.ogg,
+		}
+	}
+	
+	sound AMAKEmpty
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK_Empty.ogg,
+		}
+	}
+
+	sound AMAKIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK_In.ogg,
+		}
+	}
+
+	sound AMAKOut
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK_Out.ogg,
+		}
+	}
+
+	sound AMAKRack
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK_Rack.ogg,
+		}
+	}
+
+	sound AMAR15
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_AR15.ogg,
+		}
+	}
+
+	sound AMARIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_AR_In.ogg,
+		}
+	}
+
+	sound AMAROut
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_AR_Out.ogg,
+		}
+	}
+
+	sound AMARRack
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_AR_Rack.ogg,
+		}
+	}
+
+	sound AMbulletOutVarmint
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_bulletOutVarmint.ogg,
+		}
+	}
+
+	sound AMHandleWeapons
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_HandleWeapons.ogg,
+		}
+	}
+
+	sound AMLMGIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_LMG_In.ogg,
+		}
+	}
+
+	sound AMLMGOut
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_LMG_Out.ogg,
+		}
+	}
+
+	sound AMLMGRack
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_LMG_Rack.ogg,
+		}
+	}
+
+	sound AMM249
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_M249.ogg,
+		}
+	}
+
+	sound AMRifleEmpty
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_RifleEmpty.ogg,
+		}
+	}
+
+	sound AMRifleIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_RifleIn.ogg,
+		}
+	}
+
+	sound AMRifleOut
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_RifleOut.ogg,
+		}
+	}
+
+	sound AMRifleRack
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_RifleRack.ogg,
+		}
+	}
+
+	sound BoxPutIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_BoxPutIn.ogg,
+		}
+	}
+
+	sound BriefcaseClose
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_BriefcaseClose.ogg,
+		}
+	}
+
+	sound BriefcaseOpen
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_BriefcaseOpen.ogg,
+		}
+	}
+
+	sound crack1
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_crack1.ogg,
+		}
+	}
+
+	sound JarOpen
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_JarOpen.ogg,
+		}
+	}
+
+	sound LeadMaker
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_LeadMaker.ogg,
+		}
+	}
+
+	sound Makebullets
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_Makebullets.ogg,
+		}
+	}
+
+	sound ToolBoxClose
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_ToolBoxClose.ogg,
+		}
+	}
+
+	sound ToolBoxOpen
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_ToolBoxOpen.ogg,
+		}
+	}
+
+	sound ToolBoxPutIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_ToolBoxPutIn.ogg,
+		}
+	}
+	
+	sound AMAK47S
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMAK47Silenced.ogg,
+		}
+	}
+
+	sound AMRTL
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AMR_TLonoff.ogg,
+		}
+	}
+
+	sound DismantleFirearm
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/DismantleFWeapons.ogg,
+		}
+	}
+
+}
+

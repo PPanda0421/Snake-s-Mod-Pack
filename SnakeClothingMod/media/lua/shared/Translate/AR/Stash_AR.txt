@@ -1,0 +1,4 @@
+Stash_ES = {
+
+    Stash_SCMMap1_Text1 = "Lejano oeste cerca de la gasolinera.",
+}

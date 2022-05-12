@@ -1,0 +1,10 @@
+ContextMenu_RU = {
+
+	ContextMenu_CheckMagTT = "Прочтите этот журнал для получения очков опыта.",
+	ContextMenu_SMExpgain = "Полученный опыт: ",
+	ContextMenu_SMLevelMax = "Вы уже имеет максимальный уровень для этого навыка.",
+	ContextMenu_Reading = "Читать",
+	ContextMenu_OpeningPackage = "Достать журналы из упаковки",
+	ContextMenu_Open = "Достать журналы из упаковки",
+	ContextMenu_SMPackageTT = "Оставить ",
+}

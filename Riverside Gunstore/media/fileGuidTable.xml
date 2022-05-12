@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fileGuidTable>
+	<files>
+		<path>media/clothing/clothingItems/Shoes_BowlingTrainers.xml</path>
+		<guid>95047b8a-0248-46ad-af29-bowling0915b</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shoes_BowlingTrainersRed.xml</path>
+		<guid>95047b8a-0248-46ad-af29-bowlingr915b</guid>
+	</files>
+	<files>
+		<path>media/clothing/clothingItems/Shoes_BowlingTrainersGreen.xml</path>
+		<guid>95047b8a-0248-46ad-af29-bowlingg915b</guid>
+	</files>
+</fileGuidTable>

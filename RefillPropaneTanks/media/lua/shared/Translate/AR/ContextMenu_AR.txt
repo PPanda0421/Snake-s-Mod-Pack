@@ -1,0 +1,8 @@
+ContextMenu_ES = {
+
+	ContextMenu_RechargeTank = "Recargar garrafa",
+	ContextMenu_RechargeTankTT = "Puedes recargar una garrafa usando este tanque grande de propano.",
+	ContextMenu_TankContains = "Carga del tanque: ",
+	ContextMenu_PropaneNonFull = "vacío o a medio llenar",
+
+}

@@ -1,0 +1,18 @@
+module Base
+{
+	item PropaneTank
+	{
+		DisplayCategory = Material,
+		Weight	=	10.0,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.05,
+		KeepOnDeplete = true,
+		DisplayName	=	Propane Tank,
+		Icon	=	PropaneTank,
+		UseWorldItem = TRUE,
+		ScaleWorldIcon = 2.0,
+		WeightEmpty = 5.0,
+		WorldStaticModel = PropaneTank,
+	}
+}

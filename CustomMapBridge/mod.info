@@ -1,0 +1,8 @@
+name=Snake's ModPack - Custom Map Bridge V 3.62
+id=CustomMapBridge
+description=Este mod se encarga de cargar texturas personalizadas entre mapas diferentes.
+poster=cmbposter.png
+pack=CMBUI
+pack=CustomMapBridge
+pack=CustomMapBridge.floor
+tiledef=cmbdefinitions 990

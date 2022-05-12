@@ -1,0 +1,200 @@
+module Base
+{
+	item Shoes_BowlingTrainers
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Bowling Shoes,
+		ClothingItem = Shoes_BowlingTrainers,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = ShoesBowling,
+		StompPower = 1.8,
+		ConditionLowerChanceOneIn = 10,
+		ConditionMax = 24,
+		RunSpeedModifier = 0.95,
+		RemoveOnBroken = false,
+		ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.3,
+        WorldStaticModel = ShoesBowling_Ground,
+	}
+    model ShoesBowling_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Ground,
+		texture = Clothes/Shoes_Socks_Textres/Trainers_Bowling,
+        scale = 0.33,
+    }
+	item Shoes_BowlingTrainersRed
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Bowling Shoes,
+		ClothingItem = Shoes_BowlingTrainersRed,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = ShoesBowlingRed,
+		StompPower = 1.8,
+		ConditionLowerChanceOneIn = 10,
+		ConditionMax = 24,
+		RunSpeedModifier = 0.95,
+		RemoveOnBroken = false,
+		ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.3,
+        WorldStaticModel = ShoesBowlingRed_Ground,
+	}
+    model ShoesBowlingRed_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Ground,
+		texture = Clothes/Shoes_Socks_Textres/Trainers_BowlingRed,
+        scale = 0.33,
+    }
+	item Shoes_BowlingTrainersGreen
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Bowling Shoes,
+		ClothingItem = Shoes_BowlingTrainersGreen,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = ShoesBowlingGreen,
+		StompPower = 1.8,
+		ConditionLowerChanceOneIn = 10,
+		ConditionMax = 24,
+		RunSpeedModifier = 0.95,
+		RemoveOnBroken = false,
+		ScratchDefense = 10,
+        Insulation = 0.45,
+        WindResistance = 0.3,
+        WorldStaticModel = ShoesBowlingGreen_Ground,
+	}
+    model ShoesBowlingGreen_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Ground,
+		texture = Clothes/Shoes_Socks_Textres/Trainers_BowlingGreen,
+        scale = 0.33,
+    }
+
+    item Bowlingball
+	{
+		MaxRange	=	1,
+		WeaponSprite	=	Bowlingball,
+		MinAngle	=	0.65,
+		Type	=	Weapon,
+		MinimumSwingTime	=	5,
+		EnduranceMod	=	2.5,
+		KnockBackOnNoDeath	=	TRUE,
+		SwingAmountBeforeImpact	=	0.05,
+		Categories	=	SmallBlunt,
+		ConditionLowerChanceOneIn	=	30,
+		Weight	=	3,
+		SplatNumber	=	3,
+		PushBackMod	=	0.5,
+		SubCategory	=	Swinging,
+		ConditionMax	=	10,
+		MaxHitCount	=	1,
+		DoorDamage	=	20,
+		CanBarricade	=	TRUE,
+		SwingAnim	=	Bat,
+		DisplayName	=	Bowlingball,
+		MinRange	=	0.61,
+		SwingTime	=	3,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		SplatSize	=	3,
+		Icon	=	Bowlingball,
+		RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        BreakSound  =   ClubHammerBreak,
+        DoorHitSound = ClubHammerHit,
+		HitSound = ClubHammerHit,
+		HitFloorSound = ClubHammerHit,
+		SwingSound = ClubHammerSwing,
+        TreeDamage  =   5,
+        MetalValue = 60,
+        CriticalChance	=	40,
+        CritDmgMultiplier = 2,
+        MinDamage	=	0.5,
+        MaxDamage	=	1.1,
+        BaseSpeed = 1,
+	    WeaponLength = 0.23,
+    }
+	model Bowlingball
+	{
+		mesh = WorldItems/Bowlingball,
+		texture = WorldItems/Bowlingball,
+		scale = 0.0045,
+	}
+	item BowlingPin
+	{
+        MaxRange	=	1.15,
+        WeaponSprite	=	BowlingPin,
+        MinAngle	=	0.65,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	TRUE,
+        SwingAmountBeforeImpact	=	0.04,
+        Categories	=	Improvised;SmallBlunt,
+        ConditionLowerChanceOneIn	=	15,
+        Weight	=	2.0,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Swinging,
+        ConditionMax	=	10,
+        MaxHitCount	=	2,
+        DoorDamage	=	1,
+        SwingAnim	=	Bat,
+        DisplayName	=	Bowling Pin,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	BowlingPin,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   0,
+        CriticalChance	=	20,
+        CritDmgMultiplier = 2,
+        MinDamage	=	0.6,
+        MaxDamage	=	1.2,
+        BaseSpeed = 0.93,
+        WeaponLength = 0.3,
+        AttachmentType = Hammer,
+		ImpactSound	=	PinHit,
+        BreakSound  =   PoolcueBreak,
+        DoorHitSound = PinHit,
+		HitSound = PinHit,
+		HitFloorSound = PinHit,
+		SwingSound = BaseballBatSwing,
+  	}
+	model BowlingPin
+	{
+		mesh = Weapons/1Handed/BowlingPin,
+		texture = Weapons/1Handed/BowlingPin,
+
+		attachment world
+		{
+			offset = 0.0200 0.1400 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+	sound PinHit
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/BowlingPingHit.ogg,
+		}
+	}
+
+    fixing Fix Bowling Pin
+    {
+       Require : BowlingPin,
+
+       Fixer : Woodglue=2; Woodwork=2,
+       Fixer : DuctTape=2,
+       Fixer : Glue=2,
+       Fixer : Scotchtape=4,
+    }
+}

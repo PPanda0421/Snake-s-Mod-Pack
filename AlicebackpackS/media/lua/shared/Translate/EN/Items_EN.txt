@@ -1,0 +1,12 @@
+Items_EN = {
+
+    DisplayNameSoporte_de_mochila_Alice = "Alice pack frame with straps",
+    DisplayNameBolsa_militar_(Urbana) = "Dump pouch (Urban)",
+    DisplayNameBolsa_militar_(Jungla) = "Dump pouch (Jungle)",
+	DisplayNameMeal_Ready_To_Eat = "Meal_Ready-To-Eat",
+	DisplayNameCase_of_MREs = "Case of MREs",
+	DisplayNameMilitary_Canteen_(Empty) = "Military canteen (Empty)",
+	DisplayNameMilitary_Canteen_(Full) = "Military canteen (Full)",
+	DisplayNameMilitary_knife = "Military knife",
+	DisplayNameGrenade_Mk2 = "Hand grenade Mk2",
+}

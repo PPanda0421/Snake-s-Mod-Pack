@@ -1,0 +1,460 @@
+module ColorCrates
+{
+
+    imports
+    {
+        Base
+
+    }
+    /************** Items **************/
+
+    item UniqueMag1
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Mystery Magazine 1,
+        Icon	=	MagazineUnique1,
+        TeachedRecipes  =   Dito Box,
+        ReplaceOnUse    =   UniqueMag1,
+        StaticModel = UniqueMag1,
+		WorldStaticModel = UniqueMag1_Ground,
+    }
+
+    item UniqueMag2
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Mystery Magazine 2,
+        Icon	=	MagazineUnique2,
+        TeachedRecipes  =   Army Box,
+        ReplaceOnUse    =   UniqueMag2,
+        StaticModel = UniqueMag2,
+		WorldStaticModel = UniqueMag2_Ground,
+    }
+
+    item UniqueMag3
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Mystery Magazine 3,
+        Icon	=	MagazineUnique3,
+        TeachedRecipes  =   Ammo Maker Box,
+        ReplaceOnUse    =   UniqueMag3,
+        StaticModel = UniqueMag3,
+		WorldStaticModel = UniqueMag3_Ground,
+    }
+
+	item CrateBlue
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Blue Crate,
+		Icon	=	BlueCrate,
+		WorldObjectSprite	= carpentry_03_45,
+	}
+
+	item CrateGreen
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Green Crate,
+		Icon	=	GreenCrate,
+		WorldObjectSprite	= carpentry_03_46,
+	}
+
+	item CrateLightBrown
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Light Brown Crate,
+		Icon	=	LightBrownCrate,
+		WorldObjectSprite	= carpentry_03_47,
+	}
+
+	item CrateLightBlue
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Light Blue Crate,
+		Icon	=	LightBlueCrate,
+		WorldObjectSprite	= carpentry_03_52,
+	}
+
+	item CrateBrown
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Brown Crate,
+		Icon	=	BrownCrate,
+		WorldObjectSprite	= carpentry_03_53,
+	}
+
+	item CrateOrange
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Orange Crate,
+		Icon	=	OrangeCrate,
+		WorldObjectSprite	= carpentry_03_54,
+	}
+
+	item CrateCyan
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Cyan Crate,
+		Icon	=	CyanCrate,
+		WorldObjectSprite	= carpentry_03_55,
+	}
+
+	item CratePink
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Pink Crate,
+		Icon	=	PinkCrate,
+		WorldObjectSprite	= carpentry_03_56,
+	}
+
+	item CrateGrey
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Grey Crate,
+		Icon	=	GreyCrate,
+		WorldObjectSprite	= carpentry_03_57,
+	}
+
+	item CrateTurquoise
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Turquoise Crate,
+		Icon	=	TurquoiseCrate,
+		WorldObjectSprite	= carpentry_03_58,
+	}
+
+	item CratePurple
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Purple Crate,
+		Icon	=	PurpleCrate,
+		WorldObjectSprite	= carpentry_03_59,
+	}
+
+	item CrateYellow
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Yellow Crate,
+		Icon	=	YellowCrate,
+		WorldObjectSprite	= carpentry_03_60,
+	}
+
+	item CrateWhite
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	White Crate,
+		Icon	=	WhiteCrate,
+		WorldObjectSprite	= carpentry_03_61,
+	}
+
+	item CrateRed
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Red Crate,
+		Icon	=	RedCrate,
+		WorldObjectSprite	= carpentry_03_62,
+	}
+
+	item CrateBlack
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Black Crate,
+		Icon	=	BlackCrate,
+		WorldObjectSprite	= carpentry_03_63,
+	}
+
+	item CrateAmmo
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Ammo Crate,
+		Icon	=	AmmoCrate,
+		WorldObjectSprite	= carpentry_04_0,
+	}
+
+	item CrateFood
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Food Crate,
+		Icon	=	FoodCrate,
+		WorldObjectSprite	= carpentry_04_1,
+	}
+
+	item CrateLiterature
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Literature Crate,
+		Icon	=	LiteratureCrate,
+		WorldObjectSprite	= carpentry_04_2,
+	}
+
+	item CrateMedical
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Medical Crate,
+		Icon	=	MedicalCrate,
+		WorldObjectSprite	= carpentry_04_3,
+	}
+
+	item CrateWeapons
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Weapons Crate,
+		Icon	=	WeaponsCrate,
+		WorldObjectSprite	= carpentry_04_4,
+	}
+
+	item CrateCarpentry
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Carpentry Crate,
+		Icon	=	CarpentryCrate,
+		WorldObjectSprite	= carpentry_04_5,
+	}
+
+	item CrateElectricity
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Electricity Crate,
+		Icon	=	ElectricityCrate,
+		WorldObjectSprite	= carpentry_04_6,
+	}
+
+	item CrateFarming
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Farming Crate,
+		Icon	=	FarmingCrate,
+		WorldObjectSprite	= carpentry_04_7,
+	}
+
+	item CrateFishing
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Fishing Crate,
+		Icon	=	FishingCrate,
+		WorldObjectSprite	= carpentry_04_8,
+	}
+
+	item CrateMechanics
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Mechanics Crate,
+		Icon	=	MechanicsCrate,
+		WorldObjectSprite	= carpentry_04_9,
+	}
+
+	item CrateMetalWelding
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	MetalWelding Crate,
+		Icon	=	MetalWeldingCrate,
+		WorldObjectSprite	= carpentry_04_10,
+	}
+
+	item CratePainting
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Painting Crate,
+		Icon	=	PaintingCrate,
+		WorldObjectSprite	= carpentry_04_11,
+	}
+
+	item CrateScavenge
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Scavenge Crate,
+		Icon	=	ScavengeCrate,
+		WorldObjectSprite	= carpentry_04_12,
+	}
+
+	item CrateTrash
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Trash Crate,
+		Icon	=	TrashCrate,
+		WorldObjectSprite	= carpentry_04_13,
+	}
+
+	item CrateClothing
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Clothing Crate,
+		Icon	=	ClothingCrate,
+		WorldObjectSprite	= carpentry_04_14,
+	}
+
+	item BaseCrate
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Crate,
+		Icon	=	BaseCrate,
+		WorldObjectSprite	= carpentry_04_15,
+	}
+
+	item CrateDito
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Dito Crate,
+		Icon	=	DitoCrate,
+		WorldObjectSprite	= carpentry_04_32,
+	}
+
+	item CrateArmy
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Army Crate,
+		Icon	=	ArmyCrate,
+		WorldObjectSprite	= carpentry_04_33,
+	}
+
+	item Crate9mm
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	9mm Crate,
+		Icon	=	9mmCrate,
+		WorldObjectSprite	= paintcrates_01_0,
+	}
+
+	item Crate45
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	45 Crate,
+		Icon	=	45Crate,
+		WorldObjectSprite	= paintcrates_01_1,
+	}
+
+	item Crate38
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	38 Crate,
+		Icon	=	38Crate,
+		WorldObjectSprite	= paintcrates_01_2,
+	}
+
+	item Crate44
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	44 Crate,
+		Icon	=	44Crate,
+		WorldObjectSprite	= paintcrates_01_3,
+	}
+
+	item Crate223
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	223 Crate,
+		Icon	=	223Crate,
+		WorldObjectSprite	= paintcrates_01_4,
+	}
+	
+	item Crate308
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	308 Crate,
+		Icon	=	308Crate,
+		WorldObjectSprite	= paintcrates_01_5,
+	}
+
+	item Crate556
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	556 Crate,
+		Icon	=	556Crate,
+		WorldObjectSprite	= paintcrates_01_6,
+	}
+
+	item CrateShell
+	{
+		DisplayCategory = Furniture,
+		Weight	=	7.5,
+		Type	=	Moveable,
+		DisplayName	=	Shells Crate,
+		Icon	=	ShellCrate,
+		WorldObjectSprite	= paintcrates_01_7,
+	}
+
+}

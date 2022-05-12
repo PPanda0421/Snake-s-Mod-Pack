@@ -1,0 +1,16 @@
+ContextMenu_RU = {
+	ContextMenu_CraftFuelTank = "Построить бак для топлива",
+	ContextMenu_FuelTank = "Бак для топлива",
+	ContextMenu_TakeGasTT = "Можно забрать топливо из этого бака с помощью канистры.",
+	ContextMenu_FillFTankTT = "Можно вылить содержимое канистры в этот бак для топлива.",
+	ContextMenu_InfoTT = "Вы можете взаимодействовать с этим баком для топлива, если у вас есть полная или пустая канистра.",
+	ContextMenu_FuelTankContains = "Содержит: ",
+	ContextMenu_FuelTankAddFuel = "Хранить топливо",
+	ContextMenu_TankInfo = "Информация о баке",
+	ContextMenu_TankEmptyTT = "Невозможно забрать топливо из пустого бака.",
+	ContextMenu_TankFullTT = "Бак для топлива полностью заполнен.",
+	ContextMenu_NeedGasWithSpace = "Ваша канистра полностью заполнена.",
+	ContextMenu_NeedGasCan = "Невозможно хранить топливо, если у вас нет канистры с содержимом.",
+	ContextMenu_FuelTankMaxCapacity = "Общая вместимость: ",
+	ContextMenu_FuelMeter = "Измерить топливо",
+}

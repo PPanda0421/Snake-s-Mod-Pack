@@ -1,0 +1,11 @@
+Muldraugh Factory Changelog V 2.1 (Requiere Custom Map Bridge 3.28+)
+*Agregada extensión (Fábrica de chapas metálicas)
+*Agregados nuevos tanques de Acido Clorhidrico.
+
+Muldraugh Factory Changelog V 2.0
+*Actualizado para Build 41.
+*Agregado spawn de zombies custom.
+*Adaptada tabla de loot.
+
+Muldraugh Factory Changelog V 1.1
+*Agregados pallets de ladrillos (Requiere Custom Map Bridge 1.3)

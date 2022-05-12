@@ -1,0 +1,10 @@
+ContextMenu_ES = {
+
+	ContextMenu_CheckMagTT = "Lee esta revista para obtener puntos de experiencia.",
+	ContextMenu_SMExpgain = "Experiencia obtenida: ",
+	ContextMenu_SMLevelMax = "Ya tienes el nivel máximo para esta habilidad.",
+	ContextMenu_Reading = "Leyendo",
+	ContextMenu_OpeningPackage = "Abriendo paquete",
+	ContextMenu_Open = "Abrir",
+	ContextMenu_SMPackageTT = "Mantener ",
+}

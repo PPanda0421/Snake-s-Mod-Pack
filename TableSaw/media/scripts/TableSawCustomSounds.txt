@@ -1,0 +1,36 @@
+module Base
+{
+	sound SawMachine
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/Sawing.ogg,
+		}
+	}
+	sound SawMachineShort
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/SawingShort.ogg,
+		}
+	}
+	sound PaintLong
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/PaintingLong.ogg,
+		}
+	}
+	sound WoodenClubHit
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ClubHit.ogg,
+		}
+	}	
+
+}

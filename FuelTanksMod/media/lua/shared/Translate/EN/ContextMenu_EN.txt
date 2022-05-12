@@ -1,0 +1,16 @@
+ContextMenu_EN = {
+	ContextMenu_CraftFuelTank = "Craft Fuel Tank",
+	ContextMenu_FuelTank = "Fuel Tank",
+	ContextMenu_TakeGasTT = "You can take fuel from this tank using a gas can.",
+	ContextMenu_FillFTankTT = "You can pour the contents of a gas can into this fuel tank.",
+	ContextMenu_InfoTT = "You can interact with this fuel tank if you have a full or empty gas can.",
+	ContextMenu_FuelTankContains = "Contains: ",
+	ContextMenu_FuelTankAddFuel = "Store fuel",
+	ContextMenu_TankInfo = "Tank Info",
+	ContextMenu_TankEmptyTT = "You can't take fuel from this empty tank.",
+	ContextMenu_TankFullTT = "This tank has reached its capacity limit, you can't store fuel.",
+	ContextMenu_NeedGasWithSpace = "You can't take fuel if you do not have a gas can with enough space.",
+	ContextMenu_NeedGasCan = "You can't store fuel if you don't have a gas can with content.",
+	ContextMenu_FuelTankMaxCapacity = "Total capacity: ",
+	ContextMenu_FuelMeter = "Measure fuel",
+}

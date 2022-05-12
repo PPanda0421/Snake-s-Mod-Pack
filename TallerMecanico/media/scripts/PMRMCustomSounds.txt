@@ -1,0 +1,28 @@
+module Base
+{
+	sound DeflateTire
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/DeflateTireloop.ogg,
+		}
+	}
+	sound VulcanizingMachine
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/Vulcanizing.ogg,
+		}
+	}
+
+	sound PaintSpray
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/SprayPaint.ogg,
+		}
+	}
+}

@@ -1,0 +1,5 @@
+name=Snake's ModPack - SkillsMag Version 2.04
+description=Agrega magazines de skills las cuales otorgan exp al personaje.
+id=SkillsMag
+require=SnakeUtilsPack
+poster=smposter.png

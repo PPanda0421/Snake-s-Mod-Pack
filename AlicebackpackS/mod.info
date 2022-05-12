@@ -1,0 +1,5 @@
+name=Snake's ModPack - Mochila Alice 3.22
+poster=abposter.png
+require=SnakeUtilsPack
+id=AliceSPack
+description=Este mod agrega una mochila alice la cual puede mejorarse mediante partes de la misma, bolsas MRE (Meal Ready To Eat), una cantimplora militar y un cuchillo militar...  <LINE> <LINE>  Atencion: Solo podrás agregar los upgrades si las mochilas/bolsas estan vacías y NO equipadas.

@@ -1,0 +1,9 @@
+IGUI_RU = {
+
+    IGUI_CraftCategory_Mechanics = "Автомеханика",
+	IGUI_RepairHeater = "Починить печь",
+	IGUI_RepairGloveBox = "Починить бардачок",
+	IGUI_Repairlightbar = "Починить аварийку",
+	IGUI_TunningEngine = "Настройка двигателя",
+	IGUI_TuningEngine = "Применение специальных деталей",
+}

@@ -1,0 +1,11 @@
+ItemName_EN = {
+	ItemName_AliceBP.AlicePack = "Jungle Alice Backpack",
+	ItemName_AliceBP.UpgradedAlicePack1 = "Alice backpack (Frame)",
+	ItemName_AliceBP.UpgradedAlicePack2 = "Alice backpack (Frame + Pouch)",
+	ItemName_AliceBP.UpgradedAlicePack2b = "Alice backpack (Frame + Pouch)",
+	ItemName_AliceBP.UpgradedAlicePack3 = "Alice backpack (Pouch)",
+	ItemName_AliceBP.UpgradedAlicePack3b = "Alice backpack (Pouch)",
+	ItemName_AliceBP.AlicePackUrban = "Urban Alice Backpack",
+	ItemName_AliceBP.SpearMilitaryKnife = "Spear With Military Knife",
+	ItemName_AliceBP.AlicePackDesert = "Desert Alice Backpack",
+}

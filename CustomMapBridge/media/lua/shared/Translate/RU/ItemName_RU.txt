@@ -1,0 +1,5 @@
+ItemName_RU = {
+	ItemName_Base.PMRMTire = "Снятая шина",
+	ItemName_Base.PMRMTireMachine = "Шиномонтажная машина",
+	ItemName_Base.UnknownTire = "Шина (Неизвестно)",
+}

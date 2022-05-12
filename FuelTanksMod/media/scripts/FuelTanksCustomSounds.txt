@@ -1,0 +1,12 @@
+module Base
+{
+	sound FuelTankFill
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FillFuelTank.ogg,
+		}
+	}
+
+}

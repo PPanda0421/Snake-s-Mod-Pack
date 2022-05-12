@@ -1,0 +1,8 @@
+ContextMenu_EN = {
+
+	ContextMenu_RechargeTank = "Recharge propane tank",
+	ContextMenu_RechargeTankTT = "Need: Propane tank",
+	ContextMenu_TankContains = "Tank Contains: ",
+	ContextMenu_PropaneNonFull = "not full.",
+
+}

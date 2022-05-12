@@ -1,0 +1,1100 @@
+module Base
+{
+
+    item MincedMeat
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-40,
+        Weight	=	0.3,
+        Type	=	Food,
+        IsCookable	=	TRUE,
+        DangerousUncooked	=	TRUE,
+        DaysTotallyRotten	=	4,
+        MinutesToBurn	=	70,
+        DisplayName	=	Minced Meat,
+        Icon	=	MincedMeat,
+        DaysFresh	=	2,
+        MinutesToCook	=	50,
+        EvolvedRecipe = Stew:15;Pie:15;Burger:10;Sandwich:10|Cooked;Sandwich Baguette:10|Cooked;Sausages:15;Pizza:10|Cooked;Taco:10|Cooked;Burrito:10,
+        FoodType    =   Meat,
+        Carbohydrates = 0,
+        Proteins = 46,
+        Lipids = 30,
+        Calories = 300,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = MincedMeat_Ground,
+    }
+
+    item FishFillet
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-25,
+        Weight	=	0.2,
+        Type	=	Food,
+        IsCookable	=	TRUE,
+        DaysTotallyRotten	=	4,
+        MinutesToBurn	=	50,
+        DisplayName	=	Fish Fillet,
+        Icon	=	FishFillet,
+        DaysFresh	=	2,
+        MinutesToCook	=	20,
+        Carbohydrates = 1,
+        Proteins = 28.52,
+        Lipids = 12,
+        Calories = 205,
+        EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry Griddle Pan:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Burger:10;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+        FoodType    =   Fish,
+        BadInMicrowave = true,
+        GoodHot = true,
+		WorldStaticModel = FishFillet,
+		DangerousUncooked	=	TRUE,
+    }
+
+	item Cheese
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-15,
+        Weight	=	0.2,
+        Type	=	Food,
+        DaysTotallyRotten	=	20,
+        DisplayName	=	Cheese,
+        Icon	=	Cheese,
+        DaysFresh	=	14,
+        EvolvedRecipe = Soup:15;Sandwich:5;Sandwich Baguette:5;Burger:5;Salad:5;PastaPot:15;PastaPan:15,
+        FoodType    =   NoExplicit,
+        Carbohydrates = 0.87,
+        Proteins = 6.4,
+        Lipids = 9.33,
+        Calories = 113,
+		StaticModel = Cheese,
+		WorldStaticModel = Cheese,
+    }
+
+	item Beans
+	{
+		DisplayCategory = Food,
+		HungerChange		=	-10,
+		Weight				=	0.3,
+		Type				=	Food,
+		DaysTotallyRotten	=	10,
+		DisplayName			=	Beans,
+		Icon				=	LgBeans,
+		DaysFresh			=	7,
+		EvolvedRecipe 		=	Soup:10;Stew:10;Stir fry:10;Salad:5;Roasted Vegetables:10;Taco:5,
+		FoodType    		=	Vegetables,
+        Carbohydrates = 33,
+        Proteins = 7,
+        Lipids = 1,
+        Calories = 170,
+		Packaged = FALSE,
+	}
+
+	item Onion
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-10,
+		Weight	=	0.2,
+		Type	=	Food,
+		DaysTotallyRotten	=	9,
+		DisplayName	=	Onion,
+		Icon	=	Onion,
+		DaysFresh	=	7,
+		EvolvedRecipe = Soup:10;Stew:10;Pie:10;Stir fry:10;Sandwich:5;Sandwich Baguette:5;Burger:10;Salad:10;Roasted Vegetables:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Pizza:10;Taco:10,
+		FoodType    =   Vegetables,
+        Carbohydrates = 6.54,
+        Proteins = 0.77,
+        Lipids = 0.07,
+        Calories = 28,
+		StaticModel = RoundFood_Peach,
+        WorldStaticModel = Onion_Ground,
+	}
+
+    item BellPepper
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-8,
+        Weight	=	0.2,
+        Type	=	Food,
+        DaysTotallyRotten	=	8,
+        DisplayName	=	Bell Pepper,
+        Icon	=	BellPepper,
+        DaysFresh	=	5,
+        EvolvedRecipe = Soup:8;Pie:8;Stir fry:8;Sandwich:8;Sandwich Baguette:8;Burger:8;Salad:8;Roasted Vegetables:8;RicePot:8;RicePan:8;PastaPot:8;PastaPan:8;Pizza:8;Taco:8,
+        ThirstChange	=	-2,
+        FoodType    =   Vegetables,
+        Carbohydrates = 7,
+        Proteins = 1,
+        Lipids = 0,
+        Calories = 30,
+		StaticModel = RoundFood_Red,
+        WorldStaticModel = BellPepper_Ground,
+	}
+
+    item HamSlice
+    {
+		DisplayCategory = Food,
+        Weight	=	0.2,
+        HungerChange	=	-10,
+        Type	=	Food,
+        DisplayName	=	Ham Slice,
+        Icon	=	HamSlices,
+		EvolvedRecipe = Sandwich:10;Sandwich Baguette:10;Burger:10;Salad:10;RicePot:10;RicePan:10;PastaPot:10;PastaPan:10;Pizza:10,
+		FoodType    =   Meat,
+        DaysTotallyRotten	=	6,
+        DaysFresh	=	3,
+        Carbohydrates = 15.16,
+        Proteins = 19.5,
+        Lipids = 13,
+        Calories = 260,
+		WorldStaticModel = HamSlice,
+    }
+
+	item WatermelonSliced
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-6,
+		Weight	=	0.3,
+		Type	=	Food,
+		DaysTotallyRotten	=	4,
+		ThirstChange	=	-20,
+		DisplayName	=	Watermelon Slice,
+		Icon	=	WatermelonSliced,
+		EvolvedRecipe = Cake:5;Salad:100;FruitSalad:100,
+		FoodType    =   Fruits,
+		DaysFresh	=	3,
+        Carbohydrates = 34.11,
+        Proteins = 2.75,
+        Lipids = 0.67,
+        Calories = 135.5,
+		StaticModel = MelonSlice,
+        WorldStaticModel = MelonSlice,
+        CustomEatSound = EatingFruit,
+	}
+
+	item WatermelonSmashed
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-12,
+		Weight	=	0.6,
+		Type	=	Food,
+		DaysTotallyRotten	=	3,
+		ThirstChange	=	-25,
+		DisplayName	=	Watermelon Chunks,
+		Icon	=	WatermelonSmashed,
+		EvolvedRecipe = Cake:10;FruitSalad:10,
+		FoodType    =   Fruits,
+		DaysFresh	=	2,
+        Carbohydrates = 68.2,
+        Proteins = 5.51,
+        Lipids = 1.35,
+        Calories = 271,
+		StaticModel = MelonSlice,
+        WorldStaticModel = MelonSlice,
+        CustomEatSound = EatingFruit,
+	}
+
+	item Flour
+	{
+		DisplayCategory = Cooking,
+		Weight	=	1,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		UseDelta	=	0.25,
+		DisplayName	=	Flour,
+		Icon	=	Flour,
+		ReplaceOnDeplete	= EmptySandbag,
+		WorldStaticModel = Flour,
+	}
+
+    item Cornflour
+    {
+		DisplayCategory = Cooking,
+        Type				=			Drainable,
+		UseWhileEquipped	=	        FALSE,
+		UseDelta	        =	        0.05,
+        DisplayName			=		    Corn Flour,
+        Icon				=			Cornflour,
+        Weight				=			1,
+		WorldStaticModel = Cornflour_Ground,
+    }
+
+    item Coffee2
+    {
+		DisplayCategory = Food,
+        Weight	=	1,
+        Type	=	Food,
+        HungerChange    =   -30,
+        UnhappyChange   =   20,
+        ThirstChange    =   60,
+        FatigueChange	=	-50,
+        DisplayName	=	Coffee,
+        Icon	=	InstantCoffee,
+        EvolvedRecipe   =   HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5,
+        FoodType    =   Coffee,
+        Carbohydrates = 0,
+        Proteins = 1,
+        Lipids = 0,
+        Calories = 2,
+        Packaged = TRUE,
+		WorldStaticModel = Coffee,
+		ReplaceOnUse	=	CoffeeEmpty,
+    }
+
+    item CoffeeEmpty
+	{
+		DisplayCategory = Material,
+		Weight			= 0.1,
+		Type			= Normal,
+		DisplayName		= Coffee Empty,
+		Icon			= InstantCoffeeEmpty,
+	}
+
+    item Rosehips
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.1,
+        Type	=	Food,
+        DisplayName	=	Rosehips,
+        Icon	=	Rosehips,
+		DaysFresh	=	5,
+		DaysTotallyRotten	=	8,
+        Carbohydrates = 19,
+        Proteins = 2,
+        Lipids = 0,
+        Calories = 81,
+		WorldStaticModel = RoseHips,
+    }
+
+    item Violets
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-2,
+        Weight	=	0.1,
+        Type	=	Food,
+        DisplayName	=	Violets,
+        Icon	=	Violets,
+		DaysFresh	=	5,
+		DaysTotallyRotten	=	8,
+        Carbohydrates = 7,
+        Proteins = 1,
+        Lipids = 0,
+        Calories = 27,
+		WorldStaticModel = Violets,
+    }
+
+    item BlackSage
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-1,
+        Weight	=	0.1,
+        Type	=	Food,
+		DaysFresh	=	5,
+		DaysTotallyRotten	=	8,
+        DisplayName	=	Black Sage,
+        Icon	=	Blacksage,
+        PainReduction = 7,
+        Tooltip = Tooltip_BlackSage,
+		WorldStaticModel = BlackSage,
+    }
+
+    item Ginseng
+    {
+		DisplayCategory = FirstAid,
+        HungerChange	=	-1,
+        Weight	=	0.1,
+        Type	=	Food,
+        DisplayName	=	Ginseng,
+        Icon	=	Ginseng,
+        EnduranceChange	=	3,
+        Tooltip = Tooltip_Ginseng,
+        Carbohydrates = 0,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 0.1,
+        WorldStaticModel = Ginseng,
+    }
+
+	item BerryBlack
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-5,
+		Weight	=	0.1,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Berries,
+		Icon	=	BerryBlack,
+		DaysTotallyRotten	=	10,
+        DaysFresh	=	6,
+        EvolvedRecipe = Cake:5;FruitSalad:5,
+        FoodType    =   Fruits,
+        ThirstChange	=	-1,
+        HerbalistType = Berry,
+        Carbohydrates = 5,
+        Proteins = 4,
+        Lipids = 0,
+        Calories = 23,
+		WorldStaticModel = BerryBlack,
+        CustomEatSound = EatingFruit,
+	}
+
+	item BerryBlue
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-5,
+		Weight	=	0.1,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Berries,
+		Icon	=	BerryBlue,
+		DaysTotallyRotten	=	5,
+        DaysFresh	=	6,
+        EvolvedRecipe = Cake:5;FruitSalad:5,
+        FoodType    =   Fruits,
+        ThirstChange	=	-1,
+        HerbalistType = Berry,
+        Carbohydrates = 5,
+        Proteins = 4,
+        Lipids = 0,
+        Calories = 23,
+		WorldStaticModel = BerryBlue,
+        CustomEatSound = EatingFruit,
+	}
+
+	item BerryGeneric2
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-6,
+		Weight	=	0.1,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Berries,
+		Icon	=	BerryGeneric2,
+        DaysTotallyRotten	=	10,
+        DaysFresh	=	6,
+        EvolvedRecipe = Cake:6;FruitSalad:6,
+        FoodType    =   Fruits,
+        ThirstChange	=	-1,
+        HerbalistType = Berry,
+        Carbohydrates = 5,
+        Proteins = 4,
+        Lipids = 0,
+        Calories = 23,
+		CustomEatSound = EatingFruit,
+        WorldStaticModel = BerryGeneric2,
+	}
+
+	item BerryGeneric4
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-6,
+		Weight	=	0.1,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Berries,
+		Icon	=	BerryGeneric4,
+        DaysTotallyRotten	=	10,
+        DaysFresh	=	6,
+        EvolvedRecipe = Cake:6;FruitSalad:6,
+        FoodType    =   Fruits,
+        ThirstChange	=	-1,
+        HerbalistType = Berry,
+        Carbohydrates = 5,
+        Proteins = 4,
+        Lipids = 0,
+        Calories = 23,
+		CustomEatSound = EatingFruit,
+        WorldStaticModel = BerryGeneric4,
+	}
+
+	item BerryGeneric5
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-6,
+		Weight	=	0.1,
+		AlwaysWelcomeGift	=	true,
+		Type	=	Food,
+		DisplayName	=	Berries,
+		Icon	=	BerryGeneric5,
+        DaysTotallyRotten	=	10,
+        DaysFresh	=	6,
+        EvolvedRecipe = Cake:6;FruitSalad:6,
+        FoodType    =   Fruits,
+        ThirstChange	=	-1,
+        HerbalistType = Berry,
+        Carbohydrates = 5,
+        Proteins = 4,
+        Lipids = 0,
+        Calories = 23,
+		CustomEatSound = EatingFruit,
+        WorldStaticModel = BerryGeneric5,
+	}
+
+    item Cockroach
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.1,
+        Type	=	Food,
+        DisplayName	=	Cockroach,
+        Icon	=	Cockroach,
+        UnhappyChange	=	20,
+        FishingLure     =   true,
+        IsCookable	=	TRUE,
+        MinutesToBurn	=	25,
+        MinutesToCook	=	5,
+        Carbohydrates = 1.27,
+        Proteins = 7.41,
+        Lipids = 3.9,
+        Calories = 30,
+		WorldStaticModel = Cockroach_Ground,
+    }
+
+    item Cricket
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-5,
+        Weight	=	0.1,
+        Type	=	Food,
+        DisplayName	=	Cricket,
+        Icon	=	Cricket,
+        UnhappyChange	=	20,
+        FishingLure     =   true,
+        IsCookable	=	TRUE,
+        MinutesToBurn	=	25,
+        MinutesToCook	=	5,
+        Carbohydrates = 1.34,
+        Proteins = 3.6,
+        Lipids = 1.32,
+        Calories = 20,
+		WorldStaticModel = Cricket_Ground,
+    }
+
+	item Leek
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-6,
+        Weight	=	0.2,
+        Type	=	Food,
+        DaysTotallyRotten	=	8,
+        DisplayName	=	Leek,
+        Icon	=	Leek,
+        DaysFresh	=	5,
+        EvolvedRecipe = Soup:6;Stew:6;Pie:6;Stir fry:6;Salad:6;Roasted Vegetables:6;RicePot:6;RicePan:6;PastaPot:6;PastaPan:6,
+        FoodType    =   Vegetables,
+        ThirstChange	=	-3,
+		Carbohydrates = 12.59,
+        Proteins = 1.34,
+        Lipids = 0.27,
+        Calories = 54,
+		StaticModel = CylinderFood_Green,
+		WorldStaticModel = Leek,
+    }
+
+    item Honey
+    {
+		DisplayCategory = Food,
+        Type				=		Food,
+        DisplayName			=		Honey,
+        Icon				=		Honeybottle,
+        Weight				=		0.4,
+        HungerChange 		=		-20,
+		ReplaceOnUse    =   HoneyEmpty,
+        EvolvedRecipe       =       Cake:5;Sandwich:5;Sandwich Baguette:5;Salad:5;Roasted Vegetables:5;Stir fry:5;HotDrink:5;HotDrinkRed:5;HotDrinkWhite:5;HotDrinkSpiffo:5;HotDrinkTea:5,
+        Carbohydrates = 187,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 660,
+        Packaged = TRUE,
+        FoodType = NoExplicit,
+        CantBeFrozen = TRUE,
+		WorldStaticModel = Honey,
+    }
+
+    item HoneyEmpty
+    {
+		DisplayCategory = Material,
+        Type				=		Normal,
+        DisplayName			=		Honey Empty,
+        Icon				=		Honeybottle,
+        Weight				=		0.1,
+		Tooltip             =       Tooltip_HoneyEmpty,
+    }
+
+	item Cigarettes
+	{
+		DisplayCategory = Junk,
+		Count	=	20,
+		HungerChange	=	0,
+		Weight	=	0.005,
+		RequireInHandOrInventory	=	Lighter/Matches,
+		Type	=	Food,
+		DisplayName	=	Cigarettes,
+		StressChange	=	-5,
+		Icon	=	Cigarretes1,
+		CustomContextMenu = Smoke,
+		CantBeFrozen = TRUE,
+		OnEat = OnEat_Cigarettes,
+		StaticModel = Cigarette,
+		EatType = Cigarettes,
+		WorldStaticModel = CigaretteSimple,
+		CustomEatSound = ,
+	}
+
+	item CigarettesPack
+	{
+		DisplayCategory = Junk,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Cigarettes Pack,
+		Icon	=	IckySticks,
+		Tooltip = Tooltip_CigarettesPack,
+		WorldStaticModel = CigarettePack_Ground,
+	}
+
+    item Mustard
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-20,
+		Weight	=	0.2,
+		Type	=	Food,
+		UnhappyChange	=	30,
+		DisplayName	=	Mustard,
+		Icon	=	Mustard,
+		EvolvedRecipe = Sandwich:2;Sandwich Baguette:2;Burger:2;Salad:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+		Spice   =   true,
+        Carbohydrates = 0,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 510,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+		ReplaceOnUse    =   MustardEmpty,
+		WorldStaticModel = Mustard,
+	}
+
+    item MustardEmpty
+	{
+		DisplayCategory = Material,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Mustard Empty,
+		Icon	=	MustardEmpty,
+		Tooltip = Tooltip_MustardEmpty,
+	}
+
+    item Ketchup
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-20,
+		Weight	=	0.2,
+		Type	=	Food,
+		UnhappyChange	=	30,
+		DisplayName	=	Ketchup,
+		Icon	=	Ketchup,
+		EvolvedRecipe = Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+		Spice   =   true,
+        Carbohydrates = 370,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 1480,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+		ReplaceOnUse    =   KetchupEmpty,
+		WorldStaticModel = Ketchup,
+	}
+
+    item KetchupEmpty
+	{
+		DisplayCategory = Material,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Ketchup Empty,
+		Icon	=	KetchupEmpty,
+		Tooltip = Tooltip_KetchupEmpty,
+	}
+
+    item Marinara
+    {
+		DisplayCategory = Food,
+        HungerChange	=	-10,
+        Weight	=	0.2,
+        Type	=	Food,
+        DisplayName	=	Marinara,
+        Icon	=	Marinarai,
+        EvolvedRecipe = Sandwich:2;Sandwich Baguette:2;Burger:2;RicePot:2;RicePan:2;PastaPot:2;PastaPan:2,
+        Spice   =   true,
+        Carbohydrates = 55,
+        Proteins = 10,
+        Lipids = 7.5,
+        Calories = 350,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+		ReplaceOnUse    =   MarinaraEmpty,
+		WorldStaticModel = Marinara,
+    }
+
+    item MarinaraEmpty
+	{
+		DisplayCategory = Material,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Marinara Empty,
+		Icon	=	MarinaraEmpty,
+		Tooltip = Tooltip_MarinaraEmpty,
+	}
+
+	item PeanutButter
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-25,
+		Weight	=	0.3,
+		Type	=	Food,
+		UnhappyChange	=	-15,
+		DisplayName	=	Peanut Butter,
+		Icon	=	PeanutButter,
+		BoredomChange	=	-5,
+		EvolvedRecipe = Sandwich:7;Sandwich Baguette:7,
+		FoodType    =   NoExplicit,
+        Carbohydrates = 128,
+        Proteins = 84,
+        Lipids = 224,
+        Calories = 2660,
+        Packaged = TRUE,
+		ReplaceOnUse    =   PeanutButterEmpty,
+		WorldStaticModel = PeanutButter,
+	}
+
+	item PeanutButterEmpty
+	{
+		DisplayCategory = Material,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Peanut Butter Empty,
+		Icon	=	PeanutButterEmpty,
+		Tooltip = Tooltip_PeanutButterEmpty,
+	}
+
+	item Salmon
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-30,
+		Weight	=	0.3,
+		Type	=	Food,
+		IsCookable	=	TRUE,
+		DangerousUncooked	=	TRUE,
+		DaysTotallyRotten	=	4,
+		MinutesToBurn	=	130,
+		DisplayName	=	Salmon Fillet,
+		Icon	=	Salmon,
+		DaysFresh	=	2,
+		MinutesToCook	=	80,
+		EvolvedRecipe = Soup:15;Stew:15;Pie:15;Stir fry:15;Sandwich:5|Cooked;Sandwich Baguette:5|Cooked;Salad:10|Cooked;Roasted Vegetables:15;RicePot:15;RicePan:15;PastaPot:15;PastaPan:15,
+		FoodType    =   Fish,
+        Carbohydrates = 0,
+        Proteins = 34.28,
+        Lipids = 10.55,
+        Calories = 270,
+        BadInMicrowave = true,
+		WorldStaticModel = Salmon,
+	}
+
+    item FishingLine
+    {
+		DisplayCategory = Fishing,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.1,
+        UseWhileEquipped	=           FALSE,
+        DisplayName			=		    Fishing Line,
+        Icon				=			FishingLine,
+		Tooltip             =           Tooltip_FishingLine,
+        Weight				=			0.1,
+		WorldStaticModel = FishingLine,
+    }
+
+    item FishingRodBreak
+    {
+        MaxRange	=	1.7,
+        WeaponSprite	=	FishingRod_Crafted,
+        MinAngle	=	0.65,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Improvised;Blunt,
+        ConditionLowerChanceOneIn	=	1,
+        Weight	=	0.4,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Swinging,
+        ConditionMax	=	3,
+        MaxHitCount	=	2,
+        DoorDamage	=	1,
+        SwingAnim	=	Bat,
+        DisplayName	=	Fishing Rod Without line,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	FishingRodBreak,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        BreakSound  =   FishingRodBreak,
+        DoorHitSound = FishingRodHit,
+		HitSound = FishingRodHit,
+		HitFloorSound = FishingRodHit,
+		SwingSound = FishingRodSwing,
+        TreeDamage  =   0,
+        Tooltip = Tooltip_FishingRodBreak,
+        TwoHandWeapon = TRUE,
+        CriticalChance	=	5,
+        CritDmgMultiplier = 2,
+        MinDamage	=	0.2,
+        MaxDamage	=	0.3,
+        BaseSpeed = 1.3,
+        AttachmentType = Shovel,
+    }
+
+    item Catfish
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Catfish,
+        Icon				=			FishCatfish,
+        Weight				=			0.4,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 28,
+        Lipids = 4,
+        Calories = 215,
+		WorldStaticModel = Catfish,
+        StaticModel = Catfish,
+    }
+
+    item Bass
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Bass,
+        Icon				=			FishLbass,
+        Weight				=			1.1,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 48,
+        Lipids = 24,
+        Calories = 403,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = Bass,
+        StaticModel = Bass,
+    }
+
+    item Perch
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Perch,
+        Icon				=			FishPerch,
+        Weight				=			0.4,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 35,
+        Lipids = 1,
+        Calories = 165,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = Perch,
+    }
+
+    item Crappie
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Crappie Fish,
+        Icon				=			FishCrappie,
+        Weight				=			0.4,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 35,
+        Lipids = 1,
+        Calories = 165,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = Crappie,
+        StaticModel = Crappie,
+    }
+
+    item Panfish
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Sunfish,
+        Icon				=			FishPanfish,
+        Weight				=			0.4,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 25,
+        Lipids = 2,
+        Calories = 165,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = SunFish,
+    }
+
+    item Pike
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Pike,
+        Icon				=			FishPike,
+        Weight				=			0.4,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 35,
+        Lipids = 1,
+        Calories = 159,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = Pike_Ground,
+    }
+
+    item Trout
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Trout,
+        Icon				=			FishTrout,
+        Weight				=			0.4,
+        HungerChange 		=		    -15,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 1,
+        Proteins = 36,
+        Lipids = 10,
+        Calories = 230,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = Trout,
+    }
+
+    item BaitFish
+    {
+		DisplayCategory = Food,
+        Type				=			Food,
+        DisplayName			=		    Little Bait Fish,
+        Icon				=			FishMinnow,
+        Weight				=			0.1,
+        HungerChange 		=		    -5,
+		DangerousUncooked	=	        TRUE,
+        DaysFresh 			=		    4,
+        DaysTotallyRotten 	=	 	    8,
+        FishingLure         =           true,
+        IsCookable	        =	        true,
+        MinutesToBurn	    =	        60,
+        MinutesToCook	    =	        20,
+        Carbohydrates = 0,
+        Proteins = 8.52,
+        Lipids = 1.5,
+        Calories = 30,
+        BadInMicrowave = true,
+        GoodHot = true,
+        BadCold = true,
+		WorldStaticModel = LittleBaitFish,
+        StaticModel = LittleBaitFish,
+    }
+
+    item FishingTackle
+    {
+		DisplayCategory = Fishing,
+        Type				=			Normal,
+        DisplayName			=		    Fishing Tackle,
+        Icon				=			FishingTackle,
+        Weight				=			0.1,
+        FishingLure         =           false,
+        Tooltip = Tooltip_FishingTacklenew,
+		WorldStaticModel = FishingTackle,
+    }
+
+    item FishingTackle2
+    {
+		DisplayCategory = Fishing,
+        Type				=			Normal,
+        DisplayName			=		    Fishing Tackle,
+        Icon				=			FishingTackle2,
+        Weight				=			0.1,
+        FishingLure         =           false,
+        Tooltip = Tooltip_FishingTacklenew,
+		WorldStaticModel = FishingTackle2,
+    }
+
+    item Pop
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-8,
+		Weight	=	0.3,
+		AlwaysWelcomeGift	=	TRUE,
+		Type	=	Food,
+		UnhappyChange	=	-10,
+		ThirstChange	=	-60,
+		DisplayName	=	Pop,
+		Icon	=	Pop,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottle,
+        Carbohydrates = 39,
+        ReplaceOnUse = PopEmpty,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 140,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        StaticModel = PopCanDiet,
+        EatType = popcan,
+		WorldStaticModel = PopCanDiet,
+	}
+
+	item Pop2
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-8,
+		Weight	=	0.3,
+		AlwaysWelcomeGift	=	TRUE,
+		ReplaceOnUse = PopEmpty2,
+		Type	=	Food,
+		UnhappyChange	=	-10,
+		ThirstChange	=	-60,
+		DisplayName	=	Pop,
+		Icon	=	Pop2,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottle,
+        Carbohydrates = 39,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 140,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        StaticModel = PopCanRed,
+        EatType = popcan,
+		WorldStaticModel = PopCanRed,
+	}
+
+	item Pop3
+	{
+		DisplayCategory = Food,
+		HungerChange	=	-8,
+		Weight	=	0.3,
+		AlwaysWelcomeGift	=	TRUE,
+		ReplaceOnUse = PopEmpty3,
+		Type	=	Food,
+		UnhappyChange	=	-10,
+		ThirstChange	=	-60,
+		DisplayName	=	Pop,
+		Icon	=	Pop3,
+		CustomContextMenu = Drink,
+		CustomEatSound = DrinkingFromBottle,
+        Carbohydrates = 39,
+        Proteins = 0,
+        Lipids = 0,
+        Calories = 140,
+        Packaged = TRUE,
+        CantBeFrozen = TRUE,
+        StaticModel = PopCanRed,
+        EatType = popcan,
+		WorldStaticModel = PopCanFizz,
+	}
+
+    item PopEmpty
+    {
+		DisplayCategory = Material,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Empty Pop Can,
+        Icon	=	Pop,
+        MetalValue = 10,
+
+		CanStoreWater	= TRUE,
+		ReplaceOnUseOn	= WaterSource-PopCanFull,
+		RainFactor = 0.25,
+        Tooltip = Tooltip_item_RainFromGround,
+		WorldStaticModel = PopCanDietWorld,
+    }
+
+    item TinCanEmpty
+    {
+		DisplayCategory = Material,
+        Weight = 0.2,
+        Type = Normal,
+        DisplayName	= Empty Tin Can,
+        Icon = TinCanEmpty,
+        MetalValue = 20,
+
+		CanStoreWater	= TRUE,
+		ReplaceOnUseOn	= WaterSource-TinCanFull,
+		RainFactor = 0.25,
+        Tooltip = Tooltip_item_RainFromGround,
+		WorldStaticModel = TinCanEmpty_Ground,
+    }
+
+	item PillsVitamins
+	{
+		DisplayCategory = FirstAid,
+        FatigueChange	=	-3,
+		Weight	=	0.2,
+        UseDelta	=	0.1,
+		Type	=	Drainable,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Vitamins,
+		Icon	=	Vitamins,
+		Tooltip = Tooltip_Vitamins,
+		StaticModel = PillBottle,
+		WorldStaticModel = Vitamins_Ground,
+		Medical = TRUE,
+	}
+}

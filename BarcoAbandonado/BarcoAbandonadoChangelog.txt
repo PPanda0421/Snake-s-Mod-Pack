@@ -1,0 +1,25 @@
+Versión 2.1 (Build 41)Requiere Custom Map Bridge V3.28+
+*Agregados tanques de Acido Clorhidrico.
+*Reparada visibilidad al exterior en partes superiores del barco.
+
+Versión 2.0 (Build 41)
+*Agregados tiles custom.
+*Agregados bordes para renderizacion de agua.
+*Agregadas zonas de spawn de zombies custom.
+*Agregadas barandillas custom para evitar que zombies salten hacia el agua desde el barco.
+
+Versión 1.31 (Vehicles)
+*Reparación de un container (Eliminación de duplicación de contenedor)
+
+Versión 1.3 (Vehicles)
+*Cambio de tamaño de parkingstalls(A partir de la Build 39.64 cambió la forma en que spawnean los vehiculos).
+
+Versión 1.2 (Vehicles)
+*Agregado spawn de vehiculos.
+*Cambios en containers dentro del barco.
+*Retoques con spawn de items mecánicos y mucho combustible en ciertas zonas.
+*Reparadas todas las vigas.
+*Corregidos pequeños detalles visuales.
+
+Versión 1.1 (Vehicles)
+*Conversion de tablas de loot para la build de vehiculos (IWBUMS 41.2)

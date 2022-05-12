@@ -1,0 +1,6 @@
+UI_EN = {
+    UI_trait_Silmaker = "Silenced",
+	UI_trait_Silmakerdesc = "Be silenced it's the most significant thing.<br>You can make home made silencers.",
+	UI_trait_whandler = "Gunsmith",
+	UI_trait_whandlerdesc = "You can make and dismantle weapons accesories.",
+}

@@ -1,0 +1,142 @@
+module farming
+{
+	imports
+	{
+		Base
+	}
+    item Tomato
+	{
+		DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Tomato,
+		Icon				=		Tomato,
+		Weight				=		0.2,
+		HungerChange 		=		-12,
+		ThirstChange		=		-15,
+		DaysFresh 			=		4,
+		DaysTotallyRotten 	=	 	12,
+		EvolvedRecipe       =       Omelette:6;Soup:12;Stew:12;Pie:12;Stir fry:12;Sandwich:6;Sandwich Baguette:6;Burger:6;Salad:12;Roasted Vegetables:12;RicePot:12;RicePan:12;PastaPot:12;PastaPan:12;Pizza:12;Taco:6;Burrito:6,
+		ThirstChange	=	-8,
+		FoodType    =   Vegetables,
+        Carbohydrates = 3.53,
+        Proteins = 1.29,
+        Lipids = 0.21,
+        Calories = 14,
+		StaticModel = RoundFood_Red,
+		WorldStaticModel = Tomato_Ground,
+	}
+
+    item Potato
+	{
+		DisplayCategory = Food,
+		Type				=		Food,
+		DisplayName			=		Potato,
+		Icon				=		Potato,
+		Weight				=		0.2,
+		HungerChange 		=		-10,
+		DaysFresh 			=		14,
+		DaysTotallyRotten 	=	 	28,
+        EvolvedRecipe       =       Omelette:9;Soup:10;Stew:10;Pie:10;Stir fry:10;Salad:9;Roasted Vegetables:10;Pizza:10,
+        ThirstChange	=	-7,
+        FoodType    =   Vegetables,
+        Carbohydrates = 14.52,
+        Proteins = 2.88,
+        Lipids = 0.15,
+        Calories = 70,
+		WorldStaticModel = Potato_Ground,
+	}
+/**********************************************************************/
+/***************************Seed Packages************************************/
+/**********************************************************************/
+
+    item CarrotBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Carrot Seeds Packet,
+		Icon				=		TZ_SeedpackCarrots,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = CarrotSeedBag_Ground,
+	}
+
+    item BroccoliBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Broccoli Seeds Packet,
+		Icon				=		TZ_SeedpackBroccoli,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = BroccoliSeedBag_Ground,
+	}
+
+    item RedRadishBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Radish Seeds Packet,
+		Icon				=		TZ_SeedpackLRRadish,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = RadishSeedBag_Ground,
+	}
+
+    item StrewberrieBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Strawberries Seeds Packet,
+		Icon				=		TZ_SeedpackStrewberries,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = StrawberrySeedBag_Ground,
+	}
+
+    item TomatoBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Tomato Seeds Packet,
+		Icon				=		TZ_SeedpackTomatoes,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = TomatoSeedBag_Ground,
+	}
+
+    item PotatoBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Potato Seeds Packet,
+		Icon				=		TZ_SeedpackPotatoes,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = PotatoSeedBag_Ground,
+	}
+
+    item CabbageBagSeed
+	{
+		DisplayCategory = Gardening,
+		Type				=		Normal,
+		DisplayName			=		Cabbage Seeds Packet,
+		Icon				=		TZ_SeedpackCabbageLettuce,
+		Weight				=		0.1,
+		Tooltip     = 	Tooltip_LearnSow,
+		StaticModel = SeedPacket,
+		SurvivalGear = TRUE,
+		WorldStaticModel = CabbageSeedBag_Ground,
+	}
+}

@@ -1,0 +1,10 @@
+IGUI_EN = {
+
+    IGUI_CraftCategory_Mechanics = "Mechanics",
+	IGUI_RepairHeater = "Repair Heater",
+	IGUI_RepairGloveBox = "Repair GloveBox",
+	IGUI_Repairlightbar = "Repair LightBar",
+	IGUI_TunningEngine = "Tune Engine",
+	IGUI_TuningEngine = "Tunning Engine",
+	IGUI_VehicleNameVanSnakeneta = "Snake Modding Van",
+}

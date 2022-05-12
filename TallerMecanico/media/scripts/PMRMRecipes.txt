@@ -1,0 +1,536 @@
+module Base
+{
+
+    recipe Saw Dismounted Tire
+    {
+       DismountedTire,
+       keep Saw/GardenSaw,
+
+       Result:TireRubber,
+       Time:100.0,
+	   Sound:Sawing,
+	   OnCreate:SawTire_OnCreate,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Category:Mechanics,
+	   AnimNode:SawLog,
+	   Prop1:Source=2,
+	   Tooltip:Tooltip_Recipe_SawTire,
+    }
+
+    recipe Dismantle Car Rim
+    {
+       CarRim,
+       BlowTorch=2,
+       keep WeldingMask,
+
+       Result:ScrapMetal=2,
+       Time:100.0,
+	   OnGiveXP:Give5MWXP,
+       Category:Mechanics,
+    }
+
+    recipe Make Big Glass Panel
+    {
+       SmallGlassPanel=4,
+       GlassGlue=2,
+
+       Result:BigGlassPanel,
+       Time:250.0,
+       Category:Mechanics,
+       NeedToBeLearn:true,
+    }
+
+    recipe Make Small Glass Panel
+    {
+       BigGlassPanel,
+       keep GlassCutter,
+
+       Result:SmallGlassPanel=3,
+       Time:250.0,
+       Category:Mechanics,
+       NeedToBeLearn:true,
+    }
+
+    recipe Open Box of Brakes Parts
+    {
+        BrakesPartsBox,
+		
+        Result:BrakesParts=8,
+        Time:50.0,
+        Category:Mechanics,
+    }
+
+    recipe Put Brake Parts in a Box
+    {
+        BrakesParts=8,
+		
+        Result:BrakesPartsBox,
+        Time:50.0,
+        Category:Mechanics,
+    }
+
+    recipe Open Bag of Suspension Parts
+    {
+        SuspensionPartsBag,
+		
+        Result:SuspensionParts=8,
+        Time:50.0,
+        Category:Mechanics,
+    }
+
+    recipe Put Suspension Parts in a Bag
+    {
+        SuspensionParts=8,
+		
+        Result:SuspensionPartsBag,
+        Time:50.0,
+        Category:Mechanics,
+    }
+
+    recipe Dismantle Gas Tank
+    {
+        SmallGasTank1/NormalGasTank1/SmallGasTank2/NormalGasTank2/SmallGasTank3/NormalGasTank3,
+		BlowTorch=4,
+        keep WeldingMask,
+		
+		CanBeDoneFromFloor:true,
+        Result:SmallSheetMetal=2,
+        Time:200.0,
+		SkillRequired:Mechanics=5,
+        Category:Mechanics,
+		OnTest:DismountGasTank_OnTest,
+		OnGiveXP:Give3MXP,
+    }
+
+    recipe Dismantle Gas Tank
+    {
+        BigGasTank1/BigGasTank2/BigGasTank3,
+		BlowTorch=4,
+        keep WeldingMask,
+		
+		CanBeDoneFromFloor:true,
+        Result:SheetMetal=2,
+        Time:200.0,
+		SkillRequired:Mechanics=5,
+        Category:Mechanics,
+		OnTest:DismountGasTank_OnTest,
+		OnGiveXP:Give3MXP,
+    }
+
+    recipe Dismantle Car Brakes
+    {
+        OldBrake1/OldBrake2/OldBrake3/NormalBrake1/NormalBrake2/NormalBrake3/ModernBrake1/ModernBrake2/ModernBrake3,
+		keep Screwdriver,
+		
+		CanBeDoneFromFloor:true,
+        Result:BrakesParts=2,
+        Time:200.0,
+		SkillRequired:Mechanics=4,
+        Category:Mechanics,
+		OnGiveXP:Give3MXP,
+    }
+
+    recipe Dismantle Car Suspension
+    {
+        NormalSuspension1/NormalSuspension2/NormalSuspension3/ModernSuspension1/ModernSuspension2/ModernSuspension3,
+		keep Screwdriver,
+		
+		CanBeDoneFromFloor:true,
+        Result:SuspensionParts=2,
+        Time:300.0,
+		SkillRequired:Mechanics=4,
+        Category:Mechanics,
+		OnGiveXP:Give3MXP,
+    }
+
+    recipe Dismantle Car Hood
+    {
+        EngineDoor1/EngineDoor2/EngineDoor3,
+		BlowTorch=4,
+		keep WeldingMask,
+		
+		CanBeDoneFromFloor:true,
+        Result:SheetMetal,
+        Time:250.0,
+		SkillRequired:MetalWelding=5,
+        Category:Mechanics,
+        OnGiveXP:Give5MWXP,
+    }
+
+    recipe Dismantle Car Door
+    {
+        FrontCarDoor1/RearCarDoor1/FrontCarDoor2/RearCarDoor2/FrontCarDoor3/RearCarDoor3,
+		BlowTorch=5,
+		keep WeldingMask,
+		
+		CanBeDoneFromFloor:true,
+        Result:SheetMetal,
+        Time:250.0,
+		SkillRequired:MetalWelding=5,
+        Category:Mechanics,
+        OnGiveXP:Give5MWXP,
+    }
+
+    recipe Dismantle Rear Double Car Door
+    {
+        RearCarDoorDouble1/RearCarDoorDouble2/RearCarDoorDouble3,
+		BlowTorch=8,
+		keep WeldingMask,
+		
+		CanBeDoneFromFloor:true,
+        Result:SheetMetal=2,
+        Time:250.0,
+		SkillRequired:MetalWelding=5,
+        Category:Mechanics,
+        OnGiveXP:Give10MWXP,
+    }
+
+    recipe Dismantle Car Muffler
+    {
+        OldCarMuffler1/OldCarMuffler2/OldCarMuffler3/NormalCarMuffler1/NormalCarMuffler2/NormalCarMuffler3/ModernCarMuffler1/ModernCarMuffler2/ModernCarMuffler3,
+		BlowTorch=5,
+		keep WeldingMask,
+		
+		CanBeDoneFromFloor:true,
+        Result:SmallSheetMetal=2,
+        Time:250.0,
+		SkillRequired:MetalWelding=5,
+        Category:Mechanics,
+        OnGiveXP:Give3MXP,
+    }
+
+    recipe Read Tire
+    {
+        UnknownTire,
+
+        Result:PMRTire,
+        RemoveResultItem:true,
+        Time:100.0,
+		Category:Mechanics,
+        OnCreate:ReadTire_OnCreate,
+    }
+
+    recipe Read Tire
+    {
+        PMRMTire,
+
+        Result:DismountedTire,
+        Time:100.0,
+		Category:Mechanics,
+        OnCreate:ReadDismountedTire_OnCreate,
+    }
+
+    recipe Dismantle Car WindShield
+    {
+        Windshield1/RearWindshield1/Windshield2/RearWindshield2/Windshield3/RearWindshield3,
+		keep GlassCutter,
+		
+		CanBeDoneFromFloor:true,
+        Result:BigGlassPanel,
+        Time:250.0,
+		SkillRequired:Mechanics=2,
+        Category:Mechanics,
+        OnGiveXP:Give3MXP,
+    }
+
+    recipe Dismantle Car Window
+    {
+        FrontWindow1/FrontWindow2/FrontWindow3/RearWindow1/RearWindow2/RearWindow3,
+		keep GlassCutter,
+		
+		CanBeDoneFromFloor:true,
+        Result:SmallGlassPanel,
+        Time:250.0,
+		SkillRequired:Mechanics=1,
+        Category:Mechanics,
+        OnGiveXP:Give3MXP,
+    }
+
+	fixing Fix Hood 2
+	{
+	   Require : EngineDoor1;EngineDoor2;EngineDoor3,
+	   ConditionModifier : 0.3,
+		
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+
+	fixing Fix Trunk Lid Welding
+	{
+	   Require : TrunkDoor1;TrunkDoor2;TrunkDoor3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.15,
+
+       Fixer : SheetMetal; MetalWelding=5;Mechanics=7,
+	}
+
+	fixing Fix Trunk Lid Welding 2
+	{
+	   Require : TrunkDoor1;TrunkDoor2;TrunkDoor3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 0.55,
+
+       Fixer : SmallSheetMetal; MetalWelding=5;Mechanics=6,
+	}
+
+	fixing Fix Trunk Lid
+	{
+	   Require : TrunkDoor1;TrunkDoor2;TrunkDoor3,
+	   ConditionModifier : 0.3,
+
+       Fixer : DuctTape=2;Mechanics=5,
+	}
+
+	fixing Fix Double Rear Door
+	{
+	   Require : RearCarDoorDouble1;RearCarDoorDouble2;RearCarDoorDouble3,
+	   ConditionModifier : 0.3,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+
+	fixing Fix Old Muffler Welding
+	{
+	   Require : OldCarMuffler1;OldCarMuffler2;OldCarMuffler3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.15,
+
+       Fixer : MetalPipe; MetalWelding=5;Mechanics=7,
+	}
+
+	fixing Fix Old Muffler Welding 2
+	{
+	   Require : OldCarMuffler1;OldCarMuffler2;OldCarMuffler3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 0.55,
+
+       Fixer : SmallSheetMetal; MetalWelding=5;Mechanics=6,
+	}
+
+	fixing Fix Old Muffler
+	{
+	   Require : OldCarMuffler1;OldCarMuffler2;OldCarMuffler3,
+	   ConditionModifier : 0.3,
+
+       Fixer : DuctTape=2;Mechanics=5,
+	}
+
+	fixing Fix Average Muffler Welding
+	{
+	   Require : NormalCarMuffler1;NormalCarMuffler2;NormalCarMuffler3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.15,
+
+       Fixer : MetalPipe; MetalWelding=5;Mechanics=7,
+	}
+
+	fixing Fix Average Muffler Welding 2
+	{
+	   Require : NormalCarMuffler1;NormalCarMuffler2;NormalCarMuffler3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 0.55,
+
+       Fixer : SmallSheetMetal; MetalWelding=5;Mechanics=6,
+	}
+
+	fixing Fix Average Muffler
+	{
+	   Require : NormalCarMuffler1;NormalCarMuffler2;NormalCarMuffler3,
+	   ConditionModifier : 0.3,
+
+       Fixer : DuctTape=2;Mechanics=5,
+	}
+
+	fixing Fix Performance Muffler Welding
+	{
+	   Require : ModernCarMuffler1;ModernCarMuffler2;ModernCarMuffler3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 1.15,
+
+       Fixer : MetalPipe; MetalWelding=5;Mechanics=7,
+	}
+
+	fixing Fix Performance Muffler Welding 2
+	{
+	   Require : ModernCarMuffler1;ModernCarMuffler2;ModernCarMuffler3,
+	   GlobalItem : BlowTorch=5,
+	   ConditionModifier : 0.55,
+
+       Fixer : SmallSheetMetal; MetalWelding=5;Mechanics=6,
+	}
+
+	fixing Fix Performance Muffler
+	{
+	   Require : ModernCarMuffler1;ModernCarMuffler2;ModernCarMuffler3,
+	   ConditionModifier : 0.3,
+
+       Fixer : DuctTape=2;Mechanics=5,
+	}
+
+	fixing Fix Regular Suspension
+	{
+	   Require : NormalSuspension1;NormalSuspension2;NormalSuspension3,
+	   ConditionModifier : 1.15,
+
+       Fixer : SuspensionParts;Mechanics=5,
+	}
+
+	fixing Fix Performance Suspension
+	{
+	   Require : ModernSuspension1;ModernSuspension2;ModernSuspension3,
+	   ConditionModifier : 1.15,
+
+       Fixer : SuspensionParts;Mechanics=5,
+	}
+
+	fixing Fix Old Brake
+	{
+	   Require : OldBrake1;OldBrake2;OldBrake3,
+	   ConditionModifier : 1.15,
+
+       Fixer : BrakesParts;Mechanics=5,
+	}
+
+	fixing Fix Regular Brake
+	{
+	   Require : NormalBrake1;NormalBrake2;NormalBrake3,
+	   ConditionModifier : 1.15,
+
+       Fixer : BrakesParts;Mechanics=5,
+	}
+
+	fixing Fix Performance Brake
+	{
+	   Require : ModernBrake1;ModernBrake2;ModernBrake3,
+	   ConditionModifier : 1.15,
+
+       Fixer : BrakesParts;Mechanics=5,
+	}
+
+	fixing Fix Dismounted Tire
+	{
+	   Require : DismountedTire,
+	   ConditionModifier : 0.4,
+
+       Fixer : TireGlue=2;Mechanics=1,
+	}
+
+	fixing Fix Car Rim Welding
+	{
+	   Require : CarRim,
+	   GlobalItem : BlowTorch=2,
+	   ConditionModifier : 1.2,
+
+       Fixer : WeldingRods=2; MetalWelding=2;Mechanics=2,
+	}
+
+	fixing Fix Valu-Tire
+	{
+	   Require : OldTire1;OldTire2;OldTire3,
+	   ConditionModifier : 0.4,
+
+       Fixer : TireGlue=2;Mechanics=1,
+	}
+
+	fixing Fix Regular Tire
+	{
+	   Require : NormalTire1;NormalTire2;NormalTire3,
+	   ConditionModifier : 0.3,
+
+       Fixer : TireGlue=2;Mechanics=1,
+	}
+
+	fixing Fix Performance Tire
+	{
+	   Require : ModernTire1;ModernTire2;ModernTire3,
+	   ConditionModifier : 0.2,
+
+       Fixer : TireGlue=2;Mechanics=1,
+	}
+
+	fixing Fix Windshield
+	{
+	   Require : Windshield1;Windshield2;Windshield3,
+	   GlobalItem : GlassGlue=2,
+	   ConditionModifier : 1.2,
+
+       Fixer : BigGlassPanel;Mechanics=4,
+	   Fixer : SmallGlassPanel;Mechanics=3,
+	}
+
+	fixing Fix Windshield 2
+	{
+	   Require : Windshield1;Windshield2;Windshield3,
+	   ConditionModifier : 0.4,
+
+	   Fixer : GlassGlue=2;Mechanics=2,
+	}
+
+	fixing Fix Rear Windshield
+	{
+	   Require : RearWindshield1;RearWindshield2;RearWindshield3,
+	   GlobalItem : GlassGlue=2,
+	   ConditionModifier : 1.2,
+
+       Fixer : BigGlassPanel;Mechanics=4,
+	   Fixer : SmallGlassPanel;Mechanics=3,
+	}
+
+	fixing Fix Rear Windshield 2
+	{
+	   Require : RearWindshield1;RearWindshield2;RearWindshield3,
+	   ConditionModifier : 0.4,
+
+	   Fixer : GlassGlue=2;Mechanics=2,
+	}
+
+	fixing Fix Front Window
+	{
+	   Require : FrontWindow1;FrontWindow2;FrontWindow3,
+	   GlobalItem : GlassGlue=2,
+	   ConditionModifier : 1.2,
+
+	   Fixer : SmallGlassPanel;Mechanics=3,
+	}
+
+	fixing Fix Front Window 2
+	{
+	   Require : FrontWindow1;FrontWindow2;FrontWindow3,
+	   ConditionModifier : 0.5,
+
+	   Fixer : GlassGlue=2;Mechanics=2,
+	}
+
+	fixing Fix Rear Window
+	{
+	   Require : RearWindow1;RearWindow2;RearWindow3,
+	   GlobalItem : GlassGlue=2,
+	   ConditionModifier : 1.2,
+
+	   Fixer : SmallGlassPanel;Mechanics=3,
+	}
+
+	fixing Fix Rear Window 2
+	{
+	   Require : RearWindow1;RearWindow2;RearWindow3,
+	   ConditionModifier : 0.5,
+
+	   Fixer : GlassGlue=2;Mechanics=2,
+	}
+
+	fixing Fix Trailer Trunk
+	{
+	   Require : TrailerTrunk1;TrailerTrunk2;TrailerTrunk3,
+	   ConditionModifier : 0.3,
+
+       Fixer : DuctTape=2;Mechanics=1,
+	}
+
+	fixing Fix Car Battery
+	{
+	   Require : CarBattery1;CarBattery2;CarBattery3,
+	   ConditionModifier : 1.2,
+
+       Fixer : BatteryCleaner=1;Mechanics=1,
+	}
+
+}

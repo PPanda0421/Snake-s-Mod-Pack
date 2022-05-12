@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<clothingItem>
+	<m_MaleModel>Skinned\BackPacks\AmmoCan_LHand</m_MaleModel>
+	<m_FemaleModel>Skinned\BackPacks\AmmoCan_LHand</m_FemaleModel>
+	<m_GUID>cb012b4b-1f71-4a3d-b038-47e8a308ammo</m_GUID>
+	<m_Static>false</m_Static>
+	<m_AllowRandomHue>false</m_AllowRandomHue>
+	<m_AllowRandomTint>false</m_AllowRandomTint>
+	<m_AttachBone></m_AttachBone>
+	<textureChoices>clothes\backpacks\Ammo308Can</textureChoices>
+</clothingItem>

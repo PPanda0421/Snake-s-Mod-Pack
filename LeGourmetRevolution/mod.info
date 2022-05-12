@@ -1,0 +1,9 @@
+name=Snake's ModPack - Le Gourmet Revolution V2.04
+poster=LeGourmetRevo.png
+description= Fusión de Le Gourmet Evolution Plus para la build 41 de animaciones.
+require=SnakeUtilsPack
+id=LeGourmetRevolution
+pack=HuntingCards
+pack=Captures
+pack=AdvancedFishing
+pack=LGManual

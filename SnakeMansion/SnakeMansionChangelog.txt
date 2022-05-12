@@ -1,0 +1,6 @@
+Snake Mansion Changelog:
+V1.2:
+*Agregados items nuevos exclusivos para este mapa.
+
+V1.1:
+*Actualizadas zonas de rebuscar para Build 41.54

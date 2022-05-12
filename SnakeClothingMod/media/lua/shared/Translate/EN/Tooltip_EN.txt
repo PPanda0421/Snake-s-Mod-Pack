@@ -1,0 +1,6 @@
+Tooltip_EN = {
+	
+	Tooltip_DitoPack = "A backpack tanned in a thousand battles.",
+	Tooltip_UpholsteryKit = "Can be used to repair vehicle seats.",
+
+}

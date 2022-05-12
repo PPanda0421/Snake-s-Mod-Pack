@@ -1,0 +1,421 @@
+module Base
+{
+
+	item BatteryCleaner
+	{
+		DisplayCategory = VehicleMaintenance,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.02,
+        UseWhileEquipped	=           FALSE,
+		DisplayName	        =	        Battery Cleaner Kit,
+        Icon				=			BatteryCleaner,
+        Weight				=			0.2,
+        cantBeConsolided    =           TRUE,
+		Tooltip             =           Tooltip_BatteryCleaner,
+	}
+
+    item CarVanTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Van Tunning Parts,
+        Icon	=	TunningParts1,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item CarStepVanTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car StepVan Tunning Parts,
+        Icon	=	TunningParts2,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+	
+    item SportsCarTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Cossette Tunning Parts,
+        Icon	=	TunningParts3,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+	
+    item SUVTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car SUV Tunning Parts,
+        Icon	=	TunningParts4,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item PickUpVanTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car PickUpVan Tunning Parts,
+        Icon	=	TunningParts5,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+	
+    item PickUpTruckTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car PickUp Tunning Parts,
+        Icon	=	TunningParts6,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+    item CarOffRoadTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Dash Rancher Tunning Parts,
+        Icon	=	TunningParts7,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item ModernCar02TunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Chevalier Primani Tunning Parts,
+        Icon	=	TunningParts8,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item ModernCarTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Dash Elite Tunning Parts,
+        Icon	=	TunningParts9,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+	
+    item CarTaxiTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Taxi Tunning Parts,
+        Icon	=	TunningParts10,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item CarStationWagonTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car StationWagon Tunning Parts,
+        Icon	=	TunningParts11,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item CarLuxuryTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Luxury Tunning Parts,
+        Icon	=	TunningParts12,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item SmallCar02TunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Horizon Tunning Parts,
+        Icon	=	TunningParts13,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item SmallCarTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Dart Tunning Parts,
+        Icon	=	TunningParts14,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+	
+    item CarNormalTunningParts
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	5,
+        Type	=	Normal,
+        DisplayName	=	Car Nyala Tunning Parts,
+        Icon	=	TunningParts15,
+        MetalValue = 30,
+        MechanicsItem = TRUE,
+		Tooltip = Tooltip_TunningParts,
+    }
+
+    item TrailerTrunk1
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   1,
+        MaxCapacity = 200,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item TrailerTrunk2
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   2,
+        MaxCapacity = 200,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item TrailerTrunk3
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	30.0,
+        Type	=	Normal,
+        DisplayName	=	Trailer Trunk,
+        Icon	=	CarTrunk,
+        VehicleType =   3,
+        MaxCapacity = 200,
+        ConditionAffectsCapacity = true,
+        ConditionMax = 100,
+        ChanceToSpawnDamaged = 10,
+        MechanicsItem = TRUE,
+    }
+
+    item GlassMag1
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Glass Jobs,
+        Icon	=	MagazineGlass,
+        TeachedRecipes  =   Make Small Glass Panel;Make Big Glass Panel,
+        ReplaceOnUse    =   GlassMag1,
+        StaticModel = Magazine,
+    }
+
+    item GlassGlue
+    {
+		DisplayCategory = VehicleMaintenance,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.05,
+        UseWhileEquipped	=	        FALSE,
+        DisplayName			=		    Glass Glue,
+        Icon				=			GlassGlue,
+        Weight				=			0.1,
+        Tooltip = Tooltip_FixGlassItems,
+    }
+
+    item BigGlassPanel
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	1.5,
+        Type	=	Normal,
+        DisplayName	=	Big Glass Panel,
+        Icon	=	BigGlassPanel,
+        SurvivalGear = TRUE,
+		Tooltip = Tooltip_FixGlassItems,
+    }
+
+    item SmallGlassPanel
+    {
+		DisplayCategory = VehicleMaintenance,
+        Weight	=	0.4,
+        Type	=	Normal,
+        DisplayName	=	Small Glass Panel,
+        Icon	=	SmallGlassPanel,
+		Tooltip = Tooltip_FixGlassItems,
+    }
+
+	item GlassCutter
+	{
+		MaxRange	=	0.8,
+		WeaponSprite	=	GlassCutter,
+		MinAngle	=	0.65,
+		Type	=	Weapon,
+		MinimumSwingTime	=	2,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	SmallBlade,
+		Weight	=	0.3,
+		ConditionLowerChanceOneIn	=	1,
+		PushBackMod	=	0.3,
+		SubCategory	=	Swinging,
+		AimingMod	=	0.8,
+		ConditionMax	=	3,
+		MaxHitCount	=	1,
+		IsAimedHandWeapon	=	TRUE,
+		DoorDamage	=	1,
+		SwingAnim	=	Bat,
+		DisplayName	=	Glass Cutter,
+		MinRange	=	0.2,
+		SwingTime	=	2,
+		KnockdownMod	=	0,
+		Icon	=	GlassCutter,
+		RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+		TreeDamage  =   0,
+		EnduranceMod = 0.5,
+		MetalValue = 5,
+		CriticalChance	=	0,
+		MinDamage	=	0.1,
+        MaxDamage	=	0.1,
+		WeaponLength = 0.17,
+		AttachmentType = Screwdriver,
+        BreakSound	=	BreakMetalItem,
+ 	}
+
+	item TireRubber
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Tire Rubber,
+		Icon	=	TireRubber,
+		Tooltip = Tooltip_TireRubber,
+	}
+
+    item TireGlue
+    {
+		DisplayCategory = VehicleMaintenance,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.05,
+        UseWhileEquipped	=	        FALSE,
+        DisplayName			=		    Tire Glue,
+        Icon				=			TireGlue,
+        Weight				=			0.1,
+        Tooltip = Tooltip_FixTireItems,
+        SurvivalGear = TRUE,
+    }
+
+	item PMRTire
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	15,
+		Type	=	Normal,
+		DisplayName	=	Tire,
+		Icon	=	CarTire,
+		ConditionMax = 100,
+	}
+
+	item CarRim
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	Car Rim,
+		Icon	=	PMRMCarRim,
+		Tooltip =   Tooltip_CarRim,
+		ConditionMax = 100,
+		MechanicsItem = TRUE,
+	}
+
+	item DismountedTire
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	5,
+		Type	=	Normal,
+		DisplayName	=	Dismounted Tire,
+		Icon	=	PMRM_DTire,
+		Tooltip =   Tooltip_DismountedTire,
+		ConditionMax = 100,
+		MechanicsItem = TRUE,
+	}
+
+	item SuspensionParts
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Suspension Parts,
+		Icon	=	SuspensionParts,
+		Tooltip =   Tooltip_SuspensionParts,
+		MetalValue = 2,
+	}
+
+	item BrakesParts
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Brakes Parts,
+		Icon	=	BrakesParts,
+		Tooltip =   Tooltip_BrakesParts,
+		MetalValue = 2,
+	}
+
+	item BrakesPartsBox
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	1.0,
+		Type	=	Normal,
+		DisplayName	=	Brakes Parts Box,
+		Icon	=	BrakesPartsBox,
+		Tooltip =   Tooltip_BrakesPartsBox,
+	}
+
+	item SuspensionPartsBag
+	{
+		DisplayCategory = VehicleMaintenance,
+		Weight	=	1.0,
+		Type	=	Normal,
+		DisplayName	=	Suspension Parts Bag,
+		Icon	=	SuspensionPartsBag,
+		Tooltip =   Tooltip_SuspensionPartsBag,
+	}
+}

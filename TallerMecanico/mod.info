@@ -1,0 +1,6 @@
+name=Snake's ModPack - Pimp My Ride Mod V1.10
+poster=PimpMyRideMod.png
+description= Este mod agrega opciones para reparar partes de automoviles y un taller mecanico especial en riverside.
+description= Incompatibilidad con aquellos mods que utilicen y sobreescriban la funcion del juego base ISVehicleMechanics:doPartContextMenu().
+require=CustomMapBridge
+id=TallerMecanico

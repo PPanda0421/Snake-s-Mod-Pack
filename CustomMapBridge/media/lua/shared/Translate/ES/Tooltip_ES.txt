@@ -1,0 +1,6 @@
+Tooltip_ES = {
+	
+	Tooltip_UnknownTire = "Puedes leer la descripción en la cubierta para saber que tipo de neumático es.",
+	Tooltip_NeedToReadTire = "Lee la cubierta para saber a que tipo de neumático pertenece.<br>Luego utiliza una máquina vulcanizadora para montar o reparar.",
+	Tooltip_SecretText1 = "<H1> El Secreto!!! <LINE> <TEXT> Hola Oliver, me han contado que has pescado lo suficiente. Felicitaciones,  <RGB:1,0.8,0> te contaré uno de mis secretos. <LINE> <RGB:0.7,0.7,0.7> Busca en algun sector de mis construcciones  <RGB:1,0.8,0> la siguiente habitación  <RGB:0.7,0.7,0.7> y  <RGB:1,0.8,0> abre con esta llave la caja fuerte. <BR> <RGB:0.7,0.7,0.7> Firma:  <RGB:0,0.4,0> Snake. <BR>",
+}

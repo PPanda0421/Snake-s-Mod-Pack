@@ -1,0 +1,6 @@
+UI_ES = {
+
+    IGUI_CraftCategory_Ammo = "Recarga",
+	IGUI_perks_AMReloading = "Armamentística",
+	IGUI_ItemCat_Reloading = "Recarga",
+}

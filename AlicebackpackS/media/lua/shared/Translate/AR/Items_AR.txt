@@ -1,0 +1,12 @@
+Items_ES = {
+
+    DisplayNameSoporte_de_mochila_Alice = "Soporte de mochila Alice",
+    DisplayNameBolsa_militar_(Urbana) = "Bolsa militar (Urbana)",
+    DisplayNameBolsa_militar_(Jungla) = "Bolsa militar (Jungla)",
+	DisplayNameMeal_Ready_To_Eat = "Bolsa MRE",
+	DisplayNameCase_of_MREs = "Caja militar MRE",
+	DisplayNameMilitary_Canteen_(Empty) = "Cantimplora militar vacía",
+	DisplayNameMilitary_Canteen_(Full) = "Cantimplora militar con agua",
+	DisplayNameMilitary_knife = "Cuchillo de combate militar",
+	DisplayNameGrenade_Mk2 = "Granada de mano Mk2",
+}

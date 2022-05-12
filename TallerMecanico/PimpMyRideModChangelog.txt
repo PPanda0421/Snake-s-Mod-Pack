@@ -1,0 +1,34 @@
+Pimp My Ride Mod V 1.07 Changelog:
+*Actualización para Build 41.54
+*Agregados separamientos de parkinstalls en zonas del taller de riverside.
+*Agregadas recetas para desmantelar cubierta vehicular y rin vehicular.
+
+Pimp My Ride Mod V 1.06 Changelog:
+*Agregados 2 talleres mecánicos nuevos en distintos sitios.
+*Agregada reparación de baterías.
+*Agregado item para reparar baterías.
+*Actualizadas tablas de loot para Loot Zeta Enhanced Edition.
+
+Pimp My Ride Mod V 1.05 Changelog:
+*Agregada opcion para Tunear el motor.
+*Agregadas mas partes de motor a tablas de loot de desmantelar vehiculos.
+*Agregados los items de piezas especiales de motor.
+
+Pimp My Ride Mod V 1.04 Changelog:
+*Agregada posibilidad de desmantelar con 20 usos de soplete vehiculos con la condición total por debajo del 20%.
+*Testeo de compatibilidad para poder desmantelar tambien los helicopteros del mod Expanded Helicopter Events.
+
+Pimp My Ride Mod V 0.3 Changelog:
+Agregada la posibilidad de reparar los remolques.
+Ahora el daño afecta a la capacidad del remolque.
+
+Pimp My Ride Mod V 0.2 Changelog:
+Quitada la posibilidad de remover óxido a los vehiculos quemados.
+Agregado menú contextual para poder cargar gasolina de tanques de combustible del mod Fuel Tanks
+
+Fusion de Pimp My Ride Mod con Taller Mecánico.
+Ventana de mecánica del vehiculo: Ahora se pueden reparar climatizadores, luces de emergencia y guanteras.
+Recetas: Se pueden reparar tubos de escape, puertas traseras simples y dobles, capó, frenos, suspension. Se pueden desmantelar puertas para obtener chapas metálicas, se pueden desmantelar frenos y suspension para conseguir repuestos. Identificación de neumáticos que son worldobjects.
+Rebuscar: Enlazado a LGR se podrán encontrar repuestos para vehiculos rebuscando usando el detector de metales.
+Maquina Vulcanizadora: Permite separar en 2 partes cada neumático para poder reparar con metalistería el rin. Con la máquina, una cubierta y caucho se puede reparar la cubierta del vehiculo. Tambien permite montar las 2 partes de un neumático del mismo tipo.
+Agregada opcion para remover óxido de los vehículos.

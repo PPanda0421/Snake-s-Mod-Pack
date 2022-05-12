@@ -1,0 +1,4 @@
+Tooltip_RU = {
+	
+	Tooltip_SecretKeyA = "Золотой ключ Snake <br> Открывает секретный сейф.",
+}

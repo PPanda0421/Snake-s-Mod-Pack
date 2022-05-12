@@ -1,0 +1,7 @@
+ItemName_RU = {
+	ItemName_Base.BowlingPin = "Кегля для боулинга",
+	ItemName_Base.Bowlingball = "Шар для боулинга",
+	ItemName_Base.Shoes_BowlingTrainers = "Обувь для боулинга",
+	ItemName_Base.Shoes_BowlingTrainersRed = "Красная обувь для боулинга",
+	ItemName_Base.Shoes_BowlingTrainersGreen = "Зелёная обувь для боулинга",
+}

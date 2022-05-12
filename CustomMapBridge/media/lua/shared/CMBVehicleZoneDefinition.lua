@@ -1,0 +1,38 @@
+require 'VehicleZoneDistribution'
+-- local burnedvehicles = {};
+-- burnedvehicles["Base.CarNormal"] = {index = -1, spawnChance = 20};
+-- burnedvehicles["Base.SmallCar"] = {index = -1, spawnChance = 15};
+-- burnedvehicles["Base.SmallCar02"] = {index = -1, spawnChance = 15};
+-- burnedvehicles["Base.CarTaxi"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.CarTaxi2"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.PickUpVan"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.CarStationWagon"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.CarStationWagon2"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.VanSeats"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.Van"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.StepVan"] = {index = -1, spawnChance = 5};
+-- burnedvehicles["Base.ModernCar"] = {index = -1, spawnChance = 3};
+-- burnedvehicles["Base.ModernCar02"] = {index = -1, spawnChance = 2};
+
+VehicleZoneDistribution.burned = {};
+VehicleZoneDistribution.burned.vehicles = {};
+VehicleZoneDistribution.burned.vehicles["Base.CarNormal"] = {index = -1, spawnChance = 20};
+VehicleZoneDistribution.burned.vehicles["Base.SmallCar"] = {index = -1, spawnChance = 15};
+VehicleZoneDistribution.burned.vehicles["Base.SmallCar02"] = {index = -1, spawnChance = 15};
+VehicleZoneDistribution.burned.vehicles["Base.CarTaxi"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.CarTaxi2"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.PickUpTruck"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.PickUpVan"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.CarStationWagon"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.CarStationWagon2"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.VanSeats"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.Van"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.StepVan"] = {index = -1, spawnChance = 5};
+VehicleZoneDistribution.burned.vehicles["Base.ModernCar"] = {index = -1, spawnChance = 3};
+VehicleZoneDistribution.burned.vehicles["Base.ModernCar02"] = {index = -1, spawnChance = 2};
+VehicleZoneDistribution.burned.spawnRate = 100;
+VehicleZoneDistribution.burned.chanceToSpawnBurnt = 100;
+VehicleZoneDistribution.burned.baseVehicleQuality = 0;
+VehicleZoneDistribution.burned.chanceToPartDamage = 0;
+VehicleZoneDistribution.burned.chanceToSpawnKey = 0;

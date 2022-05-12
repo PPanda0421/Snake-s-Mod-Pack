@@ -1,0 +1,311 @@
+/** ================================================ **/
+/**                Skills Magazines					 **/
+/** ================================================ **/
+
+module SkillMag
+{
+
+    imports
+    {
+        Base
+
+    }
+
+	item SkillMagPackage
+	{
+		DisplayCategory = Literature,
+		Weight	=	3.0,
+		Type	=	Normal,
+		DisplayName	=	Skills_Mags_Package,
+		Icon	=	SkillMagPackage,
+		Tooltip = Tooltip_SkillMagPackage,
+	}
+
+	item SkillMagSprint
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Sprint Magazine,
+		Icon	=	MagazineSprint,
+		Tooltip = Tooltip_SkillMagSprint,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagLightFoot
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	LightFoot Magazine,
+		Icon	=	MagazineLightFoot,
+		Tooltip = Tooltip_SkillMagLightFoot,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagNimble
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Nimble Magazine,
+		Icon	=	MagazineNimble,
+		Tooltip = Tooltip_SkillMagNimble,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagSneaking
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Sneaking Magazine,
+		Icon	=	MagazineSneaking,
+		Tooltip = Tooltip_SkillMagSneaking,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagCarpentry
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Carpentry Magazine,
+		Icon	=	MagazineCarpentry,
+		Tooltip = Tooltip_SkillMagCarpentry,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagCooking
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Cooking Magazine,
+		Icon	=	MagazineCooking,
+		Tooltip = Tooltip_SkillMagCooking,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagFarming
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Farming Magazine,
+		Icon	=	MagazineFarming,
+		Tooltip = Tooltip_SkillMagFarming,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagFirstAid
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	First Aid Magazine,
+		Icon	=	MagazineFA,
+		Tooltip = Tooltip_SkillMagFirstAid,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagElectricity
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Electrycity Magazine,
+		Icon	=	MagazineElectricity,
+		Tooltip = Tooltip_SkillMagElectricity,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagMetal
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	MetalWelding Magazine,
+		Icon	=	MagazineMetalW,
+		Tooltip = Tooltip_SkillMagMetal,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagFirearm
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Firearm Magazine,
+		Icon	=	MagazineFirearm,
+		Tooltip = Tooltip_SkillMagFirearm,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagReloading
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Reloading Magazine,
+		Icon	=	MagazineFReloading,
+		Tooltip = Tooltip_SkillMagReloading,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagFishing
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Fishing Magazine,
+		Icon	=	MagazineFishing,
+		Tooltip = Tooltip_SkillMagFishing,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagTrapping
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Trapping Magazine,
+		Icon	=	MagazineTrapping,
+		Tooltip = Tooltip_SkillMagTrapping,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagForaging
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Foraging Magazine,
+		Icon	=	MagazineForaging,
+		Tooltip = Tooltip_SkillMagForaging,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagMechanics
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Mechanics Magazine,
+		Icon	=	MagazineMechanics,
+		Tooltip = Tooltip_SkillMagMechanics,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagAxe
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Axes Magazine,
+		Icon	=	MagazineAxe,
+		Tooltip = Tooltip_SkillMagAxe,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+	
+	item SkillMagBlade
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Blades Magazine,
+		Icon	=	MagazineLBlade,
+		Tooltip = Tooltip_SkillMagBlade,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagBlunt
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Blunt Magazine,
+		Icon	=	MagazineBlunt,
+		Tooltip = Tooltip_SkillMagBlunt,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagSpear
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Spear Magazine,
+		Icon	=	MagazineSpear,
+		Tooltip = Tooltip_SkillMagSpear,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagMaintenance
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Maintenance Magazine,
+		Icon	=	MagazineMaintenance,
+		Tooltip = Tooltip_SkillMagMaintenance,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagTailor
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Tailor Magazine,
+		Icon	=	MagazineTailor,
+		Tooltip = Tooltip_SkillMagTailor,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagAmmoReloading
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Ammo Reloading Magazine,
+		Icon	=	MagazineAmmoReloading,
+		Tooltip = Tooltip_SkillMagAmmoReloading,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+
+	item SkillMagHunting
+	{
+		DisplayCategory = Literature,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	The Hunting Magazine,
+		Icon	=	MagazineSMHunting,
+		Tooltip = Tooltip_SkillMagHunting,
+		DisplayCategory = Literature,
+		StaticModel = Magazine,
+	}
+}

@@ -1,0 +1,5 @@
+ItemName_EN = {
+	ItemName_Base.PMRMTire = "Dismounted Tire",
+	ItemName_Base.PMRMTireMachine = "Tire Machine",
+	ItemName_Base.UnknownTire = "Tire (Unknown)",
+}

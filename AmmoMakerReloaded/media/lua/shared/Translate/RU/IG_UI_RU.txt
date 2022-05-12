@@ -1,0 +1,6 @@
+UI_RU = {
+
+    IGUI_CraftCategory_Ammo = "Гильзозаправка",
+	IGUI_perks_AMReloading = "Гильзозаправка",
+	IGUI_ItemCat_Reloading = "Гильзозаправка",
+}

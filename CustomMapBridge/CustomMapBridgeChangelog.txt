@@ -1,0 +1,106 @@
+CustomMapBridge V-3.5 changelog:
+*Actualizado para la build 41.51.
+*Removido el archivo que sobreescribia el archivo del juego base ISInventoryPage. (Mayor compatibilidad con otros mods a partir de esta build)
+*Agregada tabla de iconos de contenedores en Definitions.
+*Agregados nuevos tiles para la expansión de riverside gunstore.
+*Agregadas zonas nuevas de spawn de vehiculos para enlazar con los diversos mapas actualizados.
+*Agragadas lineas de overlays para la tienda de caza y pesca de riverside gunstore expansion.
+
+CustomMapBridge V-3.4 changelog:
+*Agregados nuevos tiles para Military Complex.
+
+CustomMapBridge V-3.3 changelog:
+*Reparado ícono de contenedor para el remolque.
+
+CustomMapBridge V-3.29 changelog:
+*Agregadas texturas custom de la maquina de pintura para vehículos.
+
+CustomMapBridge V-3.28 changelog:
+*Agregadas texturas custom para la extensión del mapa "Factory".
+
+CustomMapBridge V-3.27 changelog:
+*Agregado soporte para Snake Clothing Mod
+*Agregadas lineas para WorldFiller en Riverside Gunstore.
+*Agregado soporte para Pimp My Ride Mod.
+*Agregada opcion de desmantelar a las máquinas vulcanizadoras. (Ahora no se necesita palanqueta para moverla)
+*Reparado el seteo de tile al quemarse las bolsas Hesko.
+
+CustomMapBridge V-3.26 changelog:
+*Actualizadas propiedades y agregados nuevos tiles compatibles con Le Gourmet Revolution V1.13
+
+CustomMapBridge V-3.25 changelog:
+-Agregados tiles nuevos para Military Complex V3.2
+-Agregados nuevos tiles para Le Gourmet Revolution V1.11
+
+CustomMapBridge V-3.24 changelog:
+-Agregados tiles nuevos para Military Complex V3.1
+
+CustomMapBridge V-3.23 changelog:
+-Soporte Build 41.40
+-Agregados los nombres de los contenedores custom al título de ventana de loot.
+-Reparada propiedad de uno de los lados del refrigerador de laboratorio.
+
+CustomMapBridge V-3.22 changelog:
+-Soporte Build 41.34
+
+CustomMapBridge V-3.21 changelog:
+-Agregada picadora de carne a Manivela (Le Gourmet Revolution V1.01).
+
+CustomMapBridge V-3.2 changelog:
+-Agregado soporte para Fuel Tanks Mod.
+-Agregado soporte para Table Saw Mod.
+-Agregadas plantaciones de Tabaco para Le Gourmet Revolution Mod.
+
+CustomMapBridge V-3.1 changelog:
+-Agregado soporte para Barco Abandonado V2.0 Build41.
+-Texturas 2x convertidas en lienzos de 1024x1024 (Antes 2048x2048)
+
+CustomMapBridge V-3.0 changelog:
+-Agregado soporte para build de animaciones.
+-Correcciones de errores ed propiedades.
+-Agregados sprites quemados de paredes de caña (A testear)
+-Agregadas texturas para el mod Table Saw.
+
+CustomMapBridge V-1.9 changelog:
+-Agregados nuevos sprites para Military Complex V 2.8
+-Reparados los errores con algunos sprites de pmrm.
+
+CustomMapBridge V-1.8 changelog:
+-Cambio de sprite para la plantacion de cacahuete.
+-Agregada impresión de versión del mod en consola.
+
+CustomMapBridge V-1.7 changelog:
+-Agregadas mas texturas.
+-Soporte para Military Complex V2.7
+-Agregados iconos nuevos para contenedores custom.
+
+CustomMapBridge V-1.6 changelog:
+-Agregadas mas texturas.
+
+CustomMapBridge V-1.5 changelog:
+-Agregado soporte para ZAWEvo 0.21
+
+CustomMapBridge V-1.4 changelog:
+-Inclusión del mod Visuals!!!!
+
+CustomMapBridge V-1.3 changelog:
+-Agregadas mas texturas y propiedades.
+-Agregado soporte para iconos de contenedores custom.
+-Agregado soporte para Le Gourmet Evo Plus 0.9.
+-Agregado soporte para Ammo Maker 4.2.
+-Agregado soporte para Muldraugh Factory.
+-Agregado soporte para ZAW Evolution 0.1.
+
+CustomMapBridge V-1.2 changelog:
+-Agregadas nuevas texturas para Le Gourmet Evo Plus V-0.85
+-Reparadas lineas de advertencias en consola.
+
+CustomMapBridge V-1.1 changelog:
+-Agregadas texturas (293 tiles en total) y propiedades para soporte con el mapa Military Complex 2.5
+-Agregada compatibilidad para nueva versión de Le Gourmet Evo Plus (Work in progress)
+
+CustomMapBridge V-1.0 changelog:
+-Primer relase de este mod que se encarga de cargar texturas 1x y 2x como así tambien definiciones custom de todos los mods y mapas de mi autoría.
+	Tiles de farming y de trofeos de caza de Le Gourmet Evolution Plus V 0.7
+	Tiles de Ammo Maker V 3.9 (Mesa de recarga)
+	Tiles de Muldraugh Factory V 1.0(Graffitis)

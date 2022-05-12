@@ -1,0 +1,7 @@
+ItemName_ES = {
+	ItemName_Base.BowlingPin = "Pino de boliche",
+	ItemName_Base.Bowlingball = "Bola",
+	ItemName_Base.Shoes_BowlingTrainers = "Zapatos de bolera",
+	ItemName_Base.Shoes_BowlingTrainersRed = "Zapatos de bolera",
+	ItemName_Base.Shoes_BowlingTrainersGreen = "Zapatos de bolera",
+}

@@ -1,0 +1,20 @@
+module Base
+{
+	sound RefillPropaneTank
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/RefillPropaneloop.ogg,
+		}
+	}
+
+	sound RefillPropaneTankFinish
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/FinishRefillPropaneTank.ogg,
+		}
+	}
+}

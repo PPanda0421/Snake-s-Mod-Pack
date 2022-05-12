@@ -1,0 +1,5 @@
+Recipe_RU = {
+
+  Recipe_Make_Upholstery_Sewing_Kit = "Сделать набор для ремонта обивки",
+  Recipe_Get_Needle = "Взять иглу",
+}

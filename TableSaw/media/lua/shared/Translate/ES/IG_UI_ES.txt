@@ -1,0 +1,5 @@
+IGUI_ES = {
+    IGUI_CraftCategory_Dyes = "Pigmentos",
+	IGUI_ItemCat_Dye = "Pigmentos naturales",
+	IGUI_SearchMode_Categories_Dyes = "Pigmentos naturales",
+}

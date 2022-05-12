@@ -1,0 +1,12 @@
+Items_RU = {
+
+    DisplayNameSoporte_de_mochila_Alice = "Каркас армейского рюкзака с ремнями",
+    DisplayNameBolsa_militar_(Urbana) = "Подсумок «городской камуфляж»",
+    DisplayNameBolsa_militar_(Jungla) = "Подсумок «джунглиевый камуфляж»",
+	DisplayNameMeal_Ready_To_Eat = "Сухпаёк",
+	DisplayNameCase_of_MREs = "Коробка сухпайков",
+	DisplayNameMilitary_Canteen_(Empty) = "Армейская фляга (пустая)",
+	DisplayNameMilitary_Canteen_(Full) = "Армейская фляга (полная)",
+	DisplayNameMilitary_knife = "Боевой нож",
+	DisplayNameGrenade_Mk2 = "Ручная граната Mk2",
+}

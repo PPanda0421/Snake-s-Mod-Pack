@@ -1,0 +1,344 @@
+module Base
+{
+	model TurpentineBottle
+	{
+		mesh = TurpentineBottle,
+	}
+
+	model BaseballSawBat
+	{
+		mesh = Weapons/2Handed/BaseballSawBat,
+
+		attachment world
+		{
+			offset = 0.0000 0.2450 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+	model BaseballWireBat
+	{
+		mesh = Weapons/2Handed/BaseballWireBat,
+
+		attachment world
+		{
+			offset = 0.0000 0.2450 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+
+	model WoodenClub
+	{
+		mesh = Weapons/1Handed/WoodenClub,
+	}
+
+	model Spikes
+	{
+		mesh = Weapons/1Handed/Spikes,
+	}
+
+	model PlanksPile6_Ground
+	{
+		mesh = WorldItems/PlanksPile6,
+		texture = WorldItems/PlanksPile,
+		scale = 1,
+	}
+
+	model PlanksPile9_Ground
+	{
+		mesh = WorldItems/PlanksPile9,
+		texture = WorldItems/PlanksPile,
+		scale = 1,
+	}
+
+	model PlanksPile12_Ground
+	{
+		mesh = WorldItems/PlanksPile12,
+		texture = WorldItems/PlanksPile,
+		scale = 1,
+	}
+
+	model DyeBlack
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeBlack,
+		scale = 0.4,
+	}
+
+	model DyeWhite
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeWhite,
+		scale = 0.4,
+	}
+
+	model DyeBlue
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeBlue,
+		scale = 0.4,
+	}
+
+	model DyeYellow
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeYellow,
+		scale = 0.4,
+	}
+
+	model DyeRed
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeRed,
+		scale = 0.4,
+	}
+
+	model DyeOrange
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeOrange,
+		scale = 0.4,
+	}
+
+	model DyeGreen
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeGreen,
+		scale = 0.4,
+	}
+
+	model DyePurple
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyePurple,
+		scale = 0.4,
+	}
+
+	model DyePink
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyePink,
+		scale = 0.4,
+	}
+
+	model DyeCyan
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeCyan,
+		scale = 0.4,
+	}
+
+	model DyeBrown
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeBrown,
+		scale = 0.4,
+	}
+
+	model DyeLightBrown
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeLightBrown,
+		scale = 0.4,
+	}
+
+	model DyeLightBlue
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeLightBlue,
+		scale = 0.4,
+	}
+
+	model DyeTurquoise
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeTurquoise,
+		scale = 0.4,
+	}
+
+	model DyeGrey
+	{
+		mesh = WorldItems/Dye,
+		texture = WorldItems/DyeGrey,
+		scale = 0.4,
+	}
+
+	model DyesMag
+	{
+		mesh = DyesMag,
+	}
+	
+    model DyesMag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/DyesMag,
+        scale = 0.4,
+    }
+
+	model SawTableMag
+	{
+		mesh = SawTableMag,
+	}
+	
+    model SawTableMag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/SawTableMag,
+        scale = 0.4,
+    }
+
+	model UniqueMag1
+	{
+		mesh = UniqueMag1,
+	}
+	
+    model UniqueMag1_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/UniqueMag1,
+        scale = 0.4,
+    }
+
+	model UniqueMag2
+	{
+		mesh = UniqueMag2,
+	}
+	
+    model UniqueMag2_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/UniqueMag2,
+        scale = 0.4,
+    }
+
+	model UniqueMag3
+	{
+		mesh = UniqueMag3,
+	}
+	
+    model UniqueMag3_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/UniqueMag3,
+        scale = 0.4,
+    }
+	
+    model OldEngine
+    {
+        mesh = WorldItems/OldEngine,
+		texture = WorldItems/EngineParts,
+        scale = 2.0,
+    }
+
+    model CircleSawBlade_Ground
+    {
+        mesh = WorldItems/CircleSawBlade_Ground,
+        texture = Weapons/2Handed/BaseballSawBat,
+        scale = 1.1,
+    }
+
+	model PlantRed
+	{
+		mesh = WorldItems/PlantRose,
+		texture = WorldItems/PlantRed,
+		scale = 1.0,
+	}
+
+	model PlantBlack
+	{
+		mesh = WorldItems/PlantRose,
+		texture = WorldItems/PlantBlack,
+		scale = 1.0,
+	}
+
+	model PlantYellow
+	{
+		mesh = WorldItems/PlantYellow,
+		texture = WorldItems/PlantYellow,
+		scale = 1.0,
+	}
+	
+	model PlantBlue
+	{
+		mesh = WorldItems/PlantBlue,
+		texture = WorldItems/PlantBlue,
+		scale = 1.0,
+	}
+	
+	model PlantWhite
+	{
+		mesh = WorldItems/PlantWhite,
+		texture = WorldItems/PlantWhite,
+		scale = 1.0,
+	}
+	
+	model PlantOrange
+	{
+		mesh = WorldItems/PlantOrange,
+		texture = WorldItems/PlantOrange,
+		scale = 1.0,
+	}
+	
+	model PlantMagenta
+	{
+		mesh = WorldItems/PlantMagenta,
+		texture = WorldItems/PlantMagenta,
+		scale = 1.0,
+	}
+	
+	model PlantGreen
+	{
+		mesh = WorldItems/PlantGreen,
+		texture = WorldItems/PlantGreen,
+		scale = 1.0,
+	}
+	
+	model PlantBrown
+	{
+		mesh = WorldItems/PlantBrown,
+		texture = WorldItems/PlantBrown,
+		scale = 1.0,
+	}
+	
+	model PlantCyan
+	{
+		mesh = WorldItems/PlantCyan,
+		texture = WorldItems/PlantCyan,
+		scale = 1.0,
+	}
+	
+	model PlantTurquoise
+	{
+		mesh = WorldItems/PlantTurquoise,
+		texture = WorldItems/PlantTurquoise,
+		scale = 1.0,
+	}
+	
+	model PlantPink
+	{
+		mesh = WorldItems/PlantPink,
+		texture = WorldItems/PlantPink,
+		scale = 1.0,
+	}
+	
+	model PlantLightBrown
+	{
+		mesh = WorldItems/PlantLightBrown,
+		texture = WorldItems/PlantLightBrown,
+		scale = 1.0,
+	}
+	
+	model PlantLightBlue
+	{
+		mesh = WorldItems/PlantLightBlue,
+		texture = WorldItems/PlantLightBlue,
+		scale = 1.0,
+	}
+
+	model PlantGrey
+	{
+		mesh = WorldItems/PlantGrey,
+		texture = WorldItems/PlantGrey,
+		scale = 1.0,
+	}
+}

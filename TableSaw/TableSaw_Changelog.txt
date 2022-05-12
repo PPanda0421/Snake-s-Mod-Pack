@@ -1,0 +1,20 @@
+TableSaw 
+Version 1.07 Changelog:
+*Reparado error al pintar cajas teniendo la pintura en alguna mochila.
+
+Version 1.06 Changelog:
+*Actualizado garrote rudimentario (Sonidos)
+*Balance de sonidos.
+
+Version 1.05 Changelog:
+*Actualizado para Build 41.54.
+*Agregados items a las nuevas tablas de rebuscar.
+
+Version 1.04 Changelog:
+Actualizado Build 41.51
+*Removidos scripts de pintura del mod ya que se aplicaron los balances correspondientes en el juego base.
+
+Version 1.03 Changelog:
+*Agregados bates de madera con alambre y con sierra circular.
+*Agregadas recetas.
+*Agregados modelos 3D (Gracias @Truji)

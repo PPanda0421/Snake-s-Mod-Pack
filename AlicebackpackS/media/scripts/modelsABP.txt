@@ -1,0 +1,40 @@
+module Base
+{
+/*
+	// The name XXX is used in these places:
+	//   items.txt    weaponSprite= or StaticModel=
+	//   recipes.txt  Prop1: or Prop2:
+	//   BaseTimedAction:setOverrideHandModels(XXX, XXX)
+	model XXX
+	{
+		// Path is relative to "media/models_x/".  Extension is optional.
+		mesh = Weapons/1Handed/SaucePan,
+
+		// Path is relative to "media/textures/".  Extension is optional.
+		texture = Weapons/1Handed/SaucePan,
+
+		// Default is "basicEffect".
+		shader = basicEffect,
+
+		// Default is TRUE.
+		static = TRUE,
+	}
+*/
+	model MilitaryKnife
+	{
+		mesh = Weapons/1Handed/MilitaryKnife,
+	}
+	model MilitaryCanteenFull
+	{
+		mesh = MilitaryCanteenFull,
+	}
+	model MRE
+	{
+		mesh = MRE,
+	}
+	model SpearMilitaryKnife
+	{
+		mesh = Weapons/2Handed/SpearMilitaryKnife,
+	}
+	
+}

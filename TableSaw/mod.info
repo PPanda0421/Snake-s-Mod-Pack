@@ -1,0 +1,5 @@
+name=Snake's ModPack - Table Saw V.1.10
+id=TableSaw
+description=Este mod agrega la posibilidad de construir una mesa de aserrar.
+poster=TableSawPoster.png
+require=CustomMapBridge

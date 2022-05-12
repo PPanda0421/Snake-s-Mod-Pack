@@ -1,0 +1,6 @@
+name=Snake's ModPack - Ammo Maker Reloeaded V0.63
+poster=amrposter.png
+require=SnakeUtilsPack
+id=AmmoMaker
+description=Agrega la posibilidad de fabricar munición 9mm, .38, .44, .45, 223, 308, 5,56x45mm, 7,62 y cartuchos de escopeta...  <LINE>  Agrega la profesión Armero especialista.  <LINE>  Agrega rasgos nuevos.  <LINE> <LINE>  Version 0.63
+pack=AMManual

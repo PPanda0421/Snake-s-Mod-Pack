@@ -1,0 +1,18 @@
+module Base
+{
+
+	item Tshirt_AmmoMakerGreen
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Ammo Maker T-Shirt,
+        ClothingItem = Tshirt_AmmoMakerGreen,
+        BodyLocation = Tshirt,
+        Icon	=	TshirtAmmoMaker,
+        BloodLocation = Shirt,
+        Insulation = 0.4,
+        WindResistance = 0.35,
+        FabricType = Cotton,
+		WorldStaticModel = AmmoMaker.Tshirt_AM_Ground,
+    }
+}

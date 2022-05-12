@@ -1,0 +1,11 @@
+ItemName_RU = {
+	ItemName_AliceBP.AlicePack = "Армейский рюкзак «джунглиевый камуфляж»",
+	ItemName_AliceBP.UpgradedAlicePack1 = "Армейский рюкзак (каркас)",
+	ItemName_AliceBP.UpgradedAlicePack2 = "Армейский рюкзак (каркас + подсумок)",
+	ItemName_AliceBP.UpgradedAlicePack2b = "Армейский рюкзак (каркас + подсумок)",
+	ItemName_AliceBP.UpgradedAlicePack3 = "Армейский рюкзак (подсумок)",
+	ItemName_AliceBP.UpgradedAlicePack3b = "Армейский рюкзак (подсумок)",
+	ItemName_AliceBP.AlicePackUrban = "Армейский рюкзак «городской камуфляж»",
+	ItemName_AliceBP.SpearMilitaryKnife = "Копьё с боевым ножом",
+	ItemName_AliceBP.AlicePackDesert = "Армейский рюкзак «пустынный камуфляж»",
+}

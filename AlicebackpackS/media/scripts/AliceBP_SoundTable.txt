@@ -1,0 +1,49 @@
+module Base
+{
+	sound CreateMREBox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ABP_CreateMREBox.ogg,
+		}
+	}
+
+	sound OpenCloseAlice
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ABP_OpenCloseAlice.ogg,
+		}
+	}
+
+	sound OpenMRE
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ABP_OpenMRE.ogg,
+		}
+	}
+
+	sound OpenMREBox
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ABP_OpenMREBox.ogg,
+		}
+	}
+
+	sound ThrowGrenade
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/ABP_ThrowGrenade.ogg,
+		}
+	}
+	
+}
+

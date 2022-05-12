@@ -1,0 +1,4 @@
+ItemName_RU = {
+    ItemName_FuelTanks.FuelTanksMag1 = "Журнал «Топливные баки»",
+    ItemName_FuelTanks.FuelMeter = "Счётчик топлива",
+}

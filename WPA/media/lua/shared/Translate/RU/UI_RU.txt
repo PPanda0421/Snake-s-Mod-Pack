@@ -1,0 +1,6 @@
+UI_RU = {
+    UI_trait_Silmaker = "Тихий",
+	UI_trait_Silmakerdesc = "Быть тихим - это самая важная вещь.<br>Может создавать самодельные глушители.",
+	UI_trait_whandler = "Оружейник",
+	UI_trait_whandlerdesc = "Может создавать и разбирать компоненты для оружия.",
+}

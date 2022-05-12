@@ -1,0 +1,32 @@
+module Base
+{
+    recipe Make Upholstery Sewing Kit
+    {
+        Needle,
+		Twine=10,
+		
+        Result:UpholsteryKit,
+        Time:50.0,
+        Category:Tailoring,
+    }
+
+    recipe Get Needle
+    {
+        destroy UpholsteryKit,
+		
+        Result:Needle,
+        Time:50.0,
+        Category:Tailoring,
+		OnCreate:GetNeedle_OnCreate,
+    }
+
+
+    fixing Fix Standard Seat
+	{
+	   Require : NormalCarSeat1;NormalCarSeat2;NormalCarSeat3,
+	   GlobalItem : UpholsteryKit=2,
+	   ConditionModifier : 1.2,
+
+       Fixer : LeatherStrips=2;Tailoring=2;Mechanics=2,
+	}
+}

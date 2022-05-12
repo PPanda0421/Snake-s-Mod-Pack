@@ -1,0 +1,588 @@
+module AmmoMaker
+{
+	imports
+	{
+		Base
+	}
+	model Tshirt_AM_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_TShirt_Ground,
+		texture = Clothes/Shirt_Tshirt_Textures/TShirt_AmmoMakerGreen,
+        scale = 0.33,
+    }
+	model SilencerAK47
+	{
+		mesh = Weapons/parts/AK_Silencer,
+		texture = Weapons/parts/AK_SilencerHandguard,
+	}
+	model SilencerAK_Ground
+	{
+		mesh = WorldItems/AK_Silencer_Ground,
+		texture = weapons/parts/AK_Silencer,
+	}
+	model AK47
+	{
+		mesh = Weapons/Firearm/AK47,
+
+		attachment muzzle
+		{
+			offset = 0.0000 -0.3990 0.0330,
+			rotate = -270.0000 0.0000 -180.0000,
+		}
+	}
+	model AKMMag
+    {
+        mesh = Weapons/Firearm/AKMMag,
+		texture = weapons/firearm/AKMMag,
+    }
+	model AKHandGuard
+	{
+		mesh = Weapons/parts/AKHandGuard,
+		texture = Weapons/parts/AK_SilencerHandguard,
+	}
+	model AKHandGuard_Ground
+	{
+		mesh = WorldItems/AKHandGuard_Ground,
+		texture = weapons/parts/AKHandGuard,
+	}
+	model AKRP
+	{
+		mesh = Weapons/parts/AKRP,
+		texture = weapons/parts/AKRP,
+	}
+	model AKRP_Ground
+	{
+		mesh = WorldItems/AKRP_Ground,
+		texture = weapons/parts/AKRP,
+	}
+	model AKTL
+	{
+		mesh = Weapons/parts/AKTL,
+		texture = weapons/parts/AKTL,
+	}
+	model AKTL_Ground
+	{
+		mesh = WorldItems/AKTL_Ground,
+		texture = weapons/parts/AKTL,
+	}
+	model AK4XScope
+	{
+		mesh = Weapons/parts/AK4XScope,
+		texture = weapons/parts/AK4XScope,
+	}
+	model AK4XScope_Ground
+	{
+		mesh = WorldItems/AK4XScope_Ground,
+		texture = weapons/parts/AK4XScope,
+	}
+	model AKArmyScope
+	{
+		mesh = Weapons/parts/AKArmyScope,
+		texture = Weapons/parts/AKArmyScope,
+	}
+	model AKArmyScope_Ground
+	{
+		mesh = WorldItems/AKArmyScope_Ground,
+		texture = weapons/parts/AKArmyScope,
+	}
+	model AKIronSight
+	{
+		mesh = Weapons/parts/AKIronSight,
+		texture = weapons/parts/AKIronSight,
+	}
+	model AKIronSight_Ground
+	{
+		mesh = WorldItems/AKIronSight_Ground,
+		texture = weapons/parts/AKIronSight,
+	}
+	model Ammo9mmCan_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/AmmoCan,
+        scale = 0.4,
+    }
+	model Ammo38Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo38Can,
+        scale = 0.4,
+    }
+	model Ammo44Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo44Can,
+        scale = 0.4,
+    }
+	model Ammo45Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo45Can,
+        scale = 0.4,
+    }
+	model Ammo223Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo223Can,
+        scale = 0.4,
+    }
+	model Ammo308Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo308Can,
+        scale = 0.4,
+    }
+	model Ammo556Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo556Can,
+        scale = 0.4,
+    }
+	model Ammo762Can_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/Ammo762Can,
+        scale = 0.4,
+    }
+	model AmmoShellsCan_Ground
+    {
+        mesh = WorldItems/Ammo9mmCan,
+        texture = Clothes/backpacks/AmmoShellsCan,
+        scale = 0.4,
+    }
+	model Rifle223AmmoBox_Ground
+    {
+        mesh = WorldItems/Rifle223AmmoBox,
+        texture = WorldItems/Rifle223AmmoBox,
+        scale = 0.55,
+    }
+	model Rifle308AmmoBox_Ground
+    {
+        mesh = WorldItems/Rifle308AmmoBox,
+        texture = WorldItems/Rifle308AmmoBox,
+        scale = 0.6,
+    }
+	model Rifle556AmmoBox_Ground
+    {
+        mesh = WorldItems/Rifle556AmmoBox,
+        texture = WorldItems/Rifle556AmmoBox,
+        scale = 0.6,
+    }
+	model BoxOf38SpecialBullets
+	{
+		mesh = WorldItems/HandGunAmmoBox,
+		texture = WorldItems/BoxOfRounds38SpecialBullets,
+		scale = 0.4,
+	}
+	model BoxOf45SpecialBullets
+	{
+		mesh = WorldItems/HandGunAmmoBox,
+		texture = WorldItems/BoxOfRounds45SpecialBullets,
+		scale = 0.4,
+	}
+	model BoxOf44SpecialBullets
+	{
+		mesh = WorldItems/BoxOfRounds44SpecialBullets,
+		texture = WorldItems/BoxOfRounds44SpecialBullets,
+		scale = 0.4,
+	}
+	model Rifle762AmmoBox_Ground
+    {
+        mesh = WorldItems/Rifle762AmmoBox,
+        texture = WorldItems/Rifle762AmmoBox,
+        scale = 0.65,
+    }
+	model Bullets45Rounds
+	{
+		mesh = WorldItems/9mmRounds,
+		texture = WorldItems/Bullet45Round,
+		scale = 0.45,
+	}
+	model Bullets38Special
+	{
+		mesh = WorldItems/38SpecialBullets,
+		texture = WorldItems/Bullet38Round,
+		scale = 0.45,
+	}
+	model Bullets44Rounds
+	{
+		mesh = WorldItems/9mmRounds,
+		texture = WorldItems/Bullet44Round,
+		scale = 0.45,
+	}
+	model Rifle308Ammo
+	{
+		mesh = WorldItems/RifleAmmo,
+		texture = WorldItems/BulletRound,
+		scale = 0.7,
+	}
+	model Rifle556Ammo
+	{
+		mesh = WorldItems/RifleAmmo,
+		texture = WorldItems/Rifle556Ammo,
+		scale = 0.75,
+	}
+	model Rifle762Ammo
+	{
+		mesh = WorldItems/RifleAmmo,
+		texture = WorldItems/Rifle762Ammo,
+		scale = 0.8,
+	}
+	model Rounds9mm
+	{
+		mesh = WorldItems/9mmRounds,
+		texture = WorldItems/BulletRound,
+		scale = 0.4,
+	}
+	model Cases9mmBox
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Cases9mmBox,
+		scale = 0.3,
+	}
+	model Cases223Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Cases223Box,
+		scale = 0.3,
+	}
+	model Cases308Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Cases308Box,
+		scale = 0.3,
+	}
+	model Cases38Box
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Cases38Box,
+		scale = 0.3,
+	}
+	model Cases45Box
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Cases45Box,
+		scale = 0.3,
+	}
+	model Cases44Box
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Cases44Box,
+		scale = 0.3,
+	}
+	model Cases556Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Cases556Box,
+		scale = 0.3,
+	}
+	model Cases762Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Cases762Box,
+		scale = 0.3,
+	}
+	model Lead9mmBox
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Lead9mmBox,
+		scale = 0.3,
+	}
+	model Lead223Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Lead223Box,
+		scale = 0.3,
+	}
+	model Lead308Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Lead308Box,
+		scale = 0.3,
+	}
+	model Lead38Box
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Lead38Box,
+		scale = 0.3,
+	}
+	model Lead45Box
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Lead45Box,
+		scale = 0.3,
+	}
+	model Lead44Box
+	{
+		mesh = WorldItems/CasesLeadBox,
+		texture = WorldItems/Lead44Box,
+		scale = 0.3,
+	}
+	model Lead556Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Lead556Box,
+		scale = 0.3,
+	}
+	model Lead762Box
+	{
+		mesh = WorldItems/CasesLeadBoxRect,
+		texture = WorldItems/Lead762Box,
+		scale = 0.3,
+	}
+	model GunpowderJarEmpty
+	{
+		mesh = WorldItems/GunpowderJar,
+		texture = WorldItems/GunpowderJarEmpty,
+		scale = 0.4,
+	}
+	model GunPowderBox
+	{
+		mesh = WorldItems/BoxOfJars,
+		texture = WorldItems/GunPowderBox,
+		scale = 0.4,
+	}
+	model AMAmmoMag1
+	{
+		mesh = AMAmmoMag1,
+	}
+	model AMAmmoMag1_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMAmmoMag1,
+        scale = 0.4,
+    }
+	model AMAmmoMag2
+	{
+		mesh = AMAmmoMag2,
+	}
+	model AMAmmoMag2_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMAmmoMag2,
+        scale = 0.4,
+    }
+	model AMAmmoMag3
+	{
+		mesh = AMAmmoMag3,
+	}
+	model AMAmmoMag3_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMAmmoMag3,
+        scale = 0.4,
+    }
+	model AMAmmoMag4
+	{
+		mesh = AMAmmoMag4,
+	}
+	model AMAmmoMag4_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMAmmoMag4,
+        scale = 0.4,
+    }
+	model AMGuns9Mag
+	{
+		mesh = AMGuns9Mag,
+	}
+	model AMGuns9Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns9Mag,
+        scale = 0.4,
+    }
+	model AMGuns38Mag
+	{
+		mesh = AMGuns38Mag,
+	}
+	model AMGuns38Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns38Mag,
+        scale = 0.4,
+    }
+	model AMGuns44Mag
+	{
+		mesh = AMGuns44Mag,
+	}
+	model AMGuns44Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns44Mag,
+        scale = 0.4,
+    }
+	model AMGuns45Mag
+	{
+		mesh = AMGuns45Mag,
+	}
+	model AMGuns45Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns45Mag,
+        scale = 0.4,
+    }
+	model AMGuns223Mag
+	{
+		mesh = AMGuns223Mag,
+	}
+	model AMGuns223Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns223Mag,
+        scale = 0.4,
+    }
+	model AMGuns308Mag
+	{
+		mesh = AMGuns308Mag,
+	}
+	model AMGuns308Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns308Mag,
+        scale = 0.4,
+    }
+	model AMGuns556Mag
+	{
+		mesh = AMGuns556Mag,
+	}
+	model AMGuns556Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns556Mag,
+        scale = 0.4,
+    }
+	model AMGuns762Mag
+	{
+		mesh = AMGuns762Mag,
+	}
+	model AMGuns762Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGuns762Mag,
+        scale = 0.4,
+    }
+	model AMGunsShotgunMag
+	{
+		mesh = AMGunsShotgunMag,
+	}
+	model AMGunsShotgunMag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMGunsShotgunMag,
+        scale = 0.4,
+    }
+	model AmmoBook
+	{
+		mesh = AmmoBook,
+	}
+	model AmmoBook_Ground
+	{
+        mesh = WorldItems/BookClosed,
+        texture = AmmoBook,
+        scale = 0.4,
+	}
+	model AMWeapons4Mag
+	{
+		mesh = AMWeapons4Mag,
+	}
+	model AMWeapons4Mag_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/AMWeapons4Mag,
+        scale = 0.4,
+    }
+	model M9Parts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/M9WeaponParts,
+        scale = 1.5,
+    }
+	model M1911Parts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/M1911WeaponParts,
+        scale = 1.5,
+    }
+	model DEParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/DEWeaponParts,
+        scale = 1.5,
+    }
+	model RevolverParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/RevolverWeaponParts,
+        scale = 1.5,
+    }
+	model Revolver_LongParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/Revolver_LongWeaponParts,
+        scale = 1.5,
+    }
+	model Revolver_ShortParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/Revolver_ShortWeaponParts,
+        scale = 1.5,
+    }
+	model ShotgunParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/ShotgunWeaponParts,
+        scale = 2.5,
+    }
+	model DoubleBarrelShotgunParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/DoubleBarrelShotgunWeaponParts,
+        scale = 2.5,
+    }
+	model VarmintRifleParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/VarmintRifleWeaponParts,
+        scale = 2.8,
+    }
+	model HuntingRifleParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/HuntingRifleWeaponParts,
+        scale = 3.0,
+    }
+	model AssaultRifleParts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/AssaultRifleWeaponParts,
+        scale = 2.5,
+    }
+	model AssaultRifle2Parts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/AssaultRifle2WeaponParts,
+        scale = 2.8,
+    }
+	model AK47Parts
+    {
+        mesh = WorldItems/WeaponParts,
+        texture = WorldItems/AK47WeaponParts,
+        scale = 2.8,
+    }
+	model SaucePanLead
+	{
+		mesh = WorldItems/SaucePanRice,
+		texture = WorldItems/SaucePanLead,
+		scale = 0.35,
+	}
+	model AMManualBook
+	{
+		mesh = AMManualBook,
+	}
+	model AMManualBook_Ground
+	{
+        mesh = WorldItems/BookClosed,
+        texture = AMManualBook,
+        scale = 0.4,
+	}
+}

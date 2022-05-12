@@ -1,0 +1,11 @@
+Bates Metalicos Revived Changelog:
+Version 0.4:
+*Reparado sonido del bate metálico.
+
+Version 0.3:
+*Tabla de loot actualizada.
+
+Version 0.2: 
+*Agregado sonido de impacto con el bate metalico.
+
+Version 0.1: Liberación del mod.

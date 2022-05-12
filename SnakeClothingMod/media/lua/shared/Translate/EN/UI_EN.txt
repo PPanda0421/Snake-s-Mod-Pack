@@ -1,0 +1,6 @@
+UI_EN = {
+	UI_DiscoverEasterEggDito = "<H1> SECRET DISCOVERED <BR> <IMAGECENTRE:EasterEggDito> <LINE>" ..
+            "<H1><IMAGECENTRE:EasterEggText_EN> <LINE>" ..
+	        "<H1>The zombie has dropped Ditoseadio's Unique Backpack!!! <LINE> <H1>",
+	UI_DitoPaper = "Mi escopeta lo peta",
+}

@@ -1,0 +1,12 @@
+Tooltip_EN = {
+	
+	Tooltip_SupportBackpack = "Mountable holder in military backpacks, weight reduction thereof.",
+	Tooltip_MilitiaPouch1 = "A little dump pouch (Urban cammo) for several uses.",
+	Tooltip_MilitiaPouch2 = "A little dump pouch (Jungle cammo) for several uses.",
+	Tooltip_AlicePack = "Military backpack without upgrades.",
+	Tooltip_UpgradedAlicePack1 = "Military backpack Alice with holder added.",
+    Tooltip_UpgradedAlicePack2 = "Military backpack Alice with holder and bag (Urban cammo) added.",
+	Tooltip_UpgradedAlicePack2b = "Military backpack Alice with holder and bag (Jungle cammo) added.",
+	Tooltip_UpgradedAlicePack3 = "Military backpack Alice with bag (Urban cammo) added.",
+	Tooltip_UpgradedAlicePack3b = "Military backpack Alice with bag (Jungle cammo) added.",
+}

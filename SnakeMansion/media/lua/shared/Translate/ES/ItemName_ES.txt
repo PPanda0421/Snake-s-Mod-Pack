@@ -1,0 +1,13 @@
+ItemName_ES = {
+	ItemName_Base.CMBSecretKey1 = "Llave dorada",
+	ItemName_Base.ZMChip1 = "Ficha de ruleta ($1)",
+	ItemName_Base.ZMChip2 = "Ficha de ruleta ($2)",
+	ItemName_Base.ZMChip3 = "Ficha de ruleta ($5)",
+	ItemName_Base.ZMChip4 = "Ficha de ruleta ($10)",
+	ItemName_Base.ZMChip5 = "Ficha de ruleta ($20)",
+	ItemName_Base.ZMChip6 = "Ficha de ruleta ($50)",
+	ItemName_Base.ZMChip7 = "Ficha de ruleta ($100)",
+	ItemName_Base.ZMChip8 = "Ficha de ruleta ($500)",
+	ItemName_Base.ZMChip9 = "Ficha de ruleta ($1000)",
+	ItemName_Base.RouletteStick = "Palo de crupier",
+}

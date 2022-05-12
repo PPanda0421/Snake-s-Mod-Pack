@@ -1,0 +1,8 @@
+ContextMenu_EN = {
+
+	ContextMenu_CheckMagTT = "Read this magazine to get experience points.",
+	ContextMenu_SMLevelMax = "You already have the maximum level for this skill.",
+	ContextMenu_Reading = "Reading",
+	ContextMenu_OpeningPackage = "Opening package",
+	ContextMenu_SMPackageTT = "Keep ",
+}

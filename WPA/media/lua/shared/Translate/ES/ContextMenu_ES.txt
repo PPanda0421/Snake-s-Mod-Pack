@@ -1,0 +1,8 @@
+ContextMenu_ES = {
+
+	ContextMenu_RepairSilencer = "Reparar silenciador",
+	ContextMenu_RepairS = "Reparar",
+	ContextMenu_RepairSilencerTT = "Con este kit puedes reparar un silenciador en un 10% por uso.",
+	ContextMenu_fixing = "Reparando",
+	ContextMenu_cantequipsilencer = "Este accesorio está dañado.",
+}

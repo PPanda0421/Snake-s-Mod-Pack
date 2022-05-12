@@ -1,0 +1,5 @@
+Recipe_EN = {
+
+  Recipe_Craft_Fuel_Tanks = "Craft Fuel Tanks",
+
+}

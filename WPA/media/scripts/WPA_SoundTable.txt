@@ -1,0 +1,129 @@
+module Base
+{
+	sound BBriefcaseClose
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/B_BriefcaseClose.ogg,
+		}
+	}
+
+	sound BBriefcaseOpen
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/B_BriefcaseOpen.ogg,
+		}
+	}
+
+	sound BToolBoxPutIn
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/B_ToolBoxPutIn.ogg,
+		}
+	}
+
+	sound RepairSilencer
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_RepairSilencer.ogg,
+		}
+	}
+
+	sound Scissors_01
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_Scissors_01.ogg,
+		}
+	}
+
+	sound WPA_TLonoff
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_TLOnOff.ogg,
+		}
+	}
+
+	sound WPAHandleWeapons
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_HandleWeapons.ogg,
+		}
+	}
+	
+	sound WPAHbarrelR
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_HbarrelR.ogg,
+		}
+	}
+
+	sound WPAHeavyBarrel1
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_HeavyBarrel1.ogg,
+		}
+	}
+
+	sound WPARSilencedShot
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_RSilencedShot.ogg,
+		}
+	}
+
+	sound WPAsh2
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_sh2.ogg,
+		}
+	}
+
+	sound WPASilencedShotgun
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_SilencedShotgun.ogg,
+		}
+	}
+
+	sound WPASupressedShot
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/WPA_SupressedShot.ogg,
+		}
+	}
+
+	sound AM_M16Supressed2
+	{
+		category = Item,
+		clip
+		{
+			file = media/sound/AM_M16supressed2.ogg,
+		}
+	}
+}
+

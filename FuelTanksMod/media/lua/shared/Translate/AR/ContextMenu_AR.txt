@@ -1,0 +1,17 @@
+ContextMenu_ES = {
+	ContextMenu_CraftFuelTank = "Fabricar tanque de gasolina",
+	ContextMenu_FuelTank = "Tanque de gasolina",
+	ContextMenu_TakeGasTT = "Puedes extraer combustible de este tanque utilizando un bidón de gasolina.",
+	ContextMenu_FillFTankTT = "Puedes verter el contenido de un bidón de gasolina en este tanque de combustible.",
+	ContextMenu_InfoTT = "Puedes interactuar con este tanque de combustible si tienes un bidón de gasolina lleno o vacío.",
+	ContextMenu_FuelTankContains = "Contenido: ",
+	ContextMenu_FuelTankAddFuel = "Agregar combustible al tanque",
+	ContextMenu_TankInfo = "Inspeccionar tanque",
+	ContextMenu_TakeGasFromTank = "Extraer combustible",
+	ContextMenu_TankEmptyTT = "No puedes extraer combustible de este tanque vacío.",
+	ContextMenu_TankFullTT = "Este tanque ha llegado a su límite de capacidad, no puedes almacenar combustible.",
+	ContextMenu_NeedGasWithSpace = "No puedes extraer combustible si no tienes un bidón de combustible con espacio suficiente.",
+	ContextMenu_NeedGasCan = "No puedes almacenar combustible si no tienes un bidón de gasolina con contenido.",
+	ContextMenu_FuelTankMaxCapacity = "Capacidad total: ",
+	ContextMenu_FuelMeter = "Medir combustible",
+}

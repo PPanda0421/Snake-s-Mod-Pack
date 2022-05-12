@@ -1,0 +1,7 @@
+UI_ES = {
+
+    UI_trait_Strongback = "Espalda musculosa",
+	UI_trait_StrongbackDesc = "Puedes cargar mas peso (+25% de carga base)",
+	UI_trait_Metalstrongback = "Espalda de hierro",
+	UI_trait_MetalstrongbackDesc = "Está en tus genes, puedes cargar un 50% más de carga base.",
+}

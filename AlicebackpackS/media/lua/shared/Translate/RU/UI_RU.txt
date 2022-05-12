@@ -1,0 +1,7 @@
+UI_RU = {
+
+    UI_trait_Strongback = "Мускулистая спина",
+	UI_trait_StrongbackDesc = "Может нести больше предметов (+25% базового веса)",
+	UI_trait_Metalstrongback = "Железная спина",
+	UI_trait_MetalstrongbackDesc = "Это в его клетках.<br> Может нести больше предметов (+50% базового веса)",
+}

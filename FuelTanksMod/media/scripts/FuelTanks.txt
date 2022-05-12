@@ -1,0 +1,54 @@
+module FuelTanks
+{
+
+    imports
+    {
+        Base
+
+    }
+    /************** Items **************/
+
+    item FuelTanksMag1
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Fuel Tanks Magazine,
+        Icon	=	MagazineWeldingTanks,
+        TeachedRecipes  =   Craft Fuel Tanks,
+        ReplaceOnUse    =   FuelTanksMag1,
+		StaticModel = FuelTanks.FTMag1,
+		WorldStaticModel = FuelTanks.FuelTanksMag1_Ground,
+    }
+	
+	model FTMag1
+	{
+		mesh = FTMag1,
+	}
+
+    model FuelTanksMag1_Ground
+    {
+        mesh = WorldItems/Magazine,
+        texture = WorldItems/FTMag1,
+        scale = 0.4,
+    }
+
+    item FuelMeter
+    {
+		DisplayCategory = Tool,
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	Fuel meter,
+        Icon	=	FuelMeter,
+		Tooltip = Tooltip_FuelMeter,
+		WorldStaticModel = FuelTanks.FuelMeter_Ground,
+    }
+
+    model FuelMeter_Ground
+    {
+        mesh = WorldItems/FuelMeter,
+        texture = WorldItems/FuelMeter,
+        scale = 1.0,
+    }
+
+}

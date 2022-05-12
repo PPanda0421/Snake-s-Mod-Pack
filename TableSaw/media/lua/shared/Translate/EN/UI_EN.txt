@@ -1,0 +1,4 @@
+UI_EN = {
+    UI_trait_mclogging = "McCoy's former employee",
+	UI_trait_mcloggingDesc = "You have the knowledge of a sawmill.<br>You know how to make the table saw.",
+}

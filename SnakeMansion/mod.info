@@ -1,0 +1,7 @@
+name=Snake's ModPack - Snake Mansion V1.32
+poster=SNKMansion.png
+poster=Mansionlocation.png
+description= Este mod agrega una mansion en muldraugh.
+description= Contiene un tablero de ajedrez y damas gigante.
+require=CustomMapBridge
+id=SnakeMansion

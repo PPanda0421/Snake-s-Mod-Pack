@@ -1,0 +1,5 @@
+name=Snake's ModPack - Factory V-2.4
+id=Factory
+description=Una fabrica envasadora de arena y grava muy util para hallar elementos de construccion, ubicada al este de Muldraugh.
+poster=mfposter.png
+require=CustomMapBridge

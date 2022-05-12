@@ -1,0 +1,47 @@
+module Base
+{
+	
+    item PMRMTire
+    {
+		DisplayCategory = Furniture,
+        Weight	=	10.0,
+        Type	=	Moveable,
+        DisplayName	=	Tire,
+		WorldObjectSprite	= pmrm_01_16,
+        Icon	=	DismountedTire,
+		Tooltip =   Tooltip_NeedToReadTire,
+		ConditionMax = 100,
+	}
+
+    item UnknownTire
+    {
+		DisplayCategory = Furniture,
+        Weight	=	15.0,
+        Type	=	Moveable,
+        DisplayName	=	Unknown Tire,
+		WorldObjectSprite	= pmrm_01_17,
+        Icon	=	UnknownTire,
+		Tooltip =   Tooltip_UnknownTire,
+		ConditionMax = 100,
+	}
+
+    item PMRMTireMachine
+    {
+		DisplayCategory = Furniture,
+        Weight	=	40.0,
+        Type	=	Moveable,
+        DisplayName	=	Tire Machine,
+		WorldObjectSprite	= pmrm_01_0,
+        Icon	=	TireMachine,
+	}
+
+	sound CMBEasterEgg
+	{
+		category = World,
+		clip
+		{
+			file = media/sound/CMBEasterEggDiscovered.ogg,
+			volume = 1.0,
+		}
+	}
+}

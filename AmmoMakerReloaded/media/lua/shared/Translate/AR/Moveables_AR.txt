@@ -1,0 +1,3 @@
+Moveables_ES = {	
+	Crafted_Reloading_Table = "Banco de Recarga",
+}

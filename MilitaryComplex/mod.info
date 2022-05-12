@@ -1,0 +1,6 @@
+name=Snake's ModPack - Military Complex V-3.32
+id=MilitaryComplex
+description=Military Complex - Population 2500 <LINE> <LINE> Un complejo militar.
+poster=mcposter.png
+poster=MClocation.png
+require=CustomMapBridge

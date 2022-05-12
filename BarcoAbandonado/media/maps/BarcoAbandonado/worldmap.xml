@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<world version="1.0">
+ <cell x="40" y="21">
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="101" y="9"/>
+     <point x="121" y="7"/>
+     <point x="141" y="0"/>
+     <point x="300" y="0"/>
+     <point x="300" y="287"/>
+     <point x="282" y="291"/>
+     <point x="154" y="293"/>
+     <point x="148" y="295"/>
+     <point x="145" y="300"/>
+     <point x="28" y="300"/>
+     <point x="35" y="293"/>
+     <point x="34" y="283"/>
+     <point x="30" y="279"/>
+     <point x="18" y="280"/>
+     <point x="18" y="269"/>
+     <point x="20" y="269"/>
+     <point x="20" y="234"/>
+     <point x="28" y="234"/>
+     <point x="28" y="229"/>
+     <point x="5" y="229"/>
+     <point x="5" y="234"/>
+     <point x="13" y="234"/>
+     <point x="13" y="267"/>
+     <point x="13" y="269"/>
+     <point x="15" y="269"/>
+     <point x="15" y="280"/>
+     <point x="3" y="280"/>
+     <point x="1" y="292"/>
+     <point x="0" y="294"/>
+     <point x="0" y="9"/>
+    </coordinates>
+    <coordinates>
+     <point x="145" y="177"/>
+     <point x="247" y="178"/>
+     <point x="279" y="162"/>
+     <point x="273" y="159"/>
+     <point x="247" y="145"/>
+     <point x="145" y="146"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="water" value="river"/>
+   </properties>
+  </feature>
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="145" y="177"/>
+     <point x="145" y="146"/>
+     <point x="247" y="145"/>
+     <point x="279" y="162"/>
+     <point x="247" y="178"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="building" value="Industrial"/>
+   </properties>
+  </feature>
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="16" y="269"/>
+     <point x="20" y="269"/>
+     <point x="20" y="258"/>
+     <point x="13" y="258"/>
+     <point x="13" y="269"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="building" value="RetailAndCommercial"/>
+   </properties>
+  </feature>
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="15" y="280"/>
+     <point x="18" y="280"/>
+     <point x="18" y="269"/>
+     <point x="15" y="269"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="building" value="Hospitality"/>
+   </properties>
+  </feature>
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="13" y="258"/>
+     <point x="20" y="258"/>
+     <point x="20" y="234"/>
+     <point x="28" y="234"/>
+     <point x="28" y="229"/>
+     <point x="5" y="229"/>
+     <point x="5" y="234"/>
+     <point x="13" y="234"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="building" value="hospitality"/>
+   </properties>
+  </feature>
+  <feature>
+   <geometry type="Polygon">
+    <coordinates>
+     <point x="21" y="297"/>
+     <point x="19" y="297"/>
+     <point x="19" y="295"/>
+     <point x="21" y="295"/>
+    </coordinates>
+   </geometry>
+   <properties>
+    <property name="building" value="CommunityServices"/>
+   </properties>
+  </feature>
+ </cell>
+</world>

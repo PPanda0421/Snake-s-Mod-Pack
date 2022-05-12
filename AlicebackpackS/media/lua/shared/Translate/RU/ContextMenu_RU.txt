@@ -1,0 +1,4 @@
+ContextMenu_RU = {
+	ContextMenu_OpenMRE = "Открыть упаковку сухпайка",
+	ContextMenu_OpenMREBox = "Открыть коробку сухпайков",
+}

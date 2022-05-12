@@ -1,0 +1,5 @@
+name=Snake's ModPack - Fuel Tanks Mod V0.5
+id=FuelTanksMod
+description=Este mod agrega la posibilidad de construir tanques de combustible.
+poster=ftposter.png
+require=CustomMapBridge

@@ -1,0 +1,5 @@
+Recipe_EN = {
+
+  Recipe_Make_Upholstery_Sewing_Kit = "Make Upholstery Sewing Kit",
+  Recipe_Get_Needle = "Get Needle",
+}

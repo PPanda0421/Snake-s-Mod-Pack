@@ -1,0 +1,4 @@
+Tooltip_ES = {
+
+	Tooltip_SecretKeyA = "Una llave de oro de Snake <br> que abre una caja fuerte secreta.",
+}

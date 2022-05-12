@@ -1,0 +1,4 @@
+UI_ES = {
+    UI_trait_Plater = "Chapista profesional",
+	UI_trait_Platerdesc = "Tienes el conocimiento para poder fabricar<br>partes vehiculares de metal.",
+}

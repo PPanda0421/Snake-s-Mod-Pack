@@ -1,0 +1,135 @@
+Mochila Alice By Snake Changelog
+Versión 3.10
+*Actualizados sonidos del cuchillo militar y de la lanza con cuchillo militar.
+
+Versión 3.09
+*Nerfeo de spawn de mochilas alices, solo aparecerán en la base militar y en mapas anotados.
+
+Versión 3.08
+*Posible reparación del rasgo Espalda musculosa, Espalda de Hierro para juego en pantalla dividida/coop.
+
+Versión 3.07
+*Agregado modelo nuevo para la mochila alice (Para separar el modelo base del mod)
+*Agregada posibilidad de que los zombies militares puedan spawnear con mochila alice del mod.
+
+Versión 3.06
+*Agregado modelo 3D de paquete de MRE. (Gracias @Truji)
+*Agregado tag para cuchillo de combate militar (Cut Plant)
+
+Versión 3.05 (Build 41.39)
+*Agregados valores visuales de scripts(Mano izquierda y mano derecha) para mochilas alices.
+
+Versión 3.04 (Build 41.24)
+*Cambio en las cajas de MRE (Ahora son contenedores - Solucionado el tema del peso no concordante con el contenido)
+
+Versión 3.03 (Build 41.23b)
+*Agregada tabla para que spawneen cuchillos militares clavados en zombies.
+
+Versión 3.02 (Build 41.20)
+*Agregado modelo custom de la cantimplora militar.
+*Cambio de requerimiento- Ahora el mod requiere Snake Utils Pack y no CustomTooltips Mod.
+
+Versión 3.01 (Build 41.16)
+*Agregadas propiedades de attachments para las mochilas alices.
+*Agregadas propiedades para el cuchiilo de combate militar (Ahora se pueden colocar en los cinturones.)
+
+Versión 3.0
+*Soporte para build de animaciones.
+*Agregados modelos de las mochilas.
+*Agregado modelo para el cuchillo militar.
+*Agregada posibilidad de spawn de indumentaria militar dentro de mochilas alices.
+
+Versión 2.7
+*Agregadas tablas de sonidos custom a scripts.
+
+Versión 2.6
+*Cambio de tablas de sonido.
+
+Versión 2.5
+Cambios en los ragos de Espalda Musculosa y Espalda de hierro.
+*Se ha reparado y modificado el código:
+Espalda musculosa: Otorga un 25% mas de capacidad base del personaje (Con esto pasamos de cargar 12 total a 15 total)
+	En nivel 10 de fuerza obtendremos un total de 25 de carga (Sin contar beneficios de muy bien alimentado)
+Espalda de hierro: Otorga un 50% mas de capacidad base del personaje (Con esto pasamos de cargar 12 total a 18 total)
+	En nivel 10 de fuerza obtendremos un total de 30 de carga (Sin contar beneficios de muy bien alimentado)
+
+Versión 2.4
+*Agregada receta para reparar cuchillo de combate militar.
+
+Versión 2.3
+*Agregado spawn de loot en vehiculos.
+
+Versión 2.2
+*Agregada conversión para la Build de Vehiculos (IWBUMS 41.2)
+*Agregado cuchillo militar del mod Extra Knifes(Ahora discontinuado)
+*Cambios importantes en tablas de loot.
+
+Versión 2.1
+*Agregada compatibilidad para el mapa Military Complex.
+
+Versión 2.0
+*Limpieza de codigo.
+*Cambio de sistema al abrir las cajas MRE (Ahora se rige por opciones de sanboxvars y rasgos de fortuna.
+*Subida levemente la chance de que en los almacenes aparezcan mochilas alice.
+*Nuevo sistema de spawn de objetos dentro de las mochilas alice si su spawn se realiza en StorageUnit (Almacenes).
+
+Versión 2.0
+*Agregado soporte para Build 41.
+*Agregados modelos de mochilas militares.
+*Agregado modelo del cuchillo de combate militar.
+
+Versión 1.9
+*Limpieza de codigo.
+*Randomización para cajas MRE y Bolsas MRE.
+*Agregadas cantimploras militares.
+
+Versión 1.8
+*Nuevo: Sistema automático de agregado de rasgos y recetas para aquellos que quieran cargar una partida ya empezada sin haber habilitado el mod anterioremente.
+
+Versión 1.7
+*Server Update: Ahora el mod requiere de Custom Tooltips para el correcto funcionamiento al crearse un personaje nuevo desde la opcion "nuevo personaje" in-game.
+
+Versión 1.6
+*Critico: Cambios en los codigos para detectar el mapa de Lobii City.
+
+Versión 1.5
+*Agregada tabla de loot para el mapa de Lobii City.
+*Reordenamiento de archivo de codigos de recetas.
+
+Versión 1.4
+*Reparado un bug en todos los TimedActions.
+
+Versión 1.3
+*Limpieza de código.
+*Agregada la funcion de los MRE los cuales al abrirlos otorguen alimentos cocinados.
+
+Versión 1.2
+*Agregados rasgos Espalda Musculosa y Espalda de Hierro.
+*Rasgos unicos para ciertas profesiones.
+
+Versión 1.1
+*Rebalanceados los MRE (beta)
+*Reparados tooltips de acuerdo a esta versión.
+*Modificada la mecánica para abrir cajas y paquetes de MRE.
+
+Versión 1.0
+*Solucionado problema al querer upgradear mochila alice con items dentro o si está equipada en el usuario, ahora se invalida la receta.
+*La unica manera de poder upgradear las mochilas alice es: Teniendo la mochila o Bolsa militar vacía y no teniendola equipada.
+
+*Agregados paquetes y cajas MRE (Meal, Ready to eat) - Fase de prueba, mas updates vendrán en un futuro.
+
+Versión 0.4
+*Reparada mochila alice con bolsa urbana que al quitar la misma no devolvia la bolsa.
+
+Versión 0.3
+*Reparada traducción de tooltip en dos lineas.
+
+Versión 0.2
+*Agregado soporte para traducciones (Por el momento las traducciones existentes son ES(AR), ES, EN)
+
+Versión 0.1
+*Agregadas las mochilas alice.
+*Agregadas las bolsas militares.
+*Agregado los soportes para mochilas.
+*Agregadas las recetas para añadir o quitar las partes de las mismas.
+*Agregadas texturas de los items.

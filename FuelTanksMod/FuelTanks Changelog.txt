@@ -1,0 +1,9 @@
+Fuel Tanks Changelog V0.3 (Build 41.51)
+Agregada varilla de medición de combustible.
+Al hacer click derecho en un surtidor de gasolina teniendo en el inventario la varilla de medición se desplegará la opcion de medir combustible restante. Al colocar el cursor encima de esa opción nos brindará la información respectiva.
+
+Fuel Tanks Changelog V0.2
+Agregadas animaciones para Build 41.
+
+Fuel Tanks Changelog V0.1
+Release del mod.

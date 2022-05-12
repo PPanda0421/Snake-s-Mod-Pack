@@ -1,0 +1,8 @@
+ContextMenu_RU = {
+
+	ContextMenu_RepairSilencer = "ѕочинить глушитель",
+	ContextMenu_RepairS = "ѕочинить",
+	ContextMenu_RepairSilencerTT = "Ётим ремонтным набором можно починить глушитель на 10%.",
+	ContextMenu_fixing = "ѕочинка",
+	ContextMenu_cantequipsilencer = "Ёта часть оружи€ полностью повреждена.",
+}

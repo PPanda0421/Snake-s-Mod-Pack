@@ -1,0 +1,6 @@
+Recipe_ES = {
+
+  Recipe_Make_Upholstery_Sewing_Kit = "Hacer kit de costura de tapicería",
+  Recipe_Get_Needle = "Recuperar aguja",
+
+}

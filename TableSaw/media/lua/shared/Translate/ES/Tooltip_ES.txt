@@ -1,0 +1,13 @@
+Tooltip_ES = {
+	
+	Tooltip_craft_TableSawDesc = "Permite aserrar troncos un 50% mas rapido y obtener mas cantidad de tablones de madera.",
+	Tooltip_SawEngine = "Este motor viejo aún parece funcional.",
+	Tooltip_Sawblade = "Una hoja de aserrar circular, muy filosa perfecta para un aserradero.",
+	Tooltip_Craft Table Saw = "Fabricar sierra de banco",
+	Tooltip_needrecipe = "Receta necesaria: ",
+	Tooltip_StickStacks = "Contiene 24 palos de madedra",	
+	Tooltip_item_RainFromGround2 = "Se puede utilizar para recoger el agua de la lluvia cuando se coloca en el suelo en exteriores. <br> El agua que pueda acumular este contenedor no podrá ser potabilizada si no se limpia correctamente.",
+	Tooltip_ItemDye = "Puede utilizarse para hacer pigmentos.",
+	Tooltip_ItemPaint = "Puede utilizarse para hacer pinturas.",
+	Tooltip_MetalSpikes = "Aumenta el daño del arma.",
+}

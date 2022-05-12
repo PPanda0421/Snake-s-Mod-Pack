@@ -1,0 +1,6 @@
+UI_EN = {
+
+    IGUI_CraftCategory_Ammo = "Reloading",
+	IGUI_perks_AMReloading = "Artillery",
+	IGUI_ItemCat_Reloading = "Reloading",
+}

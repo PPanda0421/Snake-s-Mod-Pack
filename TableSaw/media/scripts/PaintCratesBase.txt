@@ -1,0 +1,21 @@
+module Base
+{
+    item WaterPaintbucket
+    {
+		DisplayCategory = Water,
+        Type = Drainable,
+        DisplayName = Paint Bucket With Water,
+        Icon = PaintbucketFull2,
+        Weight = 4.0,
+        ReplaceOnDeplete = PaintbucketEmpty,
+        UseWhileEquipped = FALSE,
+        UseDelta = 0.04,
+        ReplaceOnUseOn = WaterSource-WaterPaintbucket,
+        IsWaterSource = TRUE,
+        CanStoreWater = TRUE,
+        RainFactor = 1,
+        EatType = Bucket,
+		Tooltip = Tooltip_item_RainFromGround,
+		WorldStaticModel = PaintTinEmpty_Ground,
+    }
+}

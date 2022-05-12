@@ -1,0 +1,4 @@
+UI_RU = {
+    UI_trait_mclogging = "Бывший сотрудник «McCoy's»",
+	UI_trait_mcloggingDesc = "Имеет знания о лесопилках.<br>Знает, как построить настольную пилу.",
+}

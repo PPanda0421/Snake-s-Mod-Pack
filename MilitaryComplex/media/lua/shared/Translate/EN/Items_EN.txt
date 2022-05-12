@@ -1,0 +1,3 @@
+Items_ES = {
+	DisplayNameMilitary_Complex_Map = "Military Complex Map",
+}

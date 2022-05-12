@@ -1,0 +1,11 @@
+Recipe_EN = {
+    Recipe_Agregar_soporte_a_mochila_Alice = "Add frame to Alice backpack",
+	Recipe_Agregar_bolsa_de_almacenaje_a_mochila_Alice = "Add dump pouch to Alice backpack",
+	Recipe_Quitar_bolsa_de_almacenaje_a_mochila_Alice = "Remove dump pouch from Alice backpack",
+	Recipe_Quitar_soporte_a_mochila_Alice = "Remove frame from Alice backpack",
+	Recipe_Put_12_MRE's_in_a_box = "Put 12 MRE's in a box",
+	Recipe_Open_MRE_box = "Open MRE box",
+	Recipe_Create_Spear_MK = "Create Spear",
+	Recipe_Attach_Military_Knife_to_Spear = "Attach Military Knife To Spear",
+	Recipe_Reclaim_Military_Knife_from_Spear = "Reclaim Military Knife from Spear",
+}

@@ -1,0 +1,7 @@
+ContextMenu_RU = {
+
+	ContextMenu_CheckSign = "Осмотреть объект",
+	ContextMenu_CheckSignTT = "Осмотреть объект, чтобы найти важные данные.",
+	ContextMenu_OpenSafe = "Открыть сейф",
+	ContextMenu_OpenSafeTT = "Используйте золотой ключ, чтобы открыть секретный сейф Snake.",
+}

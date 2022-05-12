@@ -1,0 +1,3 @@
+Tooltip_ES = {
+	Tooltip_SecretKeyA = "Una llave de oro que abre una caja fuerte secreta.",
+}

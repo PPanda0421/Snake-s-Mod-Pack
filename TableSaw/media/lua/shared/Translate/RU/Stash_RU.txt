@@ -1,0 +1,5 @@
+Stash_RU = {
+    Stash_TableSawMap1_Text1 = "Сексуально!!!!",
+	Stash_TableSawMap2_Text2 = "Эти тюремные свиньи из сторожевой башни забрали мой журнал!",
+	Stash_TableSawMap2_Text3 = "Я верну его, даже если это будет стоить мне жизни.!",
+}

@@ -1,0 +1,6 @@
+UI_ES = {
+	UI_DiscoverEasterEggDito = "<H1> SECRETO DESCUBIERTO <BR> <IMAGECENTRE:EasterEggDito> <LINE>" ..
+            "<H1><IMAGECENTRE:EasterEggText> <LINE>" ..
+	        "<H1>El zombie ha dejado caer la Mochila Unica Ditoseadio!!! <LINE> <H1>",
+	UI_DitoPaper = "Mi escopeta lo peta",
+}

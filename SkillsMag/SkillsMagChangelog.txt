@@ -1,0 +1,33 @@
+SkillsMag Mod Changelog
+Versión 2.02
+*Actualizada tabla de loot. Compatibilidad con Build 41.51.
+
+Versión 2.01
+*Actualizado tiempos de lectura de revistas segun el seteo del juego base (Build 41.40).
+
+Versión 2.0
+*Actualizado para build de animaciones.
+*Agregadas animaciones de lectura de las revistas.
+*Agregado requerimiento de Custom Tooltips.
+*Agregadas revistas nuevas para esta versión (Ahora las revistas de combate afilado y combate contundente pueden dar xp de armas largas o cortas al azar).
+*Eliminadas revistas obsoletas para esta versión.
+
+Versión 1.3
+*Cambio en el display de categoría de estas revistas, de normal pasan a mostrarse como literatura.
+*Agregadas todas las revistas como parte del sistema de combustible/inicio de fuego en hogueras.
+
+Versión 1.2
+*Agregadas tooltips a todas las revistas del mod.
+
+Versión 1.1
+*Reparado un error de distribución.
+
+Versión 1.0
+*Agregada revista para mecánica.
+*Agregado loot para vehiculos.
+
+Version 0.2
+*Critical Fix en distribuciones para las ultimas versiones de pz!!
+
+Version 0.1
+*First release!

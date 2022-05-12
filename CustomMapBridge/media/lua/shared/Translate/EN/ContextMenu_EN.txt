@@ -1,0 +1,7 @@
+ContextMenu_EN = {
+
+	ContextMenu_CheckSign = "Check Object",
+	ContextMenu_CheckSignTT = "Inspect objects to find important data.",
+	ContextMenu_OpenSafe = "Abrir caja fuerte",
+	ContextMenu_OpenSafeTT = "Utiliza la llave dorada para abrir la caja fuerte secreta de Snake.",
+}

@@ -1,0 +1,391 @@
+module WPA
+{
+	imports
+	{
+		Base
+	}
+
+	model ShotgunSilencer5
+	{
+		mesh = Weapons/Firearm/Shotgun_Silencer,
+	}
+
+	model HandgunSilencer
+	{
+		mesh = Weapons/Firearm/Handgun_Silencer,
+	}
+	model HandgunSilencer2
+	{
+		mesh = Weapons/Firearm/Handgun_Silencer2,
+	}
+	model Handgun02Silencer
+	{
+		mesh = Weapons/Firearm/Handgun02_Silencer,
+		texture = WorldItems/Handgun03_Silencer_Ground,
+	}
+	model Handgun02Silencer2
+	{
+		mesh = Weapons/Firearm/Handgun02_Silencer2,
+		texture = WorldItems/Handgun03_Silencer2_Ground,
+	}
+	model Handgun03Silencer
+	{
+		mesh = Weapons/Firearm/Handgun03_Silencer,
+		texture = WorldItems/Handgun03_Silencer_Ground,
+	}
+	model Handgun03Silencer2
+	{
+		mesh = Weapons/Firearm/Handgun03_Silencer2,
+		texture = WorldItems/Handgun03_Silencer2_Ground,
+	}
+	model Handgun03Silencer_Ground
+	{
+		mesh = WorldItems/Handgun03_Silencer_Ground,
+	}
+	model Handgun03Silencer2_Ground
+	{
+		mesh = WorldItems/Handgun03_Silencer_Ground,
+		texture = WorldItems/Handgun03_Silencer2_Ground,
+	}
+	model Handgun03Supressor_Ground
+	{
+		mesh = WorldItems/Handgun03_Silencer_Ground,
+	}
+	model HuntingRifleSilencer
+	{
+		mesh = Weapons/Firearm/HuntingRifle_Silencer,
+	}
+	model HuntingRifleSilencer2
+	{
+		mesh = Weapons/Firearm/HuntingRifle_Silencer2,
+	}
+	model VarmintRifleSilencer
+	{
+		mesh = Weapons/Firearm/VarmintRifle_Silencer,
+	}
+	model VarmintRifleSilencer2
+	{
+		mesh = Weapons/Firearm/VarmintRifle_Silencer2,
+	}
+	model AssaultRifleSilencer
+	{
+		mesh = Weapons/Firearm/AssaultRifleSilencer,
+		texture = WorldItems/AssaultRifles/AssaultRifle_Silencer,
+	}
+	model Handgun_Light
+	{
+		mesh = Weapons/Firearm/Handgun_Light,
+	}
+	model Handgun_Light2
+	{
+		mesh = Weapons/Firearm/Handgun_Light2,
+	}
+	model Handgun02_Light
+	{
+		mesh = Weapons/Firearm/Handgun02_Light,
+	}
+	model Handgun02_Light2
+	{
+		mesh = Weapons/Firearm/Handgun02_Light2,
+	}
+	model Handgun02_RedDot
+	{
+		mesh = Weapons/Firearm/Handgun02_RedDot,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model Handgun02_RedDot2
+	{
+		mesh = Weapons/Firearm/Handgun02_RedDot2,
+		texture = WorldItems/Handgun03_RedDot2_Ground,
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model Handgun02_RedDot3
+	{
+		mesh = Weapons/Firearm/Handgun02_RedDot3,
+		texture = WorldItems/Handgun03_RedDot3_Ground,
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model Handgun03_Light
+	{
+		mesh = Weapons/Firearm/Handgun03_Light,
+	}
+	model Handgun03_Light2
+	{
+		mesh = Weapons/Firearm/Handgun03_Light2,
+	}
+	model Handgun03_Light2_Ground
+	{
+		mesh = WorldItems/Handgun03_Light2_Ground,
+		texture = WorldItems/Handgun03_Light2_Ground,
+	}
+	model Handgun03_RedDot
+	{
+		mesh = Weapons/Firearm/Handgun03_RedDot,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model Handgun03_RedDot2
+	{
+		mesh = Weapons/Firearm/Handgun03_RedDot2,
+		texture = WorldItems/Handgun03_RedDot2_Ground,
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model Handgun03_RedDot2_Ground
+	{
+		mesh = WorldItems/Handgun03_RedDot2_Ground,
+		texture = WorldItems/Handgun03_RedDot2_Ground,
+	}
+	model Handgun03_RedDot3
+	{
+		mesh = Weapons/Firearm/Handgun03_RedDot3,
+		texture = WorldItems/Handgun03_RedDot3_Ground,
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	model Handgun03_RedDot3_Ground
+	{
+		mesh = WorldItems/Handgun03_RedDot3_Ground,
+	}
+
+	model Shotgun_SRTPS
+	{
+		mesh = Weapons/Firearm/Shotgun_SRTPS,
+
+	}
+
+	model Shotgun_RecoilPad2
+	{
+		mesh = Weapons/Firearm/Shotgun_RecoilPad2,
+
+	}
+
+	model HuntingRifle_RecoilPad3
+	{
+		mesh = Weapons/Firearm/HuntingRifle_RecoilPad3,
+
+	}
+
+	model VarmintRifle_RecoilPad3
+	{
+		mesh = Weapons/Firearm/VarmintRifle_RecoilPad3,
+
+	}
+
+	model Shotgun_ShellHolderStock
+	{
+		mesh = Weapons/Firearm/Shotgun_ShellHolderStock,
+
+	}
+
+	model Shotgun_PolymerStock
+	{
+		mesh = Weapons/Firearm/Shotgun_PolymerStock,
+	}
+
+	model Shotgun_TacticalLaserLight2
+	{
+		mesh = Weapons/Firearm/Shotgun_TacticalLaserLight2,
+	}
+
+	model Shotgun_TacticalLight2
+	{
+		mesh = Weapons/Firearm/Shotgun_TacticalLight2,
+	}
+
+	model Shotgun_Laser
+	{
+		mesh = Weapons/Firearm/Shotgun_Laser,
+	}
+
+	model Shotgun_Compensator
+	{
+		mesh = Weapons/Firearm/Shotgun_Compensator,
+	}
+
+	model Handgun02_RecoilCompensator
+	{
+		mesh = Weapons/Firearm/Handgun02_RecoilCompensator,
+	}
+
+	model Handgun03_RecoilCompensator
+	{
+		mesh = Weapons/Firearm/Handgun03_RecoilCompensator,
+		texture = WorldItems/Handgun03_RecoilCompensator,
+	}
+	
+	model Handgun03_RecoilCompensator_Ground
+	{
+		mesh = WorldItems/Handgun03_RecoilCompensator_Ground,
+		texture = WorldItems/Handgun03_RecoilCompensator,
+	}
+
+	model AssaultRifle_Reflex
+	{
+		mesh = Weapons/Firearm/AssaultRifle_Reflex,
+		texture = WorldItems/AssaultRifles/AssaultRifle_Reflex,
+	}
+	
+	model AssaultRifle_x4Scope
+	{
+		mesh = Weapons/Firearm/AssaultRifle_x4Scope,
+		texture = WorldItems/AssaultRifles/AssaultRifle_x4Scope,
+	}
+
+	model AssaultRifle_LaserLight
+	{
+		mesh = Weapons/Firearm/AssaultRifle_LaserLight,
+		texture = WorldItems/AssaultRifles/AssaultRifle_ImpLight,
+	}
+
+	model HuntingRifle_ScopeArmy
+	{
+		mesh = Weapons/Firearm/HuntingRifle_ScopeArmy,
+	}
+
+	model VarmintRifle_ScopeArmy
+	{
+		mesh = Weapons/Firearm/VarmintRifle_ScopeArmy,
+	}
+
+	model HVTacticalScope
+	{
+		mesh = Weapons/Firearm/HVTacticalScope,
+	}
+	model AssaultRifle_ImpLight
+	{
+		mesh = Weapons/Firearm/AssaultRifle_ImpLight,
+		texture = WorldItems/AssaultRifles/AssaultRifle_ImpLight,
+	}
+
+	model AssaultRifle2Silencer
+	{
+		mesh = Weapons/Firearm/AssaultRifle2Silencer,
+		texture = WorldItems/AssaultRifles/AssaultRifle_Silencer,
+	}
+
+	model AssaultRifle2_Reflex
+	{
+		mesh = Weapons/Firearm/AssaultRifle2_Reflex,
+		texture = WorldItems/AssaultRifles/AssaultRifle_Reflex,
+	}
+	
+	model AssaultRifle2_x4Scope
+	{
+		mesh = Weapons/Firearm/AssaultRifle2_x4Scope,
+		texture = WorldItems/AssaultRifles/AssaultRifle_x4Scope,
+	}
+
+	model AssaultRifle2_LaserLight
+	{
+		mesh = Weapons/Firearm/AssaultRifle2_LaserLight,
+		texture = WorldItems/AssaultRifles/AssaultRifle_ImpLight,
+	}
+
+	model AssaultRifle2_ImpLight
+	{
+		mesh = Weapons/Firearm/AssaultRifle2_ImpLight,
+		texture = WorldItems/AssaultRifles/AssaultRifle_ImpLight,
+	}
+
+	model AssaultRifle2_ImpLight_Ground
+	{
+		mesh = WorldItems/AssaultRifles/AssaultRifle2_ImpLight_Ground,
+		texture = WorldItems/AssaultRifles/AssaultRifle_ImpLight,
+	}
+
+	model Handgun03DE_RedDot2
+	{
+		mesh = Weapons/Firearm/Handgun03_RedDot2DE,
+		texture = WorldItems/Handgun03_RedDot2DE,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+
+	model Handgun03DE_RedDot3
+	{
+		mesh = Weapons/Firearm/Handgun03_RedDot3DE,
+		texture = WorldItems/Handgun03_RedDot3DE,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.1700 -0.0300,
+			rotate = -90.0000 0.0000 0.0000,
+		}
+	}
+	
+	model PHeavyBarrel_Ground
+	{
+		mesh = WorldItems/PHeavyBarrel_Ground,
+		texture = WorldItems/MultiaccesoriesA,
+	}
+
+	model Grip1_Ground
+	{
+		mesh = WorldItems/Grip1_Ground,
+		texture = WorldItems/MultiaccesoriesA,
+	}
+
+	model Grip2_Ground
+	{
+		mesh = WorldItems/Grip2_Ground,
+		texture = WorldItems/MultiaccesoriesA,
+	}
+
+	model AssaultRifleSilencer_Ground
+	{
+		mesh = WorldItems/AssaultRifles/AssaultRifle_Silencer_Ground,
+		texture = WorldItems/AssaultRifles/AssaultRifle_Silencer,
+	}
+
+	model AssaultRifle_Reflex_Ground
+	{
+		mesh = WorldItems/AssaultRifles/AssaultRifle_Reflex_Ground,
+		texture = WorldItems/AssaultRifles/AssaultRifle_Reflex,
+	}
+
+	model AssaultRifle_x4Scope_Ground
+	{
+		mesh = WorldItems/AssaultRifles/AssaultRifle_x4Scope_Ground,
+		texture = WorldItems/AssaultRifles/AssaultRifle_x4Scope,
+	}
+
+	model AssaultRifle_LaserLight_Ground
+	{
+		mesh = WorldItems/AssaultRifles/AssaultRifle_LaserLight_Ground,
+		texture = WorldItems/AssaultRifles/AssaultRifle_ImpLight,
+	}
+
+	model Handgun_Light_Ground
+	{
+		mesh = WorldItems/Handgun_Light_Ground,
+		texture = WorldItems/Handgun03_Light_Ground,
+	}
+}

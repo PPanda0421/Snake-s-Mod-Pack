@@ -1,0 +1,15 @@
+Tooltip_ES = {
+	
+	Tooltip_SupportBackpack = "Soporte montable en mochilas militares, reducción de peso de las mismas.",
+	Tooltip_MilitiaPouch1 = "Pequeña bolsa militar (Urbana) para usos varios.",
+	Tooltip_MilitiaPouch2 = "Pequeña bolsa militar (Jungla) para usos varios.",
+	Tooltip_AlicePack = "Mochila militar sin upgrades.<br>Puedes colocarle un soporte y una bolsa militar.<br>Tanto la mochila como la bolsa militar<br>deben estar vacías y no deben estar equipadas<br>para poder realizar la mejora.",
+	Tooltip_UpgradedAlicePack1 = "Mochila militar Alice con soporte agregado.",
+    Tooltip_UpgradedAlicePack2 = "Mochila militar Alice con soporte y bolsa (Urbana) agregada.",
+	Tooltip_UpgradedAlicePack2b = "Mochila militar Alice con soporte y bolsa (Jungla) agregada.",
+	Tooltip_UpgradedAlicePack3 = "Mochila militar Alice con bolsa (Urbana) agregada.",
+	Tooltip_UpgradedAlicePack3b = "Mochila militar Alice con bolsa (Jungla) agregada.",
+	Tooltip_MRE = "Bolsa militar que puede contener diversos objetos para un soldado.",
+	Tooltip_MREBox = "Puede contener varias bolsas militares MRE",
+	Tooltip_MREBox2 = "Contiene 12 bolsas militares MRE",
+}

@@ -1,0 +1,804 @@
+module ColorDyes
+{
+
+    imports
+    {
+        Base
+
+    }
+    /************** Items **************/
+
+    item DyesMag
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Dyes Magazine,
+        Icon	=	MagazineDyes,
+        TeachedRecipes  =   Dyes,
+        ReplaceOnUse    =   DyesMag,
+        StaticModel = DyesMag,
+		WorldStaticModel = DyesMag_Ground,
+    }
+
+    item PlantRed
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Red Rose,
+        Icon	=	PlantRed,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantRed,
+    }
+
+    item PlantYellow
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Dandelion,
+        Icon	=	PlantYellow,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantYellow,
+    }
+
+    item PlantBlue
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Blue Orchid,
+        Icon	=	PlantBlue,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantBlue,
+    }
+
+    item PlantWhite
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Lily of the valley,
+        Icon	=	PlantWhite,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantWhite,
+    }
+
+    item PlantBlack
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Black Rose,
+        Icon	=	PlantBlack,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantBlack,
+    }
+
+    item PlantOrange
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Orange Tulip,
+        Icon	=	PlantOrange,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantOrange,
+    }
+
+    item PlantMagenta
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Juniper Root,
+        Icon	=	PlantMagenta,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantMagenta,
+    }
+
+    item PlantGreen
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Moss,
+        Icon	=	PlantGreen,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantGreen,
+    }
+
+    item PlantBrown
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Madder Roots,
+        Icon	=	PlantBrown,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantBrown,
+    }
+
+    item PlantCyan
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Commelina Flower,
+        Icon	=	PlantCyan,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantCyan,
+    }
+
+    item PlantTurquoise
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Indigofera Plant,
+        Icon	=	PlantTurquoise,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantTurquoise,
+    }
+
+    item PlantPink
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Pink Tulip,
+        Icon	=	PlantPink,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantPink,
+    }
+
+    item PlantLightBrown
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Tagal Flower,
+        Icon	=	PlantLightBrown,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantLightBrown,
+    }
+
+    item PlantLightBlue
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	CornFlower,
+        Icon	=	PlantLightBlue,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantLightBlue,
+    }
+
+    item PlantGrey
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	Azure Bluet,
+        Icon	=	PlantGrey,
+		Tooltip = Tooltip_ItemDye,
+		WorldStaticModel = PlantGrey,
+    }
+
+    /************** Dyes **************/
+
+    item DyeBlack
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Black,
+        Icon	=	DyeBlack,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeBlack,
+    }
+
+    item DyeWhite
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye White,
+        Icon	=	DyeWhite,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeWhite,
+    }
+
+    item DyeBlue
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Blue,
+        Icon	=	DyeBlue,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeBlue,
+    }
+
+    item DyeYellow
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Yellow,
+        Icon	=	DyeYellow,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeYellow,
+    }
+
+    item DyeRed
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Red,
+        Icon	=	DyeRed,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeRed,
+    }
+
+    item DyeOrange
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Orange,
+        Icon	=	DyeOrange,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeOrange,
+    }
+
+    item DyeGreen
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Green,
+        Icon	=	DyeGreen,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeGreen,
+    }
+
+    item DyePurple
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Purple,
+        Icon	=	DyePurple,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyePurple,
+    }
+
+    item DyePink
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Pink,
+        Icon	=	DyePink,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyePink,
+    }
+
+    item DyeCyan
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Cyan,
+        Icon	=	DyeCyan,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeCyan,
+    }
+
+    item DyeBrown
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Brown,
+        Icon	=	DyeBrown,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeBrown,
+    }
+
+    item DyeLightBrown
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Light Brown,
+        Icon	=	DyeLightBrown,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeLightBrown,
+    }
+
+    item DyeLightBlue
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Light Blue,
+        Icon	=	DyeLightBlue,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeLightBlue,
+    }
+
+    item DyeTurquoise
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Turquoise,
+        Icon	=	DyeTurquoise,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeTurquoise,
+    }
+
+    item DyeGrey
+    {
+		DisplayCategory = Dye,
+        Weight	=	0.02,
+        Type	=	Normal,
+        DisplayName	=	Dye Grey,
+        Icon	=	DyeGrey,
+		Tooltip = Tooltip_ItemPaint,
+		WorldStaticModel = DyeGrey,
+    }
+
+    /************** Recipes **************/
+	
+	/************** Dyes **************/
+
+    recipe Make Dye Black
+    {
+        keep MortarPestle,
+        PlantBlack=5,
+
+        Result:DyeBlack,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye White
+    {
+        keep MortarPestle,
+        PlantWhite=5,
+
+        Result:DyeWhite,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Red
+    {
+        keep MortarPestle,
+        PlantRed=5,
+
+        Result:DyeRed,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Blue
+    {
+        keep MortarPestle,
+        PlantBlue=5,
+
+        Result:DyeBlue,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Yellow
+    {
+        keep MortarPestle,
+        PlantYellow=5,
+
+        Result:DyeYellow,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Grey
+    {
+        keep MortarPestle,
+		PlantGrey=5,
+
+        Result:DyeGrey,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Grey(Mix)
+    {
+        keep MortarPestle,
+		DyeBlack,
+        DyeWhite,
+
+        Result:DyeGrey=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Orange
+    {
+        keep MortarPestle,
+		PlantOrange=5,
+
+        Result:DyeOrange,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Orange(Mix)
+    {
+        keep MortarPestle,
+		DyeRed,
+        DyeYellow,
+
+        Result:DyeOrange=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Pink
+    {
+        keep MortarPestle,
+		PlantPink=5,
+
+        Result:DyePink,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Pink(Mix)
+    {
+        keep MortarPestle,
+		DyeRed,
+        DyeWhite,
+
+        Result:DyePink=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Green
+    {
+        keep MortarPestle,
+		PlantGreen=5,
+
+        Result:DyeGreen,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Green(Mix)
+    {
+        keep MortarPestle,
+		DyeBlue,
+        DyeYellow,
+
+        Result:DyeGreen=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Purple
+    {
+        keep MortarPestle,
+		PlantMagenta=5,
+
+        Result:DyePurple,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Purple(Mix)
+    {
+        keep MortarPestle,
+		DyeBlue,
+        DyeRed,
+
+        Result:DyePurple=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Light Blue
+    {
+        keep MortarPestle,
+		PlantLightBlue=5,
+
+        Result:DyeLightBlue,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Light Blue(Mix)
+    {
+        keep MortarPestle,
+		DyeBlue,
+        DyeWhite,
+
+        Result:DyeLightBlue=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Cyan
+    {
+        keep MortarPestle,
+		PlantCyan=5,
+
+        Result:DyeCyan,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Cyan(Mix)
+    {
+        keep MortarPestle,
+		DyeBlue,
+        DyeGreen,
+
+        Result:DyeCyan=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Turquoise
+    {
+        keep MortarPestle,
+		PlantTurquoise=5,
+
+        Result:DyeTurquoise,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Turquoise(Mix)
+    {
+        keep MortarPestle,
+		DyeBlue,
+		DyeGreen,
+        DyeYellow,
+
+        Result:DyeTurquoise=3,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Brown
+    {
+        keep MortarPestle,
+		PlantBrown=5,
+
+        Result:DyeBrown,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Brown(Mix)
+    {
+        keep MortarPestle,
+		DyeBlue,
+        DyeYellow,
+		DyeRed,
+
+        Result:DyeBrown=3,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Light Brown
+    {
+        keep MortarPestle,
+		PlantLightBrown=5,
+
+        Result:DyeLightBrown,
+        Time:60.0,
+        Category:Dyes,
+    }
+
+    recipe Make Dye Light Brown(Mix)
+    {
+        keep MortarPestle,
+		DyeBrown,
+		DyeWhite,
+
+        Result:DyeLightBrown=2,
+        Time:60.0,
+        Category:Dyes,
+    }
+	
+	/************** Paint **************/
+
+    recipe Make Black Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeBlack=4,
+		Water=5,
+
+        Result:PaintBlack,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make White Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeWhite=4,
+		Water=5,
+
+        Result:PaintWhite,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Red Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeRed=4,
+		Water=5,
+
+        Result:PaintRed,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Yellow Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeYellow=4,
+		Water=5,
+
+        Result:PaintYellow,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Blue Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeBlue=4,
+		Water=5,
+
+        Result:PaintBlue,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Green Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeGreen=4,
+		Water=5,
+
+        Result:PaintGreen,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Orange Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeOrange=4,
+		Water=5,
+
+        Result:PaintOrange,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Purple Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyePurple=4,
+		Water=5,
+
+        Result:PaintPurple,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Pink Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyePink=4,
+		Water=5,
+
+        Result:PaintPink,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Brown Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeBrown=4,
+		Water=5,
+
+        Result:PaintBrown,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Cyan Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeCyan=4,
+		Water=5,
+
+        Result:PaintCyan,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Light Blue Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeLightBlue=4,
+		Water=5,
+
+        Result:PaintLightBlue,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Light Brown Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeLightBrown=4,
+		Water=5,
+
+        Result:PaintLightBrown,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Turquoise Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeTurquoise=4,
+		Water=5,
+
+        Result:PaintTurquoise,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+    recipe Make Grey Paint
+    {
+		keep WoodenStick,
+		PaintbucketEmpty,
+		DyeGrey=4,
+		Water=5,
+
+        Result:PaintGrey,
+        Time:180.0,
+        Category:Dyes,
+    }
+
+}

@@ -1,0 +1,3914 @@
+module AmmoMaker
+{
+imports
+	{
+		Base
+	}
+
+    item ManualAM
+    {
+		DisplayCategory = Literature,
+        Type				=		Normal,
+        DisplayName			=		Ammo Maker Manual,
+        Icon				=		AMManualBook,
+        Weight				=		0.8,
+		DisplayCategory     =       Literature,
+		Tooltip             =       Tooltip_AMManual,
+		StaticModel = AmmoMaker.AMManualBook,
+		WorldStaticModel = AmmoMaker.AMManualBook_Ground,
+    }
+
+	item AMBookAReloading1
+    {
+		DisplayCategory = SkillBook,
+        NumberOfPages	=	220,
+        Weight	=	0.8,
+        Type	=	Literature,
+        DisplayName	=	A-Reloading for Beginners,
+        Icon	=	BookAMReloading,
+        SkillTrained = AMReloading,
+        LvlSkillTrained = 1,
+        NumLevelsTrained = 2,
+        StaticModel = AmmoMaker.AmmoBook,
+		WorldStaticModel = AmmoMaker.AmmoBook_Ground,
+    }
+
+    item AMBookAReloading2
+    {
+		DisplayCategory = SkillBook,
+        NumberOfPages	=	260,
+        Weight	=	0.8,
+        Type	=	Literature,
+        DisplayName	=	A-Reloading for Intermediates,
+        Icon	=	BookAMReloading,
+        SkillTrained = AMReloading,
+        LvlSkillTrained = 3,
+        NumLevelsTrained = 2,
+        StaticModel = AmmoMaker.AmmoBook,
+		WorldStaticModel = AmmoMaker.AmmoBook_Ground,
+    }
+
+    item AMBookAReloading3
+    {
+		DisplayCategory = SkillBook,
+        NumberOfPages	=	300,
+        Weight	=	0.8,
+        Type	=	Literature,
+        DisplayName	=	Advanced A-Reloading,
+        Icon	=	BookAMReloading,
+        SkillTrained = AMReloading,
+        LvlSkillTrained = 5,
+        NumLevelsTrained = 2,
+        StaticModel = AmmoMaker.AmmoBook,
+		WorldStaticModel = AmmoMaker.AmmoBook_Ground,
+    }
+
+    item AMBookAReloading4
+    {
+		DisplayCategory = SkillBook,
+        NumberOfPages	=	340,
+        Weight	=	0.8,
+        Type	=	Literature,
+        DisplayName	=	Expert A-Reloading,
+        Icon	=	BookAMReloading,
+        SkillTrained = AMReloading,
+        LvlSkillTrained = 7,
+        NumLevelsTrained = 2,
+        StaticModel = AmmoMaker.AmmoBook,
+		WorldStaticModel = AmmoMaker.AmmoBook_Ground,
+    }
+
+    item AMBookAReloading5
+    {
+		DisplayCategory = SkillBook,
+        NumberOfPages	=	380,
+        Weight	=	0.8,
+        Type	=	Literature,
+        DisplayName	=	Master A-Reloading,
+        Icon	=	BookAMReloading,
+        SkillTrained = AMReloading,
+        LvlSkillTrained = 9,
+        NumLevelsTrained = 2,
+        StaticModel = AmmoMaker.AmmoBook,
+		WorldStaticModel = AmmoMaker.AmmoBook_Ground,
+    }
+
+    item WeaponsMagazine4
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Weapons Magazine 4,
+        Icon	=	MagazineWeaponsNew,
+        TeachedRecipes  =   Dismantle weapons;Ensamble M9;Ensamble M1911;Ensamble DE;Ensamble Revolver;Ensamble Revolver Long;Ensamble Revolver Short;Ensamble Shotgun;Ensamble DoubleBarrelShotgun;Ensamble VarmintRifle;Ensamble HuntingRifle;Ensamble AssaultRifle;Ensamble AssaultRifle2;Ensamble AK47,
+        ReplaceOnUse    =   WeaponsMagazine4,
+		StaticModel = AmmoMaker.AMWeapons4Mag,
+		WorldStaticModel = AmmoMaker.AMWeapons4Mag_Ground,
+	}
+
+
+	/********** AK47 **********/
+
+	item SilencerAK
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = AK Silencer,
+        Icon = SilencerAK,
+        Weight = 1,
+		MaxRangeModifier = -3,
+		MinRangeModifier = -0.2,
+		DamageModifier = -0.1,
+        WeightModifier = 1.2,
+        MountOn = AK47,
+        PartType = Canon,
+		Tooltip = Tooltip_AKSilencer,
+		MetalValue = 1,
+		WorldStaticModel = AmmoMaker.SilencerAK_Ground,
+    }
+
+    item AKHG
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = AK Hand Guard,
+        Icon = AKHG,
+        Weight = 0.5,
+        WeightModifier = 0.1,
+        HitChanceModifier = 2,
+        MountOn = AK47,
+        PartType = Stock,
+        Tooltip = Tooltip_AKHandGuardStock,
+		MetalValue = 1,
+		WorldStaticModel = AmmoMaker.AKHandGuard_Ground,
+    }
+
+    item AKRecoilPad
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = AK47 Recoil Pad,
+        Icon = AKRecoilPad,
+        Weight = 0.1,
+		HitChanceModifier = 8,
+        WeightModifier = 0.1,
+        RecoilDelayModifier = -3.0,
+        MountOn = AK47,
+        PartType = RecoilPad,
+        Tooltip = Tooltip_AkRecoilPad,
+		MetalValue = 1,
+		WorldStaticModel = AmmoMaker.AKRP_Ground,
+    }
+
+	item AKTacticalLight
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = AK Tactical Light,
+        Icon = TacticalLight,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+		AimingTimeModifier = -2,
+        MountOn = AK47,
+        PartType = Sling,
+		LightStrength	=	0,
+		LightDistance	=	0,
+		TorchCone	=	TRUE,
+		ActivatedItem	=	FALSE,
+		Tooltip = Tooltip_weaponpart_AKTacticalLight,
+		MetalValue = 5,
+		WorldStaticModel = AmmoMaker.AKTL_Ground,
+    }
+
+    item AkIronSight2
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = Ak Iron Sight,
+        Icon = AkIronSight2,
+        Weight = 0.1,
+        WeightModifier = 0.1,
+        MaxRangeModifier = 2,
+        MountOn = AK47,
+        PartType = Scope,
+        Tooltip = Tooltip_MilitaryIronSight2,
+        MetalValue = 15,
+		WorldStaticModel = AmmoMaker.AKIronSight_Ground,
+    }
+
+    item AK47x4Scope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = AK-47 x4 Scope,
+        Icon = ak4xscope2,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        MaxRangeModifier = 3,
+		AimingTimeModifier = 5,
+		HitChanceModifier = 5,
+        MountOn = AK47,
+        PartType = Scope,
+        Tooltip = Tooltip_AK4xScope,
+        MetalValue = 10,
+		WorldStaticModel = AmmoMaker.AK4XScope_Ground,
+    }
+
+    item AK47MilitaryScope
+    {
+		DisplayCategory = WeaponPart,
+        Type = WeaponPart,
+        DisplayName = AK-47 x4 Scope,
+        Icon = AKARmyScope,
+        Weight = 0.2,
+        WeightModifier = 0.2,
+        MaxRangeModifier = 5,
+		AimingTimeModifier = 1,
+		HitChanceModifier = 8,
+        MountOn = AK47,
+        PartType = Scope,
+        Tooltip = Tooltip_AKArmyScope,
+        MetalValue = 10,
+		WorldStaticModel = AmmoMaker.AKArmyScope_Ground,
+    }
+
+	item Ammo_762x39mm
+	{
+		DisplayCategory = Ammo,
+		Count = 5,
+		Weight = 0.025,
+		AlwaysWelcomeGift	=	TRUE,
+		Type = Normal,
+		DisplayName = 762x39mm rounds,
+        DisplayCategory = Ammo,
+		Icon = Am762x39Rounds,
+		MetalValue = 1,
+		WorldStaticModel = AmmoMaker.Rifle762Ammo,
+	}
+
+	item 762x39mmBox
+    {
+		DisplayCategory = Ammo,
+        Weight = 0.5,
+		AlwaysWelcomeGift	=	TRUE,
+        Type = Normal,
+        DisplayName = Box of 762x39mm,
+		DisplayCategory = Ammo,
+        Icon = Am762x39Box,
+		MetalValue = 40,
+		WorldStaticModel = AmmoMaker.Rifle762AmmoBox_Ground,
+    }
+
+	item AKMMag
+	{
+		DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	.762 Magazine,
+        Icon	=	AK47Mag,
+        MaxAmmo = 30,
+        AmmoType = AmmoMaker.Ammo_762x39mm,
+        StaticModel = AmmoMaker.AKMMag,
+		GunType = AmmoMaker.AK47,
+		WorldStaticModel = AmmoMaker.AKMMag,
+		MetalValue = 1,
+	}
+
+    item AK47
+    {
+		DisplayCategory = Weapon,
+        ImpactSound	=	null,
+        MaxRange	=	14,
+        WeaponSprite	=	AmmoMaker.AK47,
+        SoundVolume	=	35,
+        MinAngle	=	0.965,
+        Type	=	Weapon,
+        MinimumSwingTime	=	0.5,
+        ToHitModifier	=	1.5,
+        NPCSoundBoost	=	1.5,
+        KnockBackOnNoDeath	=	TRUE,
+        Ranged	=	TRUE,
+        SwingAmountBeforeImpact	=	0,
+        ProjectileCount	=	1,
+        ConditionLowerChanceOneIn	=	240,
+        Weight	=	4,
+        SplatNumber	=	3,
+        PushBackMod	=	0.6,
+        SubCategory	=	Firearm,
+        ConditionMax	=	10,
+        ShareDamage	=	FALSE,
+        MaxHitCount	=	2,
+        PiercingBullets = TRUE,
+        IsAimedFirearm	=	TRUE,
+        DoorDamage	=	20,
+        UseEndurance	=	FALSE,
+        SwingAnim	=	Rifle,
+        DisplayName	=	AK47 Assault Rifle,
+        MinRange	=	0.61,
+        SwingTime	=	0.5,
+        MultipleHitConditionAffected	=	FALSE,
+		BringToBearSound = M16BringToBear,
+		SwingSound	=	AMAK47,
+        HitSound = BulletHitBody,
+		ClickSound = M16Jam,
+        SoundRadius	=	100,
+        MinDamage	=	2.4,
+        MaxDamage	=	4.8,
+        SplatSize	=	3,
+        KnockdownMod	=	4,
+        SplatBloodOnNoDeath	=	TRUE,
+        Icon	=	AK47,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        CriticalChance = 30,
+        AimingPerkCritModifier = 0,
+        HitChance = 25,
+        AimingPerkHitChanceModifier = 7,
+        AimingPerkMinAngleModifier = 0.01,
+        AimingPerkRangeModifier = 3,
+        RecoilDelay = 0,
+        SoundGain = 2,
+        ReloadTime = 25,
+        AimingTime = 20,
+        RequiresEquippedBothHands = TRUE,
+        BreakSound  =   M16Break,
+        TwoHandWeapon = TRUE,
+        MetalValue = 45,
+        AmmoBox = AmmoMaker.762x39mmBox,
+        MaxAmmo = 30,
+		EquipSound = M16Equip,
+		UnequipSound = M16UnEquip,
+        InsertAmmoSound = AMAKIn,
+        EjectAmmoSound = AMAKOut,
+		InsertAmmoStartSound = M16InsertAmmoStart,
+		InsertAmmoStopSound = M16InsertAmmoStop,
+		EjectAmmoStartSound = M16EjectAmmoStart,
+		EjectAmmoStopSound = M16EjectAmmoStop,
+        ShellFallSound = M16CartridgeFall,
+        RackSound = AMAKRack,
+        MagazineType = AmmoMaker.AKMMag,
+        AmmoType = AmmoMaker.Ammo_762x39mm,
+        WeaponReloadType = boltaction,
+        JamGunChance = 2,
+        AttachmentType = Rifle,
+        FireMode = Auto,
+        FireModePossibilities = Auto/Single,
+		ModelWeaponPart = AmmoMaker.SilencerAK AmmoMaker.SilencerAK47,
+		ModelWeaponPart = AmmoMaker.AKHG AmmoMaker.AKHandGuard,
+		ModelWeaponPart = AmmoMaker.AKRecoilPad AmmoMaker.AKRP,
+		ModelWeaponPart = AmmoMaker.AKTacticalLight AmmoMaker.AKTL,
+		ModelWeaponPart = AmmoMaker.AK47x4Scope AmmoMaker.AK4XScope,
+		ModelWeaponPart = AmmoMaker.AK47MilitaryScope AmmoMaker.AKArmyScope,
+		ModelWeaponPart = AmmoMaker.AkIronSight2 AmmoMaker.AKIronSight,
+		StopPower = 2,
+    }
+
+	/********** M16 Parts **********/
+
+    item m16Part0
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	M16 lower parts,
+        Icon	=	m16part0,
+		Tooltip = Tooltip_SWPPart0,
+		OBSOLETE = true,
+    }
+
+    item m16Part1
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	M16 Buttstock,
+        Icon	=	m16part1,
+		Tooltip = Tooltip_SWPPart1,
+		OBSOLETE = true,
+    }
+
+    item m16Part2
+    {
+        Weight	=	0.1,
+        Type	=	Normal,
+        DisplayName	=	M16 Grip,
+        Icon	=	m16part2,
+		Tooltip = Tooltip_SWPPart1,
+		OBSOLETE = true,
+    }
+
+    item m16Part3
+    {
+        Weight	=	0.8,
+        Type	=	Normal,
+        DisplayName	=	M16 Barrel,
+        Icon	=	m16part3,
+		Tooltip = Tooltip_SWPPart1,
+		OBSOLETE = true,
+    }
+
+    item m16Part4
+    {
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=	M16 Triangle Handguard Set,
+        Icon	=	m16part4,
+		Tooltip = Tooltip_SWPPart1,
+		OBSOLETE = true,
+    }
+
+    item m16Part5
+    {
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	M16 Buffer Retainer and Spring,
+        Icon	=	m16part5,
+		Tooltip = Tooltip_SWPPart1,
+		OBSOLETE = true,
+    }
+
+    /************* Caja de polvora *************/
+
+	item GunPowderBox
+	{
+		DisplayCategory = Ammo,
+		Weight	=	3.0,
+		Type	=	Normal,
+		DisplayName	=	Gun Powder Box,
+		Icon	=	GunPowderBox,
+		Tooltip = Tooltip_GunPowderBox,
+		WorldStaticModel = AmmoMaker.GunPowderBox,
+	}
+
+    /************* Latas de municion *************/
+
+	item 9mmCan
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 9mm Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_9mmCan,
+		ReplaceInSecondHand = Bag_AmmoCan_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_AmmoCan_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo9mmCan_Ground,
+	}
+
+	item 38Can
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 38 Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_38Can,
+		ReplaceInSecondHand = Bag_Ammo38Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo38Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo38Can_Ground,
+	}
+
+	item 44Can
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 44 Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_44Can,
+		ReplaceInSecondHand = Bag_Ammo44Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo44Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo44Can_Ground,
+	}
+
+	item 45Can
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 45 Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_45Can,
+		ReplaceInSecondHand = Bag_Ammo45Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo45Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo45Can_Ground,
+	}
+
+	item 223Can
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 223 Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_223Can,
+		ReplaceInSecondHand = Bag_Ammo223Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo223Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo223Can_Ground,
+	}
+
+	item 308Can
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 308 Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_308Can,
+		ReplaceInSecondHand = Bag_Ammo308Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo308Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo308Can_Ground,
+	}
+
+	item 556x45mmCan
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 556x45mm Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_556x45mmCan,
+		ReplaceInSecondHand = Bag_Ammo556Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo556Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo556Can_Ground,
+	}
+
+	item ShotgunShellsCan
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Shotgun Ammo Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_ShotgunShellsCan,
+		ReplaceInSecondHand = Bag_AmmoShellsCan_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_AmmoShellsCan_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.AmmoShellsCan_Ground,
+	}
+
+	item 762Can
+	{
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	7.62mm Canister,
+		DisplayCategory = Ammo,
+		Icon	=	AmmoCan2,
+		Tooltip = Tooltip_762x39mmCan,
+		ReplaceInSecondHand = Bag_Ammo762Can_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_Ammo762Can_RHand holdingbagright,
+		WorldStaticModel = AmmoMaker.Ammo762Can_Ground,
+	}
+
+    /************* Latas de casquillos *************/
+
+	item 9mmCasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 9mm Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_9mmCasesCan,
+	}
+
+	item 38CasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 38 Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_38CasesCan,
+	}
+
+	item 44CasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 44 Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_44CasesCan,
+	}
+
+	item 45CasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 45 Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_45CasesCan,
+	}
+
+	item 223CasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 223 Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_223CasesCan,
+	}
+
+	item 308CasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 308 Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_308CasesCan,
+	}
+
+	item 556x45mmCasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 556x45mm Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_556x45mmCasesCan,
+	}
+
+	item ShotgunShellsCasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Shotgun Ammo Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_ShotgunShellsCasesCan,
+	}
+
+	item 762x39mmCasesCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 762x39mm Canister,
+		Icon	=	AmmoCan3,
+		Tooltip = Tooltip_762x39mmCasesCan,
+	}
+
+    /************* Latas de proyectiles *************/
+
+	item 9mmLeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Cal 9mm Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_9mmLeadCan,
+	}
+
+	item 38LeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	5.0,
+		Type	=	Normal,
+		DisplayName	=	Cal 38 Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_38LeadCan,
+	}
+
+	item 44LeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Cal 44 Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_44LeadCan,
+	}
+
+	item 45LeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Cal 45 Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_45LeadCan,
+	}
+
+	item 223LeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Cal 223 Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_223LeadCan,
+	}
+
+	item 308LeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Cal 308 Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_308LeadCan,
+	}
+
+	item 556x45mmLeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Lead Cal 556x45mm Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_556x45mmLeadCan,
+	}
+
+	item ShotgunShellsLeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Shotgun Ammo Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_ShotgunShellsLeadCan,
+	}
+
+	item 762x39mmLeadCan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2.5,
+		Type	=	Normal,
+		DisplayName	=	Lead Cal 762x39mm Canister,
+		Icon	=	AmmoCan,
+		Tooltip = Tooltip_762x39mmLeadCan,
+	}
+
+/************* Materiales de plomo *************/
+
+	item Lead
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Lead,
+		Icon	=	Lead,
+		Tooltip = Tooltip_Lead,
+		MetalValue = 1,
+	}
+
+	item LeadBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Lead box,
+		Icon	=	LeadBox,
+		Tooltip = Tooltip_LeadBox,
+	}
+
+	item MeltedLeadSaucepan
+	{
+		DisplayCategory = Reloading,
+		Weight	=	4,
+		Type	=	Drainable,
+        UseDelta =  0.1,
+		UseWhileEquipped	=	FALSE,
+		DisplayName	=	Melted lead saucepan,
+		ReplaceOnDeplete	=	Saucepan,
+		Icon	=	SaucepanFullLead,
+		Tooltip = Tooltip_MeltedLeadSaucepan,
+		WorldStaticModel = AmmoMaker.SaucePanLead,
+	}
+
+/************* Herramientas *************/
+
+	item ReloadingToolBroken
+	{
+		DisplayCategory = Reloading,
+		Weight	=	3,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool Broken,
+		Icon	=	AmmoReloaderBroken,
+		Tooltip = Tooltip_RTB,
+		MetalValue = 2,
+	}
+
+	item ReloadingTool
+	{
+		DisplayCategory = Reloading,
+		Weight	=	10,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool,
+		Icon	=	AmmoReloader,
+		Tooltip = Tooltip_ReloadingTool,
+		MetalValue = 5,
+	}
+
+	item AmmoPliers
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	Pliers for molds,
+		Icon	=	AmmoPliers,
+		Tooltip = Tooltip_AmmoPliers,
+		MetalValue = 1,
+	}
+
+	item LeadMaker
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	9mm Lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker9mm,
+		MetalValue = 2,
+	}
+
+	item LeadMaker2
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Cal.223 lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker223,
+		MetalValue = 2,
+	}
+
+	item LeadMaker3
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Cal.308 lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker308,
+		MetalValue = 2,
+	}
+
+	item LeadMaker4
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Pellets lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMakerPellets,
+		MetalValue = 2,
+	}
+
+	item LeadMaker5
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	556x45mm Lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker556x45mm,
+		MetalValue = 2,
+	}
+
+	item LeadMaker6
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Cal.38 lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker38,
+		MetalValue = 2,
+	}
+
+	item LeadMaker7
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Cal.44 lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker44,
+		MetalValue = 2,
+	}
+
+	item LeadMaker8
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	Cal.45 lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker45,
+		MetalValue = 2,
+	}
+
+	item LeadMaker9
+	{
+		DisplayCategory = Reloading,
+		Weight	=	2,
+		Type	=	Normal,
+		DisplayName	=	762x39mm Lead maker,
+		Icon	=	LeadMaker,
+		Tooltip = Tooltip_LeadMaker762x39mm,
+		MetalValue = 2,
+	}
+	
+/************* Moldes *************/
+
+	item 9mmMold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	9mm mold,
+		Icon	=	Mold9mm,
+		Tooltip = Tooltip_9mmMold,
+		MetalValue = 1,
+	}
+
+	item 223Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	.223 mold,
+		Icon	=	Moldcal223,
+		Tooltip = Tooltip_223Mold,
+		MetalValue = 1,
+	}
+
+	item 308Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	.308 mold,
+		Icon	=	Moldcal308,
+		Tooltip = Tooltip_308Mold,
+		MetalValue = 1,
+	}
+
+	item PelletsMold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	Pellets mold,
+		Icon	=	MoldPellets,
+		Tooltip = Tooltip_PelletsMold,
+		MetalValue = 1,
+	}
+
+	item 556Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	556x45mm mold,
+		Icon	=	Moldcal556,
+		Tooltip = Tooltip_556Mold,
+		MetalValue = 1,
+	}
+	
+	item 38Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	.38 mold,
+		Icon	=	Moldcal38,
+		Tooltip = Tooltip_38Mold,
+		MetalValue = 1,
+	}
+
+	item 44Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	.44 mold,
+		Icon	=	Moldcal44,
+		Tooltip = Tooltip_44Mold,
+		MetalValue = 1,
+	}
+
+	item 45Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	.45 mold,
+		Icon	=	Moldcal45,
+		Tooltip = Tooltip_45Mold,
+		MetalValue = 1,
+	}
+
+	item 762Mold
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	762x39mm mold,
+		Icon	=	Moldcal762,
+		Tooltip = Tooltip_762Mold,
+		MetalValue = 1,
+	}
+
+/************* Casquillos *************/
+
+	item Casq9mm
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	Case 9mm,
+		Icon	=	9mmCasquillos,
+		Tooltip = Tooltip_Casq9mm,
+		ScaleWorldIcon 	= 0.2,
+		MetalValue = 1,
+	}
+
+	item Casq223
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Case cal.223,
+		Icon	=	223Casquillos,
+		Tooltip = Tooltip_Casq223,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq308
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Case cal.308,
+		Icon	=	308Casquillos,
+		Tooltip = Tooltip_Casq308,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item CasqShotgun
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Shotgun cases,
+		Icon	=	ShotgunHulls,
+		Tooltip = Tooltip_CasqShotgun,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq556x45mm
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.02,
+		Type	=	Normal,
+		DisplayName	=	Case 556x45mm,
+		Icon	=	556Casquillos,
+		Tooltip = Tooltip_Casq556x45,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq38
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Case cal.38,
+		Icon	=	38Casquillos,
+		Tooltip = Tooltip_Casq38,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq44
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Case cal.44,
+		Icon	=	44Casquillos,
+		Tooltip = Tooltip_Casq44,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq45
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Case cal.45,
+		Icon	=	45Casquillos,
+		Tooltip = Tooltip_Casq45,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq762x39mm
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Case 762x39mm,
+		Icon	=	762Casquillos,
+		Tooltip = Tooltip_Casq762x39,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 1,
+	}
+
+	item Casq9mmBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases 9mm,
+		Icon	=	9mmCasquillosBox,
+		Tooltip = Tooltip_Casq9mmBox,
+		WorldStaticModel = AmmoMaker.Cases9mmBox,
+	}
+
+	item Casq223Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases cal.223,
+		Icon	=	223CasquillosBox,
+		Tooltip = Tooltip_Casq223Box,
+		WorldStaticModel = AmmoMaker.Cases223Box,
+	}
+
+	item Casq308Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases cal.308,
+		Icon	=	308CasquillosBox,
+		Tooltip = Tooltip_Casq308Box,
+		WorldStaticModel = AmmoMaker.Cases308Box,
+	}
+
+	item CasqShotgunBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of shotgun cases,
+		Icon	=	ShotgunHullsBox,
+		Tooltip = Tooltip_CasqShotgunBox,
+	}
+
+	item Casq556x45mmBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases 556x45mm,
+		Icon	=	556CasquillosBox,
+		Tooltip = Tooltip_Casq556x45mmBox,
+		WorldStaticModel = AmmoMaker.Cases556Box,
+	}
+
+	item Casq38Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases cal.38,
+		Icon	=	38CasquillosBox,
+		Tooltip = Tooltip_Casq38Box,
+		WorldStaticModel = AmmoMaker.Cases38Box,
+	}
+
+	item Casq44Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases cal.44,
+		Icon	=	44CasquillosBox,
+		Tooltip = Tooltip_Casq44Box,
+		WorldStaticModel = AmmoMaker.Cases44Box,
+	}
+
+	item Casq45Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases cal.45,
+		Icon	=	45CasquillosBox,
+		Tooltip = Tooltip_Casq45Box,
+		WorldStaticModel = AmmoMaker.Cases45Box,
+	}
+
+	item Casq762x39mmBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of cases 762x39mm,
+		Icon	=	762CasquillosBox,
+		Tooltip = Tooltip_Casq762x39mmBox,
+		WorldStaticModel = AmmoMaker.Cases762Box,
+	}
+
+/************* Puntas de Plomo *************/
+
+	item Lead9mm
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead 9mm,
+		Icon	=	Lead9mm,
+		Tooltip = Tooltip_Lead9mm,
+		ScaleWorldIcon 	= 0.2,
+		MetalValue = 2,
+	}
+
+	item Lead223
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.223,
+		Icon	=	Leadcal223,
+		Tooltip = Tooltip_Lead223,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead308
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.308,
+		Icon	=	Leadcal308,
+		Tooltip = Tooltip_Lead308,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item LeadPellets
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.01,
+		Type	=	Normal,
+		DisplayName	=	Lead pellets,
+		Icon	=	ShotgunPellets,
+		Tooltip = Tooltip_LeadPellets,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead556x45mm
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead 556x45mm,
+		Icon	=	Leadcal556,
+		Tooltip = Tooltip_Lead556x45mm,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead38
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.38,
+		Icon	=	Lead38,
+		Tooltip = Tooltip_Lead308,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead44
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.44,
+		Icon	=	Lead44,
+		Tooltip = Tooltip_Lead308,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead45
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.05,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.45,
+		Icon	=	Lead45,
+		Tooltip = Tooltip_Lead308,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead762x39mm
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Lead 762x39mm,
+		Icon	=	Leadcal762,
+		Tooltip = Tooltip_Lead762x39mm,
+		ScaleWorldIcon 	= 0.3,
+		MetalValue = 2,
+	}
+
+	item Lead9mmBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead 9mm box,
+		Icon	=	Lead9mmBox,
+		Tooltip = Tooltip_Lead9mmBox,
+		WorldStaticModel = AmmoMaker.Lead9mmBox,
+	}
+
+	item Lead223Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.223 box,
+		Icon	=	Lead223Box,
+		Tooltip = Tooltip_Lead223Box,
+		WorldStaticModel = AmmoMaker.Lead223Box,
+	}
+
+	item Lead308Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.308 box,
+		Icon	=	Lead308Box,
+		Tooltip = Tooltip_Lead308Box,
+		WorldStaticModel = AmmoMaker.Lead308Box,
+	}
+
+	item LeadPelletsBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Box of lead pellets,
+		Icon	=	ShotgunPelletsBox,
+		Tooltip = Tooltip_LeadPelletsBox,
+	}
+
+	item Lead556x45mmBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead 556x45mm box,
+		Icon	=	Lead556Box,
+		Tooltip = Tooltip_Lead556x45mmBox,
+		WorldStaticModel = AmmoMaker.Lead556Box,
+	}
+
+	item Lead38Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.38 box,
+		Icon	=	Lead38Box,
+		Tooltip = Tooltip_Lead38Box,
+		WorldStaticModel = AmmoMaker.Lead38Box,
+	}
+
+	item Lead44Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.44 box,
+		Icon	=	Lead44Box,
+		Tooltip = Tooltip_Lead44Box,
+		WorldStaticModel = AmmoMaker.Lead44Box,
+	}
+
+	item Lead45Box
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.5,
+		Type	=	Normal,
+		DisplayName	=	Lead cal.45 box,
+		Icon	=	Lead45Box,
+		Tooltip = Tooltip_Lead45Box,
+		WorldStaticModel = AmmoMaker.Lead45Box,
+	}
+
+	item Lead762x39mmBox
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1,
+		Type	=	Normal,
+		DisplayName	=	Lead 762x39mm box,
+		Icon	=	Lead762Box,
+		Tooltip = Tooltip_Lead762x39mmBox,
+		WorldStaticModel = AmmoMaker.Lead762Box,
+	}
+
+/************* Polvora *************/
+
+	item GunPowderBottle
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1.0,
+		Type	=	Normal,
+		DisplayName	=	Gunpowder bottle,
+		Icon	=	GunpowderJar,
+		Tooltip = Tooltip_GunPowderBottle,
+		WorldStaticModel = GunpowderJar,
+	}
+
+	item GunPowderBottleEmpty
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Gunpowder bottle empty,
+		Icon	=	GunpowderJar,
+		Tooltip = Tooltip_GunPowderBottleEmpty,
+		WorldStaticModel = AmmoMaker.GunpowderJarEmpty,
+	}
+
+/************* Partes de herramienta *************/
+
+	item ToolPart1
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool part1,
+		Icon	=	ToolPart1,
+		Tooltip = Tooltip_ToolPart,
+		MetalValue = 2,
+	}
+
+	item ToolPart2
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool part2,
+		Icon	=	ToolPart2,
+		Tooltip = Tooltip_ToolPart,
+		MetalValue = 2,
+	}
+
+	item ToolPart3
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.1,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool part3,
+		Icon	=	ToolPart3,
+		Tooltip = Tooltip_ToolPart,
+		MetalValue = 2,
+	}
+
+	item ToolPart4
+	{
+		DisplayCategory = Reloading,
+		Weight	=	0.2,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool part4,
+		Icon	=	ToolPart4,
+		Tooltip = Tooltip_ToolPart,
+		MetalValue = 2,
+	}
+
+	item ToolPart5
+	{
+		DisplayCategory = Reloading,
+		Weight	=	1.0,
+		Type	=	Normal,
+		DisplayName	=	Reloading tool part5,
+		Icon	=	ToolPart5,
+		Tooltip = Tooltip_ToolPart,
+		MetalValue = 2,
+	}
+
+/************* Contenedores *************/
+
+	item ToolBoxKit
+	{
+		DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	10,
+		DisplayName		=	Toolbox,
+		Icon			=	ToolBoxing,
+        OpenSound   	=   ToolBoxOpen,
+        CloseSound   	=   ToolBoxClose,
+        PutInSound   	=   ToolBoxPutIn,
+	}
+
+	item AmmoBriefcase
+	{
+		DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	10,
+		DisplayName		=	Ammunition briefcase,
+		Icon			=	AmmoBriefcase,
+        OpenSound   	=   BriefcaseOpen,
+        CloseSound   	=   BriefcaseClose,
+        PutInSound   	=   ToolBoxPutIn,
+	}
+
+/************* Revistas *************/
+
+    item AmmoMagazine1
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 1,
+        Icon	=	AmmoMag1,
+        TeachedRecipes  =   Fix reloading tool,
+        ReplaceOnUse    =   AmmoMagazine1,
+		StaticModel = AmmoMaker.AMAmmoMag1,
+		WorldStaticModel = AmmoMaker.AMAmmoMag1_Ground,
+    }
+
+    item AmmoMagazine2
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 2,
+        Icon	=	MagazineBullets9mm,
+        TeachedRecipes  =   Make 9mm Lead;Make 9mm bullets,
+        ReplaceOnUse    =   AmmoMagazine2,
+		StaticModel = AmmoMaker.AMGuns9Mag,
+		WorldStaticModel = AmmoMaker.AMGuns9Mag_Ground,
+    }
+
+    item AmmoMagazine3
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 3,
+        Icon	=	AmmoMag3,
+        TeachedRecipes  =   Make liquid lead;Make 9mm liquid lead;Make cal.223 liquid lead;Make cal.308 liquid lead;Make pellets liquid lead;Make cal.38 liquid lead;Make cal.44 liquid lead;Make cal.45 liquid lead;Make 556x45mm liquid lead;Make 762x39mm liquid lead,
+        ReplaceOnUse    =   AmmoMagazine3,
+		StaticModel = AmmoMaker.AMAmmoMag3,
+		WorldStaticModel = AmmoMaker.AMAmmoMag3_Ground,
+    }
+
+    item AmmoMagazine6
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 6,
+        Icon	=	AmmoMag6,
+        TeachedRecipes  =   Craft Reloading Table,
+        ReplaceOnUse    =   AmmoMagazine6,
+		StaticModel = AmmoMaker.AMAmmoMag4,
+		WorldStaticModel = AmmoMaker.AMAmmoMag4_Ground,
+    }
+
+    item AmmoMagazine7
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 7,
+        Icon	=	MagazineBullets223,
+        TeachedRecipes  =   Make cal.223 Lead;Make bullets cal.223,
+        ReplaceOnUse    =   AmmoMagazine7,
+		StaticModel = AmmoMaker.AMGuns223Mag,
+		WorldStaticModel = AmmoMaker.AMGuns223Mag_Ground,
+    }
+
+    item AmmoMagazine8
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 8,
+        Icon	=	MagazineBullets308,
+        TeachedRecipes  =   Make cal.308 Lead;Make bullets cal.308,
+        ReplaceOnUse    =   AmmoMagazine8,
+		StaticModel = AmmoMaker.AMGuns308Mag,
+		WorldStaticModel = AmmoMaker.AMGuns308Mag_Ground,
+    }
+
+    item AmmoMagazine9
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 9,
+        Icon	=	MagazineBulletsSS,
+        TeachedRecipes  =   Make shotgun pellets;Make shotgun shells,
+        ReplaceOnUse    =   AmmoMagazine9,
+		StaticModel = AmmoMaker.AMGunsShotgunMag,
+		WorldStaticModel = AmmoMaker.AMGunsShotgunMag_Ground,
+    }
+
+    item AmmoMagazine10
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 10,
+        Icon	=	MagazineBullets556,
+        TeachedRecipes  =   Make 556x45mm Lead;Make 556x45mm bullets,
+        ReplaceOnUse    =   AmmoMagazine10,
+		StaticModel = AmmoMaker.AMGuns556Mag,
+		WorldStaticModel = AmmoMaker.AMGuns556Mag_Ground,
+    }
+
+    item AmmoMagazine11
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 11,
+        Icon	=	MagazineBullets38,
+        TeachedRecipes  =   Make cal.38 Lead;Make bullets cal.38,
+        ReplaceOnUse    =   AmmoMagazine11,
+		StaticModel = AmmoMaker.AMGuns38Mag,
+		WorldStaticModel = AmmoMaker.AMGuns38Mag_Ground,
+    }
+
+    item AmmoMagazine12
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 12,
+        Icon	=	MagazineBullets44,
+        TeachedRecipes  =   Make cal.44 Lead;Make bullets cal.44,
+        ReplaceOnUse    =   AmmoMagazine12,
+		StaticModel = AmmoMaker.AMGuns44Mag,
+		WorldStaticModel = AmmoMaker.AMGuns44Mag_Ground,
+    }
+
+    item AmmoMagazine13
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 13,
+        Icon	=	MagazineBullets45,
+        TeachedRecipes  =   Make cal.45 Lead;Make bullets cal.45,
+        ReplaceOnUse    =   AmmoMagazine13,
+		StaticModel = AmmoMaker.AMGuns45Mag,
+		WorldStaticModel = AmmoMaker.AMGuns45Mag_Ground,
+    }
+
+    item AmmoMagazine14
+    {
+		DisplayCategory = SkillBook,
+        Weight	=	0.1,
+        Type	=	Literature,
+        DisplayName	=	Ammunition Magazine 14,
+        Icon	=	MagazineBullets762,
+        TeachedRecipes  =   Make 762x39mm Lead;Make 762x39mm bullets,
+        ReplaceOnUse    =   AmmoMagazine14,
+		StaticModel = AmmoMaker.AMGuns762Mag,
+		WorldStaticModel = AmmoMaker.AMGuns762Mag_Ground,
+    }
+
+
+/************************* Recetas *************************/
+
+/************* R. Metalworking *************/
+
+	recipe Dismantle Toolbox
+	{
+	   AmmoMaker.ToolBoxKit,
+	   keep Screwdriver,
+	   keep Saw,
+
+	   Result:SmallSheetMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:AMDismantle_TestIsValid,
+	   Time:150.0,
+	}
+
+	recipe Dismantle Briefcase
+	{
+	   AmmoMaker.AmmoBriefcase,
+	   keep Screwdriver,
+	   keep Saw,
+
+	   Result:SmallSheetMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:AMDismantle_TestIsValid,
+	   Time:150.0,
+	}
+
+/************* R. Moldes *************/
+
+	recipe Add mold 9mm
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.9mmMold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold 9mm back
+	{
+	   AmmoMaker.LeadMaker,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.9mmMold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold cal.223
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.223Mold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker2,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold cal.223 back
+	{
+	   AmmoMaker.LeadMaker2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.223Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold cal.308
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.308Mold,
+	   Screws=2,
+       keep Screwdriver,
+	   
+	   Result:AmmoMaker.LeadMaker3,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold cal.308 back
+	{
+	   AmmoMaker.LeadMaker3,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.308Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add pellets mold
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.PelletsMold,
+	   Screws=2,
+       keep Screwdriver,
+	   
+	   Result:AmmoMaker.LeadMaker4,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get pellets mold back
+	{
+	   AmmoMaker.LeadMaker4,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.PelletsMold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold cal.38
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.38Mold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker6,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold cal.38 back
+	{
+	   AmmoMaker.LeadMaker6,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.38Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold cal.44
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.44Mold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker7,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold cal.44 back
+	{
+	   AmmoMaker.LeadMaker7,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.44Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold cal.45
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.45Mold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker8,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold cal.45 back
+	{
+	   AmmoMaker.LeadMaker8,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.45Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold 556x45mm
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.556Mold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker5,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold 556x45mm back
+	{
+	   AmmoMaker.LeadMaker5,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.556Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Add mold 762x39mm
+	{
+	   AmmoMaker.AmmoPliers,
+	   AmmoMaker.762Mold,
+	   Screws=2,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.LeadMaker9,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Get mold 762x39mm back
+	{
+	   AmmoMaker.LeadMaker9,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.762Mold,
+	   OnCreate:AMReturnAmmoPliers,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+/************* R. Polvora *************/
+
+	recipe Open gunpowder box
+	{
+	   AmmoMaker.GunPowderBox,
+
+	   Result:AmmoMaker.GunPowderBottle=6,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	}
+
+	recipe Put gunpowder in a box
+	{
+	   AmmoMaker.GunPowderBottle=6,
+
+	   Result:AmmoMaker.GunPowderBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	}
+
+	recipe Open gunpowder bottle
+	{
+	   AmmoMaker.GunPowderBottle,
+
+	   Result:GunPowder=25,
+	   SkillRequired:Strength=2,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:JarOpen,
+	}
+
+	recipe Put gunpowder in a bottle
+	{
+	   GunPowder=25,
+
+	   Result:AmmoMaker.GunPowderBottle,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:JarOpen,
+	}
+
+
+/************* R. Casquillos *************/
+
+	recipe Open box of cases 9mm
+	{
+	   AmmoMaker.Casq9mmBox,
+
+	   Result:AmmoMaker.Casq9mm=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put 9mm cases in a box
+	{
+	   AmmoMaker.Casq9mm=50,
+
+	   Result:AmmoMaker.Casq9mmBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases cal.223
+	{
+	   AmmoMaker.Casq223Box,
+
+	   Result:AmmoMaker.Casq223=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.223 cases in a box
+	{
+	   AmmoMaker.Casq223=50,
+
+	   Result:AmmoMaker.Casq223Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases cal.308
+	{
+	   AmmoMaker.Casq308Box,
+
+	   Result:AmmoMaker.Casq308=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.308 cases in a box
+	{
+	   AmmoMaker.Casq308=50,
+
+	   Result:AmmoMaker.Casq308Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open shotgun cases box
+	{
+	   AmmoMaker.CasqShotgunBox,
+
+	   Result:AmmoMaker.CasqShotgun=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put shotgun cases in a box
+	{
+	   AmmoMaker.CasqShotgun=50,
+
+	   Result:AmmoMaker.CasqShotgunBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases 556x45mm
+	{
+	   AmmoMaker.Casq556x45mmBox,
+
+	   Result:AmmoMaker.Casq556x45mm=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put 556x45mm cases in a box
+	{
+	   AmmoMaker.Casq556x45mm=50,
+
+	   Result:AmmoMaker.Casq556x45mmBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases cal.38
+	{
+	   AmmoMaker.Casq38Box,
+
+	   Result:AmmoMaker.Casq38=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.38 cases in a box
+	{
+	   AmmoMaker.Casq38=50,
+
+	   Result:AmmoMaker.Casq38Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases cal.44
+	{
+	   AmmoMaker.Casq44Box,
+
+	   Result:AmmoMaker.Casq44=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.44 cases in a box
+	{
+	   AmmoMaker.Casq44=50,
+
+	   Result:AmmoMaker.Casq44Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases cal.45
+	{
+	   AmmoMaker.Casq45Box,
+
+	   Result:AmmoMaker.Casq45=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.45 cases in a box
+	{
+	   AmmoMaker.Casq45=50,
+
+	   Result:AmmoMaker.Casq45Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+	recipe Open box of cases 762x39mm
+	{
+	   AmmoMaker.Casq762x39mmBox,
+
+	   Result:AmmoMaker.Casq762x39mm=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put 762x39mm cases in a box
+	{
+	   AmmoMaker.Casq762x39mm=50,
+
+	   Result:AmmoMaker.Casq762x39mmBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:5.0,
+	   Sound:BoxPutIn,
+	}
+
+/************* Scrapping Cases *************/
+
+	recipe Scrap 9mm Cases
+	{
+	   AmmoMaker.Casq9mm=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=1,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 223 Cases
+	{
+	   AmmoMaker.Casq223=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=3,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 308 Cases
+	{
+	   AmmoMaker.Casq308=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=3,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap Shotgun Cases
+	{
+	   AmmoMaker.CasqShotgun=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=4,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 556 Cases
+	{
+	   AmmoMaker.Casq556x45mm=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=5,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 38 Cases
+	{
+	   AmmoMaker.Casq38=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=2,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 44 Cases
+	{
+	   AmmoMaker.Casq44=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=2,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 45 Cases
+	{
+	   AmmoMaker.Casq45=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=2,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+	recipe Scrap 762 Cases
+	{
+	   AmmoMaker.Casq762x39mm=25,
+	   keep AmmoMaker.AmmoPliers,
+	   
+	   Result:ScrapMetal,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   SkillRequired:AMReloading=6,
+       Sound:BoxPutIn,
+	   Category:Ammo,
+	   Time:50.0,
+	}
+
+/************* R. Cajas Puntas de plomo *************/
+
+	recipe Open box of 9mm lead
+	{
+	   AmmoMaker.Lead9mmBox,
+
+	   Result:AmmoMaker.Lead9mm=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put 9mm lead in a box
+	{
+	   AmmoMaker.Lead9mm=25,
+
+	   Result:AmmoMaker.Lead9mmBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of cal.223 lead
+	{
+	   AmmoMaker.Lead223Box,
+
+	   Result:AmmoMaker.Lead223=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.223 lead in a box
+	{
+	   AmmoMaker.Lead223=25,
+
+	   Result:AmmoMaker.Lead223Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of cal.308 lead
+	{
+	   AmmoMaker.Lead308Box,
+
+	   Result:AmmoMaker.Lead308=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.308 lead in a box
+	{
+	   AmmoMaker.Lead308=25,
+
+	   Result:AmmoMaker.Lead308Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of shotgun pellets
+	{
+	   AmmoMaker.LeadPelletsBox,
+
+	   Result:AmmoMaker.LeadPellets=500,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put shotgun pellets in a box
+	{
+	   AmmoMaker.LeadPellets=500,
+
+	   Result:AmmoMaker.LeadPelletsBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of 556x45mm lead
+	{
+	   AmmoMaker.Lead556x45mmBox,
+
+	   Result:AmmoMaker.Lead556x45mm=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put 556x45mm lead in a box
+	{
+	   AmmoMaker.Lead556x45mm=25,
+
+	   Result:AmmoMaker.Lead556x45mmBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of cal.38 lead
+	{
+	   AmmoMaker.Lead38Box,
+
+	   Result:AmmoMaker.Lead38=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.38 lead in a box
+	{
+	   AmmoMaker.Lead38=25,
+
+	   Result:AmmoMaker.Lead38Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of cal.44 lead
+	{
+	   AmmoMaker.Lead44Box,
+
+	   Result:AmmoMaker.Lead44=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.44 lead in a box
+	{
+	   AmmoMaker.Lead44=25,
+
+	   Result:AmmoMaker.Lead44Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of cal.45 lead
+	{
+	   AmmoMaker.Lead45Box,
+
+	   Result:AmmoMaker.Lead45=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put cal.45 lead in a box
+	{
+	   AmmoMaker.Lead45=25,
+
+	   Result:AmmoMaker.Lead45Box,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Open box of 762x39mm lead
+	{
+	   AmmoMaker.Lead762x39mmBox,
+
+	   Result:AmmoMaker.Lead762x39mm=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+	recipe Put 762x39mm lead in a box
+	{
+	   AmmoMaker.Lead762x39mm=25,
+
+	   Result:AmmoMaker.Lead762x39mmBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+/************* R. Plomo *************/
+
+	recipe Open box of lead
+	{
+	   AmmoMaker.LeadBox,
+
+	   Result:AmmoMaker.Lead=50,
+       OnGiveXP:Recipe.OnGiveXP.None,
+       Sound:PutItemInBag,
+	   Time:5.0,
+	}
+
+	recipe Put lead in a box
+	{
+	   AmmoMaker.Lead=50,
+
+	   Result:AmmoMaker.LeadBox,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Sound:BoxPutIn,
+	   Time:5.0,
+	}
+
+
+/************* R. Herramientas *************/
+
+	recipe Fix reloading tool
+	{
+	   AmmoMaker.ReloadingToolBroken,
+	   AmmoMaker.ToolPart1,
+	   AmmoMaker.ToolPart2,
+	   AmmoMaker.ToolPart3,
+	   AmmoMaker.ToolPart4,
+	   AmmoMaker.ToolPart5,
+	   Screws=4,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.ReloadingTool,
+       NeedToBeLearn:true,
+	   SkillRequired:Strength=3,
+	   Sound:Hammering,
+       OnGiveXP:AMStrengthxp1,
+	   Time:50.0,
+	   Category:Engineer,
+	}
+
+
+/************* R. Plomo *************/
+
+	recipe Make liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead=50,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make 9mm liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead9mm=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make cal.223 liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead223=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make cal.308 liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead308=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make pellets liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.LeadPellets=300,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make 556x45mm liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead556x45mm=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make cal.38 liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead38=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make cal.44 liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead44=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make cal.45 liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead45=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make 762x39mm liquid lead
+	{
+       Saucepan,
+	   AmmoMaker.Lead762x39mm9=25,
+	   BlowTorch=2,
+	   keep WeldingMask,
+
+	   Result:AmmoMaker.MeltedLeadSaucepan,
+       NeedToBeLearn:true,
+       OnGiveXP:AMWeldingxp3,
+       Sound:AM_Blowtorch,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Destroy to lead
+	{
+	   LeadPipe,
+	   keep Hammer/HammerStone,
+
+	   Result:AmmoMaker.Lead=25,
+       OnGiveXP:AMWeldingxp3,
+       Sound:Hammering,
+	   Time:150.0,
+	   Category:Welding,
+	}
+
+	recipe Make 9mm Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker,
+
+	   Result:AmmoMaker.Lead9mm=2,
+       NeedToBeLearn:true,
+	   SkillRequired:Strength=2,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make cal.223 Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker2,
+
+	   Result:AmmoMaker.Lead223=2,
+	   SkillRequired:Strength=3,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make cal.308 Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker3,
+
+	   Result:AmmoMaker.Lead308=2,
+	   SkillRequired:Strength=4,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make shotgun pellets
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker4,
+
+	   Result:AmmoMaker.LeadPellets=25,
+	   SkillRequired:Strength=4,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make 556x45mm Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker5,
+
+	   Result:AmmoMaker.Lead556x45mm=2,
+       NeedToBeLearn:true,
+	   SkillRequired:Strength=5,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make cal.38 Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker6,
+
+	   Result:AmmoMaker.Lead38=2,
+	   SkillRequired:Strength=4,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make cal.44 Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker7,
+
+	   Result:AmmoMaker.Lead44=2,
+	   SkillRequired:Strength=4,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make cal.45 Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker8,
+
+	   Result:AmmoMaker.Lead45=2,
+	   SkillRequired:Strength=5,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+	recipe Make 762x39mm Lead
+	{
+	   AmmoMaker.MeltedLeadSaucepan=1,
+	   keep LeadMaker9,
+
+	   Result:AmmoMaker.Lead762x39mm=2,
+	   SkillRequired:Strength=5,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMWSAXP1,
+	   Sound:LeadMaker,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	}
+
+/************* R. Municion *************/
+
+	recipe Make 9mm bullets
+	{
+	   AmmoMaker.Casq9mm=1,
+	   AmmoMaker.Lead9mm=1,
+	   GunPowder=1,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:Bullets9mm=1,
+	   SkillRequired:Aiming=3;AMReloading=2;Strength=3,
+       NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp1,
+	   Sound:Makebullets,
+	   Time:30.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make bullets cal.223
+	{
+	   AmmoMaker.Casq223=1,
+	   AmmoMaker.Lead223=1,
+	   GunPowder=2,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:223Bullets=1,
+       SkillRequired:Aiming=4;AMReloading=3;Strength=4,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp2,
+	   Sound:Makebullets,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make bullets cal.308
+	{
+	   AmmoMaker.Casq308=1,
+	   AmmoMaker.Lead308=1,
+	   GunPowder=3,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:308Bullets=1,
+       SkillRequired:Aiming=5;AMReloading=4;Strength=5,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp3,
+	   Sound:Makebullets,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make shotgun shells
+	{
+	   AmmoMaker.CasqShotgun=1,
+	   AmmoMaker.LeadPellets=25,
+	   GunPowder=5,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:ShotgunShells=1,
+       SkillRequired:Aiming=6;AMReloading=5;Strength=6,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp3,
+	   Sound:Makebullets,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make 556x45mm bullets
+	{
+	   AmmoMaker.Casq556x45mm=1,
+	   AmmoMaker.Lead556x45mm=1,
+	   GunPowder=4,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:556Bullets=1,
+	   SkillRequired:Aiming=5;AMReloading=5;Strength=6,
+       NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp3,
+	   Sound:Makebullets,
+	   Time:30.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make bullets cal.38
+	{
+	   AmmoMaker.Casq38=1,
+	   AmmoMaker.Lead38=1,
+	   GunPowder=1,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:Bullets38=1,
+       SkillRequired:Aiming=3;AMReloading=3;Strength=3,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp2,
+	   Sound:Makebullets,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make bullets cal.44
+	{
+	   AmmoMaker.Casq44=1,
+	   AmmoMaker.Lead44=1,
+	   GunPowder=2,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:Bullets44=1,
+       SkillRequired:Aiming=4;AMReloading=4;Strength=4,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp2,
+	   Sound:Makebullets,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make bullets cal.45
+	{
+	   AmmoMaker.Casq45=1,
+	   AmmoMaker.Lead45=1,
+	   GunPowder=2,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:Bullets45=1,
+       SkillRequired:Aiming=5;AMReloading=5;Strength=5,
+	   NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp2,
+	   Sound:Makebullets,
+	   Time:50.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+	recipe Make 762x39mm bullets
+	{
+	   AmmoMaker.Casq762x39mm=1,
+	   AmmoMaker.Lead762x39mm=1,
+	   GunPowder=5,
+	   keep AmmoMaker.ReloadingTool,
+
+	   Result:AmmoMaker.Ammo_762x39mm=1,
+	   SkillRequired:Aiming=6;AMReloading=6;Strength=6,
+       NeedToBeLearn:true,
+       OnGiveXP:AMStrengthxp3,
+	   Sound:Makebullets,
+	   Time:30.0,
+	   Category:Ammo,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+       Prop2:CDplayer,
+	   Tooltip:Tooltip_Recipe_MakeBullets,
+	}
+
+/************* R. Latas Municion *************/
+
+	recipe Open 9mm Canister
+	{
+	   AmmoMaker.9mmCan,
+
+	   Result:Bullets9mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 9mm boxes in a canister
+	{
+	   Bullets9mmBox=25,
+
+	   Result:AmmoMaker.9mmCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 223 Canister
+	{
+	   AmmoMaker.223Can,
+
+	   Result:223Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 223 boxes in a canister
+	{
+	   223Box=25,
+
+	   Result:AmmoMaker.223Can,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 308 Canister
+	{
+	   AmmoMaker.308Can,
+
+	   Result:308Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 308 boxes in a canister
+	{
+	   308Box=25,
+
+	   Result:AmmoMaker.308Can,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open shotgun Canister
+	{
+	   AmmoMaker.ShotgunShellsCan,
+
+	   Result:ShotgunShellsBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put shotgun shells boxes in a canister
+	{
+	   ShotgunShellsBox=25,
+
+	   Result:AmmoMaker.ShotgunShellsCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 556x45mm Canister
+	{
+	   AmmoMaker.556x45mmCan,
+
+	   Result:556Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 556x45mm boxes in a canister
+	{
+	   556Box=25,
+
+	   Result:AmmoMaker.556x45mmCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 38 Canister
+	{
+	   AmmoMaker.38Can,
+
+	   Result:Bullets38Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 38 boxes in a canister
+	{
+	   Bullets38Box=25,
+
+	   Result:AmmoMaker.38Can,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 44 Canister
+	{
+	   AmmoMaker.44Can,
+
+	   Result:Bullets44Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 44 boxes in a canister
+	{
+	   Bullets44Box=25,
+
+	   Result:AmmoMaker.44Can,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 45 Canister
+	{
+	   AmmoMaker.45Can,
+
+	   Result:Bullets45Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 45 boxes in a canister
+	{
+	   Bullets45Box=25,
+
+	   Result:AmmoMaker.45Can,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+/************* R. Latas Casquillos *************/
+
+	recipe Open 9mm Cases Canister
+	{
+	   AmmoMaker.9mmCasesCan,
+
+	   Result:AmmoMaker.Casq9mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 9mm cases boxes in a canister
+	{
+	   AmmoMaker.Casq9mmBox=25,
+
+	   Result:AmmoMaker.9mmCasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 223 Cases Canister
+	{
+	   AmmoMaker.223CasesCan,
+
+	   Result:AmmoMaker.Casq223Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 223 cases boxes in a canister
+	{
+	   AmmoMaker.Casq223Box=25,
+
+	   Result:AmmoMaker.223CasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 308 Cases Canister
+	{
+	   AmmoMaker.308CasesCan,
+
+	   Result:AmmoMaker.Casq308Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 308 cases boxes in a canister
+	{
+	   AmmoMaker.Casq308Box=25,
+
+	   Result:AmmoMaker.308CasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open shotgun hulls Canister
+	{
+	   AmmoMaker.ShotgunShellsCasesCan,
+
+	   Result:AmmoMaker.CasqShotgunBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put shotgun hulls boxes in a canister
+	{
+	   AmmoMaker.CasqShotgunBox=25,
+
+	   Result:AmmoMaker.ShotgunShellsCasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 556x45mm Cases Canister
+	{
+	   AmmoMaker.556x45mmCasesCan,
+
+	   Result:AmmoMaker.Casq556x45mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 556x45mm cases boxes in a canister
+	{
+	   AmmoMaker.Casq556x45mmBox=25,
+
+	   Result:AmmoMaker.556x45mmCasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 38 Cases Canister
+	{
+	   AmmoMaker.38CasesCan,
+
+	   Result:AmmoMaker.Casq38Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 38 cases boxes in a canister
+	{
+	   AmmoMaker.Casq38Box=25,
+
+	   Result:AmmoMaker.38CasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 44 Cases Canister
+	{
+	   AmmoMaker.44CasesCan,
+
+	   Result:AmmoMaker.Casq44Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 44 cases boxes in a canister
+	{
+	   AmmoMaker.Casq44Box=25,
+
+	   Result:AmmoMaker.44CasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 45 Cases Canister
+	{
+	   AmmoMaker.45CasesCan,
+
+	   Result:AmmoMaker.Casq45Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 45 cases boxes in a canister
+	{
+	   AmmoMaker.Casq45Box=25,
+
+	   Result:AmmoMaker.45CasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 762x39mm Cases Canister
+	{
+	   AmmoMaker.762x39mmCasesCan,
+
+	   Result:AmmoMaker.Casq762x39mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 762x39mm cases boxes in a canister
+	{
+	   AmmoMaker.Casq762x39mmBox=25,
+
+	   Result:AmmoMaker.762x39mmCasesCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+/************* R. Latas Proyectiles *************/
+
+	recipe Open 9mm Lead Canister
+	{
+	   AmmoMaker.9mmLeadCan,
+
+	   Result:AmmoMaker.Lead9mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 9mm lead boxes in a canister
+	{
+	   AmmoMaker.Lead9mmBox=25,
+
+	   Result:AmmoMaker.9mmLeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 223 Lead Canister
+	{
+	   AmmoMaker.223LeadCan,
+
+	   Result:AmmoMaker.Lead223Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 223 lead boxes in a canister
+	{
+	   AmmoMaker.Lead223Box=25,
+
+	   Result:AmmoMaker.223LeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 308 Cases Canister
+	{
+	   AmmoMaker.308LeadCan,
+
+	   Result:AmmoMaker.Lead308Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 308 cases boxes in a canister
+	{
+	   AmmoMaker.Lead308Box=25,
+
+	   Result:AmmoMaker.308LeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open shotgun pellets Canister
+	{
+	   AmmoMaker.ShotgunShellsLeadCan,
+
+	   Result:AmmoMaker.LeadPelletsBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put shotgun pellets boxes in a canister
+	{
+	   AmmoMaker.LeadPelletsBox=25,
+
+	   Result:AmmoMaker.ShotgunShellsLeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 556x45mm Lead Canister
+	{
+	   AmmoMaker.556x45mmLeadCan,
+
+	   Result:AmmoMaker.Lead556x45mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 556x45mm lead boxes in a canister
+	{
+	   AmmoMaker.Lead556x45mmBox=25,
+
+	   Result:AmmoMaker.556x45mmLeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 38 Lead Canister
+	{
+	   AmmoMaker.38LeadCan,
+
+	   Result:AmmoMaker.Lead38Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 38 lead boxes in a canister
+	{
+	   AmmoMaker.Lead38Box=25,
+
+	   Result:AmmoMaker.38LeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 44 Lead Canister
+	{
+	   AmmoMaker.44LeadCan,
+
+	   Result:AmmoMaker.Lead44Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 44 lead boxes in a canister
+	{
+	   AmmoMaker.Lead44Box=25,
+
+	   Result:AmmoMaker.44LeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 45 Lead Canister
+	{
+	   AmmoMaker.45LeadCan,
+
+	   Result:AmmoMaker.Lead45Box=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 45 lead boxes in a canister
+	{
+	   AmmoMaker.Lead45Box=25,
+
+	   Result:AmmoMaker.45LeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Open 762x39mm Lead Canister
+	{
+	   AmmoMaker.762x39mmLeadCan,
+
+	   Result:AmmoMaker.Lead762x39mmBox=25,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 762x39mm lead boxes in a canister
+	{
+	   AmmoMaker.Lead762x39mmBox=25,
+
+	   Result:AmmoMaker.762x39mmLeadCan,
+       OnGiveXP:Recipe.OnGiveXP.None,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+	recipe Put 762x39mm rounds in a box
+	{
+	   AmmoMaker.Ammo_762x39mm=50,
+
+	   Result:AmmoMaker.762x39mmBox,
+       OnGiveXP:NoXP_OnGiveXP,
+	   Time:5.0,
+	   Sound:PutItemInBag,
+	}
+
+	recipe Open box of 762x39mm rounds
+	{
+	   AmmoMaker.762x39mmBox,
+
+	   Result:AmmoMaker.Ammo_762x39mm=10,
+       OnGiveXP:NoXP_OnGiveXP,
+       Sound:PutItemInBag,
+	   Time:5.0,
+	}
+
+	recipe Open 762x39mm Canister
+	{
+	   AmmoMaker.762Can,
+
+	   Result:762x39mmBox=25,
+       OnGiveXP:NoXP_OnGiveXP,
+	   Time:25.0,
+	   Sound:ToolBoxOpen,
+	   Category:Ammo,
+	}
+
+	recipe Put 762x39mm boxes in a canister
+	{
+	   762x39mmBox=25,
+
+	   Result:AmmoMaker.762Can,
+       OnGiveXP:NoXP_OnGiveXP,
+	   Time:25.0,
+	   Sound:ToolBoxClose,
+	   Category:Ammo,
+	}
+
+
+/********** Ensamblar armas de fuego **********/
+
+	recipe Ensamble M9
+	{
+	   M9Parts=5,
+	   keep Screwdriver,
+
+	   Result:Pistol,
+	   SkillRequired:Aiming=3;AMReloading=2,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble M1911
+	{
+	   M1911Parts=5,
+	   keep Screwdriver,
+
+	   Result:Pistol2,
+	   SkillRequired:Aiming=3;AMReloading=3,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble DE
+	{
+	   DEParts=5,
+	   keep Screwdriver,
+
+	   Result:Pistol3,
+	   SkillRequired:Aiming=3;AMReloading=4,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble Revolver
+	{
+	   RevolverParts=5,
+	   keep Screwdriver,
+
+	   Result:Revolver,
+	   SkillRequired:Aiming=3;AMReloading=3,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble Revolver Long
+	{
+	   Revolver_LongParts=5,
+	   keep Screwdriver,
+
+	   Result:Revolver_Long,
+	   SkillRequired:Aiming=3;AMReloading=4,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble Revolver Short
+	{
+	   Revolver_ShortParts=5,
+	   keep Screwdriver,
+
+	   Result:Revolver_Short,
+	   SkillRequired:Aiming=3;AMReloading=4,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble Shotgun
+	{
+	   ShotgunParts=5,
+	   keep Screwdriver,
+
+	   Result:Shotgun,
+	   SkillRequired:Aiming=2;AMReloading=4,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble DoubleBarrelShotgun
+	{
+	   DoubleBarrelShotgunParts=5,
+	   keep Screwdriver,
+
+	   Result:DoubleBarrelShotgun,
+	   SkillRequired:Aiming=2;AMReloading=4,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble VarmintRifle
+	{
+	   VarmintRifleParts=5,
+	   keep Screwdriver,
+
+	   Result:VarmintRifle,
+	   SkillRequired:Aiming=4;AMReloading=5,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble HuntingRifle
+	{
+	   HuntingRifleParts=5,
+	   keep Screwdriver,
+
+	   Result:HuntingRifle,
+	   SkillRequired:Aiming=4;AMReloading=5,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble AssaultRifle
+	{
+	   AssaultRifleParts=5,
+	   keep Screwdriver,
+
+	   Result:AssaultRifle,
+	   SkillRequired:Aiming=5;AMReloading=6,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble AssaultRifle2
+	{
+	   AssaultRifle2Parts=5,
+	   keep Screwdriver,
+
+	   Result:AssaultRifle2,
+	   SkillRequired:Aiming=5;AMReloading=6,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+	recipe Ensamble AK47
+	{
+	   AK47Parts=5,
+	   keep Screwdriver,
+
+	   Result:AmmoMaker.AK47,
+	   SkillRequired:Aiming=6;AMReloading=7,
+       NeedToBeLearn:true,
+       OnGiveXP:AM_3XP_Weapons,
+	   Sound:DismantleFirearm,
+	   Time:200.0,
+	   Category:Engineer,
+	   AnimNode:Disassemble,
+	   Prop1:Screwdriver,
+	}
+
+
+}

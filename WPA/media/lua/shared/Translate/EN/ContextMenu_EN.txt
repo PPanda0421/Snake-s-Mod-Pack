@@ -1,0 +1,8 @@
+ContextMenu_EN = {
+
+	ContextMenu_RepairSilencer = "Repair silencer",
+	ContextMenu_RepairS = "Repair",
+	ContextMenu_RepairSilencerTT = "With this repair kit you can repair a silencer 10% per use.",
+	ContextMenu_fixing = "Fixing",
+	ContextMenu_cantequipsilencer = "This weapon part is totally damaged.",
+}

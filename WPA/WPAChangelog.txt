@@ -1,0 +1,158 @@
+Changelog
+
+Version 3.09(Build 41 Edition)
+*Actualizadas tablas de loot.
+*Agregado sonidos nuevos (Balance de sonidos)
+*Agregado correctamente modelo 3D del combo laser luz en la pistola M9 (Gracias Truji!!!!)
+
+Version 3.08(Build 41 Edition)
+*Actualizadas tablas de loot para Build 41.51
+
+Version 3.07(Build 41 Edition)
+*Cambio de iconos para la pistola M9 y D-E, los iconos ahora corresponden a los modelos.
+
+Version 3.06(Build 41 Edition)
+Deshabilitadas las recetas para poder desmantelar y fabricar armas ( Ahora se utiliza la mesa de recarga de Ammo Maker V0.47 para este sistema)
+Agregado chequeo de recetas aprendidas para poder eliminar las obsoletas cuando se comienza una partida ya comenzada.
+Cambio en el costo de puntaje del rasgo armero.
+
+Version 3.05(Build 41 Edition)
+Reparados modelos del juego base para las armas modificadas del mod.
+Reparada configuración del rifle de caza y varmint (Ya no necesitan cargadores)
+
+
+Version 3.04(Build 41 Edition)
+Reparado bug al cortar cañones de escopeta: se conservaban las partes equipadas en la escopeta convencional en la escopeta recortada.
+Reparado bug que al tener equipada un arma con luz tactica y desequiparla seguiamos teniendo el cono de luz.
+Actualizado el peso de las armas respecto al juego base.
+Nuevos modelos 3D para armas (Gracias @Truji)
+Agregado modelo del silenciador de escopetas.
+Agregado modelo de mira militar de escopeta.
+Agregado modelo de combo laser/Luz de escopeta.
+Agregado modelo de Linterna táctica de escopeta.
+Agregado modelo de Láser de escopeta.
+Agregado modelo de carcaza de polimero de escopeta.
+Agregado modelo de cantonera con porta cartuchos de escopeta y de rifles.
+Agregado modelo de carcaza porta cartuchos de escopeta.
+Agregado modelo de compensador de pistola y de escopeta.
+
+Version 3.03(Build 41 Edition)
+Agregada tabla de loot para stashes de suelos de tablones.
+
+Version 3.02(Build 41 Edition)
+Cambio en recetas de los silenciadores caseros.
+Eliminación de receta para hacer tubos de esponja.
+
+Version 3.01(Build 41 Edition)
+Reparadas tablas de loot para Build 41.34
+
+Version 3.0(Build 41 Edition)
+Código totalmente reescrito.
+Compatible con Build 41.
+Agregadas partes de armas del juego base a las nuevas que se han agregado.
+Ahora partes que agrega el mod tambien se pueden insertar en algunas armas nuevas que han agregado.
+Nuevas partes para las armas nuevas.
+
+Version 2.3(Build 40 Edition)
+Agregadas tablas de sonidos custom en scripts.
+
+Version 2.2(Build 40 Edition)
+*Cambio en tablas de sonido.
+
+Version 2.1
+*Cambio en el peso de los Kit de reparaciones S&S. (de 0.02 a 0.5)
+
+Version 2.0
+*Agregada durabilidad en silenciadores.
+*Agregada barra de condicion de silenciador en silenciadores y armas (Siempre y cuando estas tengan equipado un silenciador) - Requiere Custom Tooltips V2.3
+*Agregados kit de reparacion de silenciador ("Kit de reparacion S&S")- Reparan un 10% la condición del silenciador por cada uso (Compatible con Ammo Maker 3.7).
+*Cambios en loot de vehiculos.
+*Agregado sonido de drop de casquillos - Requiere Custom Tooltips V2.3
+*Cambios en tablas de loot.
+
+Version 1.9
+*Agregado loot para vehiculos.
+
+Version 1.8
+*Conversión para Build de Vehiculos(IWBUMS 41.2)
+
+Version 1.75
+*Agregada compatibilidad para el mapa Military Complex.
+
+Version 1.74
+[Fix Importante]*Reparado un error que al apretar la F en el menú principal del juego ocasionaba errores.
+[Fix Importante]*Reparado el bug de que al desequipar un accesorio de luz táctica o similar, al apretar la tecla F, cargaba el item en las manos y prendía luz automáticamente sin tener el accesorio.
+
+Version 1.73
+[Fix Importante]*Reparado un bug luego de haber usado un arma con mejora de cañón y luego de retirada la misma no se restauraban los stats originales del arma.
+
+Version 1.72
+*Reparadas recetas de ensamblaje de armas.
+*Reparado un error al otorgar xp a la habilidad carpintería (nullpointer).
+
+Version 1.71
+*Reparado un error en tablas de loot.
+
+Version 1.7
+*Server Update: Ahora el mod requiere de Custom Tooltips para el correcto funcionamiento al crearse un personaje nuevo desde la opcion "nuevo personaje" in-game.
+
+Version 1.6
+*Cambio de codigo interno, ahora el valor de sonido de volumen y radio de distancia de sonido han sido separados para una mejor configuración de silenciadores.
+*Reconfiguración de silenciadores.
+*Agregado silenciador casero de rifle.
+*Agregada la receta para hacer silenciadores caseros de rifles.
+*Cambio de sonido cuando se usa supresor de pistola.
+
+Version 1.5
+*Agregados items del mod al contenido que se genera en los eventos de mapas anotados.
+
+Version 1.4
+*Agregada compatibilidad con AliceBackpackS (Ahora spawnean objetos de este mod dentro de las mochilas alice).
+
+Version 1.3
+*Reconfigurados parametros de sonidos de silenciadores.
+
+Version 1.2(para Pz 35.14+)
+*Quitado el fix especial ya que los desarrolladores de indie stone incluyeron el fix del mod en el juego base.
+
+Version 1.1
+*Agregado un fix especial que repara un problema del juego base: al hacer click en el menú contextual de un arma que está dentro de un contenedor,
+nos daba la opción de agregar o quitar una parte de la misma, la cual al hacerle click no ocurria nada.
+Ahora con este fix al hacer click en el menú contextual el arma pasa a nuestro inventario y se inicia el proceso del agregado o quitado de la parte deseada automaticamente.
+
+Version 1.0
+*Limpieza de codigo (Alivianamiento del mod).
+*Agregados ensambles y desmantelamientos de escopeta y escopeta recortada.
+*Agregado nuevo accesorio.
+*Corregida una receta.
+
+Version 0.4
+*Agregados ensambles y desmantelamientos de rifles Varmint y de caza.
+*Reconfiguradas funciones matemátcias de desmantelamiento de acuerdo al rasgo armero.
+*Agregado rasgo armero en lista de rasgos con un costo de 6 puntos.
+*Reparada receta de pistola que requería una habilidad erronea.
+
+Version 0.3
+*Agregadas partes nuevas para escopetas.
+*Agregadas revistas nuevas.
+*Agregada la posibilidad de desamblar y obtener partes de las pistolas rotas (Proximamente las demas armas de fuego).
+*Agregada la posibilidad de ensamblar una pistola con las partes obtenidas del punto anterior.
+*Agregado rasgo unico nuevo (Influye en desamblar y ensamblar armas de fuego).
+*Agregadas funciones matemáticas para el correcto desempeño de ensamblar o desamblar armas de fuego.
+*Agregada compatibilidad con Ammo Maker para agregar rasgo a la profesión Maestro Armero.
+*Rebalanceadas distribuciones.
+*Agregados objetos nuevos.
+*Cambiada la capacidad de los maletines negros.
+*Agregados sonidos nuevos.
+*Actualizadas lineas de traducciones.
+
+Version 0.2
+*Reparadas algunas lineas de traducciones.
+*Agregadas partes nuevas para rifles.
+*Agregada revista nueva.
+*Agregadas recetas nuevas.
+*Actualizada la distribución de objetos.
+*Agregados sonidos nuevos.
+
+Version 0.1
+*Beta release.

@@ -1,0 +1,4 @@
+Stash_RU = {
+
+    Stash_SCMMap1_Text1 = "Далеко на запад. Ближе к «FossOil».",
+}

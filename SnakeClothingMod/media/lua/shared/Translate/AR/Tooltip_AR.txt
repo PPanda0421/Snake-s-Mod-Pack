@@ -1,0 +1,6 @@
+Tooltip_ES = {
+	
+	Tooltip_DitoPack = "Una mochila curtida en mil batallas.",
+	Tooltip_UpholsteryKit = "Puede utilizarse para reparar asientos vehiculares.",
+
+}

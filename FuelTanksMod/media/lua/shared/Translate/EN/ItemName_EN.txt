@@ -1,0 +1,4 @@
+ItemName_EN = {
+    ItemName_FuelTanks.FuelTanksMag1 = "'Fuel Tanks' Magazine",
+    ItemName_FuelTanks.FuelMeter = "Fuel Meter",
+}

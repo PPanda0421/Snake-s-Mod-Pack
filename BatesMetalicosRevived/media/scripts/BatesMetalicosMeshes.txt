@@ -1,0 +1,33 @@
+module BatesMetalicos
+{
+/*
+	// The name XXX is used in these places:
+	//   items.txt    weaponSprite= or StaticModel=
+	//   recipes.txt  Prop1: or Prop2:
+	//   BaseTimedAction:setOverrideHandModels(XXX, XXX)
+	model XXX
+	{
+		// Path is relative to "media/models_x/".  Extension is optional.
+		mesh = Weapons/1Handed/SaucePan,
+
+		// Path is relative to "media/textures/".  Extension is optional.
+		texture = Weapons/1Handed/SaucePan,
+
+		// Default is "basicEffect".
+		shader = basicEffect,
+
+		// Default is TRUE.
+		static = TRUE,
+	}
+*/
+	model MetalBaseballBat
+	{
+		mesh = Weapons/2Handed/MetalBaseballBat,
+
+		attachment world
+		{
+			offset = 0.0000 0.2450 0.0000,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+	}
+}

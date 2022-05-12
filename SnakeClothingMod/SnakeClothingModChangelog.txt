@@ -1,0 +1,18 @@
+V0.5
+*Agregada nueva indumentaria.
+
+V0.4
+Actualizadas tablas de loot (Build 41.51)
+
+V0.3
+Agregado mapa anotado custom.
+Agregada mas indumentaria.
+
+V0.2
+Agregada receta para hacer kit de costura de tapicería.
+Agregada receta para recuperar aguja del kit de costura de tapicería.
+Editado el item base Twine (Ahora se pueden consolidar)
+Agregada receta de reparación de asientos de vehiculos utilizando el kit de costura de tapicería y retales de cuero.
+
+V 0.1
+Release!!!

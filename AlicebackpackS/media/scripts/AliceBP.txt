@@ -1,0 +1,682 @@
+module AliceBP
+{
+
+    imports
+    {
+        Base
+
+    }
+
+/*********** Normal ***********/
+/*    item GrenadeMk2 */
+/*	{ */
+/*		MaxRange	=	10, */
+/*		Type	=	Weapon, */
+/*		MinimumSwingTime	=	1.5, */
+/*		SwingAnim	=	Throw, */
+/*		SwingSound	=	ThrowGrenade, */
+/*		WeaponSprite = Molotov, */
+/*		UseSelf	=	TRUE, */
+/*		DisplayName	=	Grenade Mk2, */
+/*		SwingTime	=	1.5, */
+/*		SwingAmountBeforeImpact	=	0.1, */
+/*		PhysicsObject	=	PipeBomb, */
+/*		MinDamage	=	0, */
+/*		Weight	=	1.5, */
+/*		MaxDamage	=	0, */
+/*		KnockdownMod	=	20, */
+/*		CriticalChance = 100, */
+/*       CritDmgMultiplier = 8, */
+/*		MaxHitCount	=	25, */
+/*		Icon	=	Grenade, */
+/*		ExplosionPower  =   1, */
+/*		ExplosionRange  =   5, */
+/*        SmokeRange  =   5, */
+/*		ExplosionSound  =   BigExplosion, */
+/*	} */
+
+    item SpearMilitaryKnife
+    {
+        MaxRange	=	1.48,
+        WeaponSprite	=	SpearMilitaryKnife,
+        MinAngle	=	0.8,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Improvised;Spear,
+        ConditionLowerChanceOneIn	=	15,
+        Weight	=	1.5,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Spear,
+        ConditionMax	=	10,
+        MaxHitCount	=	2,
+        DoorDamage	=	7,
+        SwingAnim	=	Spear,
+        DisplayName	=	Spear With Military Knife,
+        MinRange	=	0.98,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	SpearMilitaryKnife,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        TreeDamage  =   0,
+        TwoHandWeapon = TRUE,
+        CriticalChance	=	30,
+        CritDmgMultiplier = 10,
+        MinDamage	=	1.2,
+        MaxDamage	=	1.8,
+        DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        BreakSound  =   SpearHuntingKnifeBreak,
+        HitFloorSound	=	SpearHuntingKnifeHit,
+        ImpactSound	=	SpearHuntingKnifeHit,
+        DoorHitSound = SpearHuntingKnifeHit,
+        HitSound	=	SpearHuntingKnifeHit,
+        SwingSound	=	SpearHuntingKnifeSwing,
+		AttachmentType = Shovel,
+        Tags = FishingSpear,
+    }
+
+	item SupportBackpack
+	{
+		DisplayCategory = Accessory,
+        Tooltip = 	Tooltip_SupportBackpack,
+		Weight	=	0.4,
+		Type	=	Normal,
+		DisplayName	=	Soporte de mochila Alice,
+		Icon	=	Soporte,
+	}
+
+  	item MRE
+	{
+		DisplayCategory = Food,
+		DisplayName		=	Meal Ready-To-Eat,
+		Weight			=	2,
+		Type			=	Normal,
+		Icon			=	MRE,
+		Tooltip = 	Tooltip_MRE,
+		StaticModel = MRE,
+	}
+
+  	item BoxMRE
+	{
+		DisplayCategory = Container,
+		Weight			=	25,
+		Icon			=	CaseMRE,
+		DisplayName		=	Case of MREs,
+		Tooltip = 	Tooltip_MREBox,
+	}
+
+  	item BoxMRE2
+	{
+		DisplayCategory = Container,
+		Weight			=	25,
+		Icon			=	CaseMRE,
+		DisplayName		=	Case of MREs,
+		Tooltip = 	Tooltip_MREBox2,
+	}
+
+	item BoxMRE3
+	{
+		DisplayCategory = Container,
+		WeightReduction	=	50,
+		Weight			=	5,
+		Type			=	Container,
+		Capacity		=	25,
+		DisplayName		=	Case of MREs,
+		Icon			=	CaseMRE,
+        OpenSound   	=   OpenMREBox,
+        CloseSound   	=   OpenMREBox,
+        PutInSound   	=   OpenMREBox,
+	}
+
+/*********** Contenedores ***********/	
+
+	item MilitiaPouch1
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_MilitiaPouch1,
+		WeightReduction	=	80,
+		Weight			=	0.1,
+		Type			=	Container,
+		Capacity		=	4,
+		DisplayName		=	Bolsa militar (Urbana),
+		Icon			=	DumpPouchUCP,
+        OpenSound   	=   OpenBag,
+        CloseSound   	=   CloseBag,
+        PutInSound   	=   PutItemInBag,
+	}
+	
+	item MilitiaPouch2
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_MilitiaPouch2,
+		WeightReduction	=	80,
+		Weight			=	0.1,
+		Type			=	Container,
+		Capacity		=	4,
+		DisplayName		=	Bolsa militar (Jungla),
+		Icon			=	DumpPouchMulticam,
+        OpenSound   	=   OpenBag,
+        CloseSound   	=   CloseBag,
+        PutInSound   	=   PutItemInBag,
+	}
+
+	item AlicePack
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_AlicePack,
+		WeightReduction	=	90,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Mochila militar Alice,
+		Icon			=	AlicePackMulticam,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+	}
+
+	item UpgradedAlicePack1
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_UpgradedAlicePack1,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.4,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Mochila militar Alice (Soporte),
+		Icon			=	AlicePackMulticamU,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+	}
+
+	item UpgradedAlicePack2
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_UpgradedAlicePack2,
+		ClothingItem = UpgradedAlicePack2,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.5,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Soporte + Bolsa),
+		Icon			=	AlicePackMulticamUp1,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = UpgradedAlicePack2_LHand holdingbagleft,
+        ReplaceInPrimaryHand = UpgradedAlicePack2_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+	}
+
+	item UpgradedAlicePack2b
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack2b,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		CanBeEquipped = Back,
+		WeightReduction	=	95,
+		Weight			=	1.5,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Soporte + Bolsa),
+		Icon			=	AlicePackMulticamUp2,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.93,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+	}
+
+	item UpgradedAlicePack3
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack3,
+		ClothingItem = UpgradedAlicePack2,
+		CanBeEquipped = Back,
+		WeightReduction	=	90,
+		Weight			=	1.1,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Bolsa),
+		Icon			=	Alice3,	
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = UpgradedAlicePack2_LHand holdingbagleft,
+        ReplaceInPrimaryHand = UpgradedAlicePack2_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+	}
+
+	item UpgradedAlicePack3b
+	{
+		DisplayCategory = Bag,
+	    Tooltip 	    =   Tooltip_UpgradedAlicePack3b,
+		ClothingItem = Bag_ALICEpack_ArmyMod,
+		WeightReduction	=	90,
+		Weight			=	1.1,
+		Type			=	Container,
+		Capacity		=	34,
+		DisplayName		=	Mochila militar Alice (Bolsa),
+		Icon			=	Alice3b,
+		CanBeEquipped   = 	Back,	
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyMod_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyMod_RHand holdingbagright,
+		WorldStaticModel = ALICE_Pack_Ground,
+	}
+
+/*********** Cantimplora militar ***********/
+
+    item MilitaryCanteenEmpty
+  	{
+		DisplayCategory = WaterContainer,
+   		Type 				= 		Normal,
+   		DisplayName 		= 		Military Canteen (Empty),
+   		Icon 				= 		MilitaryCanteen,
+   		Weight 				= 		0.5,
+   		ReplaceOnUseOn  	=		WaterSource-MilitaryCanteenFull,
+		CanStoreWater		=		true,
+  	}
+
+    item MilitaryCanteenFull
+	{
+		DisplayCategory = Water,
+		Type				=		Drainable,
+		DisplayName			=		Military Canteen (Full),
+		Icon				=		MilitaryCanteen,
+		Weight				=		1.5,
+    	UseDelta			=		0.05,
+    	ReplaceOnUseOn 		= 		WaterSource-MilitaryCanteenFull,
+    	ReplaceOnDeplete 	= 		MilitaryCanteenEmpty,
+    	IsWaterSource		=		true,
+		CanStoreWater		=		true,
+		UseWhileEquipped	=	    false,
+		StaticModel = MilitaryCanteenFull,
+	}
+
+    item MilitaryKnife
+	{
+		MaxRange	=	0.9,
+		WeaponSprite	=	MilitaryKnife,
+		MinAngle	=	0,
+		Type	=	Weapon,
+		MinimumSwingTime	=	2,
+		KnockBackOnNoDeath	=	FALSE,
+		SwingAmountBeforeImpact	=	0.02,
+		Categories	=	SmallBlade,
+		ConditionLowerChanceOneIn	=	40,
+		Weight	=	0.5,
+		SplatNumber	=	4,
+		PushBackMod	=	0.3,
+		SubCategory	=	Stab,
+		AimingMod	=	0.8,
+		ConditionMax	=	20,
+		MaxHitCount	=	1,
+		IsAimedHandWeapon	=	TRUE,
+		DoorDamage	=	2,
+		SwingAnim	=	Stab,
+		WeaponWeight	=	0.5,
+		DisplayName	=	Military knife,
+		MinRange	=	0.61,
+		CloseKillMove = Jaw_Stab,
+		SwingTime	=	2,
+		KnockdownMod	=	0,
+		SplatBloodOnNoDeath	=	TRUE,
+		Icon	=	MilitaryKnife,
+		RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+		TreeDamage  =   2,
+		EnduranceMod = 0.5,
+		BreakSound  =   HuntingKnifeBreak,
+		MetalValue = 30,
+		CriticalChance	=	25,
+        CritDmgMultiplier = 3,
+		MinDamage	=	0.8,
+		MaxDamage	=	1.4,
+		WeaponLength = 0.25,
+		DamageCategory = Slash,
+        DamageMakeHole = TRUE,
+        HitFloorSound	=	HuntingKnifeHit,
+        ImpactSound	=	HuntingKnifeHit,
+        DoorHitSound = HuntingKnifeHit,
+		HitSound	=	HuntingKnifeHit,
+		SwingSound = HuntingKnifeSwing,
+		AttachmentType = Knife,
+		Tags = CutPlant,
+	}
+
+	item AlicePackUrban
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_AlicePack,
+		WeightReduction	=	90,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ALICEpack_ArmyUrban,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Alice BackPack Urban,
+		Icon			=	ALICEpack_Urban,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyUrban_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyUrban_RHand holdingbagright,
+	}
+
+	item AlicePackDesert
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_AlicePack,
+		WeightReduction	=	90,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ALICEpack_ArmyDesert,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	30,
+		DisplayName		=	Alice BackPack Desert,
+		Icon			=	ALICEpack_Desert,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_ArmyDesert_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_ArmyDesert_RHand holdingbagright,
+	}
+/*********** Recetas ***********/
+
+
+    recipe Agregar soporte a mochila Alice
+    {
+       AliceBP.AlicePack=1,
+       AliceBP.SupportBackpack=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack1,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Agregar soporte a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack3=1,
+       AliceBP.SupportBackpack=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack2,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Agregar soporte a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack3b=1,
+       AliceBP.SupportBackpack=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack2b,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Agregar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack1=1,
+       destroy AliceBP.MilitiaPouch1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack2,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Agregar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack1=1,
+       destroy AliceBP.MilitiaPouch2,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack2b,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Agregar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.AlicePack=1,
+       destroy AliceBP.MilitiaPouch1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack3,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Agregar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.AlicePack=1,
+       destroy AliceBP.MilitiaPouch2,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack3b,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+       Time:80.0,
+    }
+
+    recipe Quitar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack3=1,
+       keep Screwdriver,
+	   
+	   Result:AliceBP.AlicePack,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnMilitiaPouch1,
+	   Time:80.0,
+    }
+
+    recipe Quitar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack3b=1,
+       keep Screwdriver,
+	   
+	   Result:AliceBP.AlicePack,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnMilitiaPouch2,
+	   Time:80.0,
+    }
+
+    recipe Quitar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack2=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack1,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnMilitiaPouch1,
+       Time:80.0,
+    }
+
+    recipe Quitar bolsa de almacenaje a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack2b=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack1,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnMilitiaPouch2,
+       Time:80.0,
+    }
+
+    recipe Quitar soporte a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack2=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack3,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnSupportBackpack,
+       Time:80.0,
+    }
+
+    recipe Quitar soporte a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack2b=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.UpgradedAlicePack3b,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnSupportBackpack,
+       Time:80.0,
+    }
+
+    recipe Quitar soporte a mochila Alice
+    {
+       AliceBP.UpgradedAlicePack1=1,
+       keep Screwdriver,
+	   
+       Result:AliceBP.AlicePack,
+	   OnGiveXP:Recipe.OnGiveXP.None,
+	   OnTest:UpgradeAlice_TestIsValid,
+	   OnCreate:MUReturnSupportBackpack,
+       Time:80.0,
+    }
+
+ 	recipe Put 12 MRE's in a box
+    {
+       	MRE=12,
+		Scotchtape=1,
+
+       	Result:BoxMRE2,
+		Sound:CreateMREBox,
+        Time:370.0,
+    }
+
+ 	recipe Open MRE box
+    {
+		BoxMRE2,
+		keep Scissors/KitchenKnife/HuntingKnife/Screwdriver/SharpedStone,
+		
+		Result:MRE=12,
+		Sound:OpenMREBox,
+		Time:125.0,
+    }
+
+    recipe Create Spear MK
+    {
+        Plank/TreeBranch,
+        keep MilitaryKnife,
+
+        Result:SpearCrafted,
+        Time:100.0,
+		OnTest:ABPCreateSpear_TestIsValid,
+        OnCreate:Recipe.OnCreate.CreateSpear,
+        Category:Survivalist,
+        OnGiveXP:Recipe.OnGiveXP.WoodWork5,
+    }
+
+    recipe Attach Military Knife to Spear
+    {
+        SpearCrafted,
+        AliceBP.MilitaryKnife,
+        DuctTape=2,
+
+        Result:AliceBP.SpearMilitaryKnife,
+        Time:100.0,
+        OnCreate:Recipe.OnCreate.UpgradeSpear,
+        Category:Survivalist,
+    }
+
+    recipe Reclaim Military Knife from Spear
+    {
+        AliceBP.SpearMilitaryKnife,
+
+        Result:AliceBP.MilitaryKnife,
+        OnCreate:Recipe.OnCreate.DismantleSpear,
+        Time:60.0,
+        Category:Survivalist,
+    }
+
+    fixing Fix Spear With Military Knife
+    {
+       Require : AliceBP.SpearMilitaryKnife,
+
+       Fixer : Woodglue=2; Woodwork=2,
+       Fixer : DuctTape=2,
+       Fixer : Glue=2,
+       Fixer : Scotchtape=4,
+    }
+
+	fixing Reparar Cuchillo de Combate Militar
+    {
+       Require : MilitaryKnife,
+
+       Fixer : Woodglue=4; Woodwork=2,
+       Fixer : DuctTape=3,
+       Fixer : Glue=3,
+       Fixer : Scotchtape=4,
+    }
+}

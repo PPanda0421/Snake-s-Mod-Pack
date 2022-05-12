@@ -1,0 +1,9 @@
+Tooltip_EN = {
+	
+	Tooltip_Craft Fuel Tanks = "Build Fuel Tank",
+	Tooltip_needrecipe = "Recipe needed: ",
+	Tooltip_craft_FuelTankDesc = "Can be used to store fuel.      ",
+	Tooltip_ftalreadyknownrecipe = " (Already knows the recipe)",
+	Tooltip_FuelMeter = "You can use it to measure the remaining units of gasoline from a gas pump.",
+	Tooltip_FAmount = "Units of gasoline remaining: ",
+}

@@ -1,0 +1,7 @@
+UI_EN = {
+
+    UI_trait_Strongback = "Muscle back",
+	UI_trait_StrongbackDesc = "You can carry more weight (+25% Base Weight)",
+	UI_trait_Metalstrongback = "Iron back",
+	UI_trait_MetalstrongbackDesc = "It's in your cells.<br> You can carry +50% Base Weight",
+}

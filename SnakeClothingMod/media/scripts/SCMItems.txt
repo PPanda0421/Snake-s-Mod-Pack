@@ -1,0 +1,98 @@
+module Base
+{
+    item CowToy
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Cow Toy,
+		Icon	=	CowToy,
+		WorldStaticModel = CowToy,
+	}
+
+    model CowToy
+    {
+        mesh = WorldItems/CowToy,
+        texture = WorldItems/CowToy,
+        scale = 0.5,
+    }
+
+    item SafeToy
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Safe Toy,
+		Icon	=	SafeToy,
+		WorldStaticModel = SafeToy,
+	}
+
+    model SafeToy
+    {
+        mesh = WorldItems/SafeToy,
+        texture = WorldItems/SafeToy,
+        scale = 0.4,
+    }
+
+    item HorseToy
+	{
+	    DisplayCategory = Junk,
+		Weight	=	0.3,
+		Type	=	Normal,
+		DisplayName	=	Horse Toy,
+		Icon	=	HorseToy,
+		WorldStaticModel = HorseToy,
+	}
+
+    model HorseToy
+    {
+        mesh = WorldItems/HorseToy,
+        texture = WorldItems/HorseToy,
+        scale = 0.4,
+    }
+
+	item Bag_BigSpiffoBackpack
+    {
+		DisplayCategory = Bag,
+        WeightReduction	=	95,
+        Weight	=	1,
+        Type	=	Container,
+        Capacity	=	35,
+        DisplayName	=	Spiffo Backpack,
+        Icon = BigSpiffoBackpack,
+        CanBeEquipped = Back,
+        OpenSound   =   OpenBag,
+        CloseSound   =   CloseBag,
+        PutInSound   =   PutItemInBag,
+        ClothingItem = Bag_BigSpiffoBackpack,
+        BloodLocation = Bag,
+        RunSpeedModifier = 0.97,
+        AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_BigSpiffoBackpack_Lhand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_BigSpiffoBackpack_Rhand holdingbagright,
+        WorldStaticModel = BigSpiffoBackpack,
+    }
+
+    model BigSpiffoBackpack
+    {
+        mesh = WorldItems/BigSpiffoBackpack_Ground,
+        texture = WorldItems/Bag_BigSpiffoBackpack,
+        scale= 1.0,
+    }
+
+	item UpholsteryKit
+	{
+		DisplayCategory     =           Material,
+        Type	            =	        Drainable,
+        UseDelta	        =	        0.1,
+        UseWhileEquipped	=           FALSE,
+		DisplayName	        =	        Upholstery Sewing Kit,
+        Icon				=			CarSewingKit,
+        Weight				=			0.3,
+        cantBeConsolided    =           TRUE,
+        SurvivalGear        =           TRUE,
+		ReplaceOnDeplete	=	        Needle,
+		Tooltip             =           Tooltip_UpholsteryKit,
+	}
+
+}

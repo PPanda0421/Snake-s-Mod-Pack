@@ -1,0 +1,642 @@
+module Base
+{
+
+    item 308Bullets
+    {
+        DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.02,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	.308 Ammo,
+        Icon	=	RifleAmmo308loose,
+        MetalValue = 1,
+        WorldStaticModel = AmmoMaker.Rifle308Ammo,
+    }
+
+    item 223Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.6,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of .223 Bullets,
+        Icon	=	Rifle223Ammo,
+        MetalValue = 40,
+        WorldStaticModel = AmmoMaker.Rifle223AmmoBox_Ground,
+    }
+
+    item 308Box
+    {
+        DisplayCategory = Ammo,
+        Weight	=	0.6,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of .308 Bullets,
+        Icon	=	RifleAmmo308,
+        MetalValue = 40,
+        WorldStaticModel = AmmoMaker.Rifle308AmmoBox_Ground,
+    }
+
+    item 556Clip
+    {
+		DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	.556 Magazine,
+        Icon	=	Clip556,
+        MaxAmmo = 30,
+        AmmoType = Base.556Bullets,
+        StaticModel = GunMagazine,
+		GunType = Base.AssaultRifle,
+		WorldStaticModel = Gun_Magazine_Ground,
+    }
+
+    item 308Clip
+    {
+		DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	.308 Magazine,
+        Icon	=	Clip308hr,
+        MaxAmmo = 3,
+        AmmoType = Base.308Bullets,
+        StaticModel = GunMagazine,
+		GunType = Base.HuntingRifle,
+        WorldStaticModel = Gun_Magazine_Ground,
+    }
+
+    item 223Clip
+    {
+		DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	.223 Magazine,
+        Icon	=	Clip223,
+        MaxAmmo = 3,
+        AmmoType = Base.223Bullets,
+        StaticModel = GunMagazine,
+		/*GunType = Base.VarmintRifle,*/
+		WorldStaticModel = Gun_Magazine_Ground,
+    }
+
+    item M14Clip
+    {
+		DisplayCategory = Ammo,
+        CanStack	=	FALSE,
+        Weight	=	0.2,
+        Type	=	Normal,
+        DisplayName	=	.308 Magazine,
+        Icon	=	Clip308,
+        MaxAmmo = 20,
+        AmmoType = Base.308Bullets,
+		StaticModel = GunMagazine,
+        GunType = Base.AssaultRifle2,
+        WorldStaticModel = Gun_Magazine_Ground,
+    }
+
+    item 556Bullets
+    {
+		DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.025,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	.556 Ammo,
+        Icon	=	Am556x45Rounds,
+        MetalValue = 1,
+		WorldStaticModel = AmmoMaker.Rifle556Ammo,
+    }
+
+    item 556Box
+    {
+		DisplayCategory = Ammo,
+        Weight	=	1.25,
+        AlwaysWelcomeGift	=	TRUE,
+        Type	=	Normal,
+        DisplayName	=	Box of .556 Bullets,
+        Icon	=	Am556x45Box,
+        MetalValue = 40,
+		WorldStaticModel = AmmoMaker.Rifle556AmmoBox_Ground,
+    }
+
+    item LeadPipe
+    {
+		DisplayCategory = Weapon,
+        MaxRange	=	1.15,
+        WeaponSprite	=	LeadPipe,
+        MinAngle	=	0.7,
+        Type	=	Weapon,
+        MinimumSwingTime	=	2,
+        KnockBackOnNoDeath	=	FALSE,
+        SwingAmountBeforeImpact	=	0.02,
+        Categories	=	Improvised;SmallBlunt,
+        ConditionLowerChanceOneIn	=	20,
+        Weight	=	1.5,
+        SplatNumber	=	1,
+        PushBackMod	=	0.3,
+        SubCategory	=	Swinging,
+        ConditionMax	=	15,
+        MaxHitCount	=	2,
+        DoorDamage	=	1,
+        SwingAnim	=	Bat,
+        DisplayName	=	Lead Pipe,
+        MinRange	=	0.61,
+        SwingTime	=	2,
+        KnockdownMod	=	0,
+        SplatBloodOnNoDeath	=	FALSE,
+        Icon	=	Pipe,
+        RunAnim	=	Run_Weapon2,
+        IdleAnim	=	Idle_Weapon2,
+        BreakSound  =   LeadPipeBreak,
+        DoorHitSound = LeadPipeHit,
+		HitSound = LeadPipeHit,
+		HitFloorSound = LeadPipeHit,
+		SwingSound = LeadPipeSwing,
+        TreeDamage  =   0,
+        CriticalChance	=	30,
+        CritDmgMultiplier = 2,
+        MinDamage	=	0.7,
+        MaxDamage	=	1.2,
+        BaseSpeed = 0.93,
+        WeaponLength = 0.35,
+        AttachmentType = BigWeapon,
+		Tooltip = Tooltip_LeadPipe,
+    }
+
+    item Bullets9mm
+    {
+		DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.01,
+        Type	=	Normal,
+        DisplayName	=	9mm Rounds,
+        Icon	=	Ammo9mm,
+        MetalValue = 1,
+		WorldStaticModel = AmmoMaker.Rounds9mm,
+    }
+
+    item Bullets45
+    {
+		DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.04,
+        Type	=	Normal,
+        DisplayName	=	.45 Auto,
+        Icon	=	Ammo45mm,
+        MetalValue = 1,
+		WorldStaticModel = AmmoMaker.Bullets45Rounds,
+    }
+
+    item Bullets45Box
+    {
+		DisplayCategory = Ammo,
+        Weight	=	1,
+        Type	=	Normal,
+        DisplayName	=	Box of .45 Auto Bullets,
+        Icon	=	Ammo45mmBox,
+        MetalValue = 30,
+		WorldStaticModel = AmmoMaker.BoxOf45SpecialBullets,
+    }
+
+    item Bullets44
+    {
+		DisplayCategory = Ammo,
+        Count	=	3,
+        Weight	=	0.04,
+        Type	=	Normal,
+        DisplayName	=	.44 Magnum Bullets,
+        Icon	=	Ammo44mm,
+        MetalValue = 1,
+		WorldStaticModel = AmmoMaker.Bullets44Rounds,
+    }
+
+    item Bullets44Box
+    {
+		DisplayCategory = Ammo,
+        Weight	=	0.38,
+        Type	=	Normal,
+        DisplayName	=	Box of .44 Magnum Bullets,
+        Icon	=	Ammo44mmBox,
+        MetalValue = 30,
+		WorldStaticModel = AmmoMaker.BoxOf44SpecialBullets,
+    }
+
+    item Bullets38
+    {
+		DisplayCategory = Ammo,
+        Count	=	5,
+        Weight	=	0.015,
+        Type	=	Normal,
+        DisplayName	=	.38 Special Bullets,
+        Icon	=	Ammo38mm,
+        MetalValue = 1,
+		WorldStaticModel = AmmoMaker.Bullets38Special,
+    }
+
+    item Bullets38Box
+    {
+		DisplayCategory = Ammo,
+        Weight	=	0.35,
+        Type	=	Normal,
+        DisplayName	=	Box of .38 Special Bullets,
+        Icon	=	38calAmmoBox,
+        MetalValue = 30,
+		WorldStaticModel = AmmoMaker.BoxOf38SpecialBullets,
+    }
+
+    item GunPowder
+    {
+		DisplayCategory = Material,
+        Weight	=	0.05,
+        DisplayName	=	Gunpowder,
+		Type	=	Normal,
+        Icon	=	Gunpowder,
+		WorldStaticModel = GunPowder,
+    }
+
+	/********** Dismantling Parts **********/
+	item M9Parts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = M9 Parts,
+		Icon = M9Parts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.M9Parts,
+	}	
+
+    fixing Fix Pistol
+    {
+       Require : Pistol,
+
+       Fixer : M9Parts; AMReloading=1; Aiming=3,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Pistol 2
+    {
+       Require : Pistol,
+
+       Fixer : Pistol; Aiming=3,
+    }
+
+	item M1911Parts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = M1911 Parts,
+		Icon = M1911Parts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.M1911Parts,
+	}	
+
+    fixing Fix Pistol2
+    {
+       Require : Pistol2,
+
+       Fixer : M1911Parts; AMReloading=2; Aiming=3,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Pistol2 2
+    {
+       Require : Pistol2,
+
+       Fixer : Pistol2; Aiming=3,
+    }
+
+	item DEParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = D-E Parts,
+		Icon = DEParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.DEParts,
+	}	
+
+    fixing Fix Pistol3
+    {
+       Require : Pistol3,
+
+       Fixer : DEParts; AMReloading=3; Aiming=3,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Pistol3 2
+    {
+       Require : Pistol3,
+
+       Fixer : Pistol3; Aiming=3,
+    }
+
+	item RevolverParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Revolver Parts,
+		Icon = RevolverParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.RevolverParts,
+	}	
+
+    fixing Fix Revolver
+    {
+       Require : Revolver,
+
+       Fixer : RevolverParts; AMReloading=2; Aiming=3,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Revolver 2
+    {
+       Require : Revolver,
+
+       Fixer : Revolver; Aiming=3,
+    }
+
+	item Revolver_LongParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Magnum Parts,
+		Icon = Revolver_LongParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.Revolver_LongParts,
+	}	
+
+    fixing Fix Revolver_Long
+    {
+       Require : Revolver_Long,
+
+       Fixer : Revolver_LongParts; AMReloading=3; Aiming=3,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Revolver_Long 2
+    {
+       Require : Revolver_Long,
+
+       Fixer : Revolver_Long; Aiming=3,
+    }
+
+	item Revolver_ShortParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Revolver M36 Parts,
+		Icon = Revolver_ShortParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.Revolver_ShortParts,
+	}	
+
+    fixing Fix Revolver_Short
+    {
+       Require : Revolver_Short,
+
+       Fixer : Revolver_ShortParts; AMReloading=3; Aiming=3,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Revolver_Short 2
+    {
+       Require : Revolver_Short,
+
+       Fixer : Revolver_Short; Aiming=3,
+    }
+
+	item ShotgunParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Shotgun Parts,
+		Icon = ShotgunParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.ShotgunParts,
+	}	
+
+    fixing Fix Shotgun
+    {
+       Require : Shotgun,
+
+       Fixer : ShotgunParts; AMReloading=3; Aiming=2,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Shotgun 2
+    {
+       Require : Shotgun,
+
+       Fixer : Shotgun; Aiming=2,
+    }
+
+    fixing Fix ShotgunSawnoff
+    {
+       Require : ShotgunSawnoff,
+
+       Fixer : ShotgunParts; AMReloading=3; Aiming=2,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix ShotgunSawnoff 2
+    {
+       Require : ShotgunSawnoff,
+
+       Fixer : ShotgunSawnoff; Aiming=2,
+    }
+
+	item DoubleBarrelShotgunParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Double Barrel Shotgun Parts,
+		Icon = DoubleBarrelShotgunParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.DoubleBarrelShotgunParts,
+	}	
+
+    fixing Fix DoubleBarrelShotgun
+    {
+       Require : DoubleBarrelShotgun,
+
+       Fixer : DoubleBarrelShotgunParts; AMReloading=3; Aiming=2,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix DoubleBarrelShotgun 2
+    {
+       Require : DoubleBarrelShotgun,
+
+       Fixer : DoubleBarrelShotgun; Aiming=2,
+    }
+
+    fixing Fix DoubleBarrelShotgunSawnoff
+    {
+       Require : DoubleBarrelShotgunSawnoff,
+
+       Fixer : DoubleBarrelShotgunParts; AMReloading=3; Aiming=2,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix DoubleBarrelShotgunSawnoff 2
+    {
+       Require : DoubleBarrelShotgunSawnoff,
+
+       Fixer : DoubleBarrelShotgunSawnoff; Aiming=2,
+    }
+
+	item VarmintRifleParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Varmint Rifle Parts,
+		Icon = VarmintRifleParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.VarmintRifleParts,
+	}	
+
+    fixing Fix VarmintRifle
+    {
+       Require : VarmintRifle,
+
+       Fixer : VarmintRifleParts; AMReloading=4; Aiming=4,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix VarmintRifle 2
+    {
+       Require : VarmintRifle,
+
+       Fixer : VarmintRifle; Aiming=4,
+    }
+
+	item HuntingRifleParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = Hunting Rifle Parts,
+		Icon = VarmintRifleParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.HuntingRifleParts,
+	}	
+
+    fixing Fix HuntingRifle
+    {
+       Require : HuntingRifle,
+
+       Fixer : HuntingRifleParts; AMReloading=4; Aiming=4,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix HuntingRifle 2
+    {
+       Require : HuntingRifle,
+
+       Fixer : HuntingRifle; Aiming=4,
+    }
+
+	item AssaultRifleParts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = M16 AssaultRifle Parts,
+		Icon = AssaultRifleParts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.AssaultRifleParts,
+	}	
+
+    fixing Fix Assault Rifle
+    {
+       Require : AssaultRifle,
+
+       Fixer : AssaultRifleParts; AMReloading=5; Aiming=5,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix Assault Rifle 2
+    {
+       Require : AssaultRifle,
+
+       Fixer : AssaultRifle; Aiming=5,
+    }
+
+	item AssaultRifle2Parts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = M14 AssaultRifle Parts,
+		Icon = AssaultRifle2Parts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.AssaultRifle2Parts,
+	}	
+
+    fixing Fix AssaultRifle2
+    {
+       Require : AssaultRifle2,
+
+       Fixer : AssaultRifle2Parts; AMReloading=5; Aiming=5,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix AssaultRifle2 2
+    {
+       Require : AssaultRifle2,
+
+       Fixer : AssaultRifle2; Aiming=5,
+    }
+
+	item AK47Parts
+	{
+		DisplayCategory = Material,
+		Weight = 0.2,
+		Type = Normal,
+		DisplayName = AK47 Parts,
+		Icon = AK47Parts,
+		Tooltip = Tooltip_AMWP,
+		MetalValue = 3,
+		WorldStaticModel = AmmoMaker.AK47Parts,
+	}	
+
+    fixing Fix AK47
+    {
+       Require : AK47,
+
+       Fixer : AK47Parts; AMReloading=6; Aiming=6,
+	   ConditionModifier : 1.5,
+    }
+
+    fixing Fix AK47 2
+    {
+       Require : AK47,
+
+       Fixer : AK47; Aiming=6,
+    }
+}

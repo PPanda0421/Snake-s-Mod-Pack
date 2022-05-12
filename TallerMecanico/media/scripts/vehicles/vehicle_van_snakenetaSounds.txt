@@ -1,0 +1,12 @@
+module Base
+{
+	sound VehicleHSnakenetaVan
+	{
+		category = Vehicle,
+		clip
+		{
+			file = media/sound/VehicleHornSnakenetaVan.ogg,
+		}
+	}
+
+}

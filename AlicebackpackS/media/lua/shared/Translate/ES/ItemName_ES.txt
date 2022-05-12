@@ -1,0 +1,11 @@
+ItemName_ES = {
+	ItemName_AliceBP.AlicePack = "Mochila militar Alice Jungla",
+	ItemName_AliceBP.UpgradedAlicePack1 = "Mochila militar Alice (Soporte)",
+	ItemName_AliceBP.UpgradedAlicePack2 = "Mochila militar Alice (Soporte + Bolsa)",
+	ItemName_AliceBP.UpgradedAlicePack2b = "Mochila militar Alice (Soporte + Bolsa)",
+	ItemName_AliceBP.UpgradedAlicePack3 = "Mochila militar Alice (Bolsa)",
+	ItemName_AliceBP.UpgradedAlicePack3b = "Mochila militar Alice (Bolsa)",
+	ItemName_AliceBP.AlicePackUrban = "Mochila militar Alice Urbana",
+	ItemName_AliceBP.SpearMilitaryKnife = "Lanza con cuchillo de combate militar",
+	ItemName_AliceBP.AlicePackDesert = "Mochila militar Alice Desierto",
+}

@@ -1,0 +1,105 @@
+Military Complex By Snake
+Changelog V-3.23 (Build 41) - Requiere Custom Map Bridge 3.5+:
+*Actualizado para la build 41.51 (Agregadas zonas custom de spawn de vehiculos)
+
+Changelog V-3.22 (Build 41) - Requiere Custom Map Bridge 3.4+:
+*Agregados detalles.
+*Agregadas puertas dobles de metal para mayor circulación de zombies en toda la zona.
+*Agregado nuevo Spawn.
+*Agregada nueva zona de campamento.
+
+Changelog V-3.21 (Build 41) - Requiere Custom Map Bridge 3.28+:
+*Agregados tanques de Acido Clorhidrico en el mapa.
+
+Changelog V-3.2 (Build 41) - Requiere Custom Map Bridge 3.25:
+*Agregados mas detalles (Numeraciones de hangares, construcciones)
+*Balance de spawn de loot en hangares.
+*Reparación en primer piso de todos los hangares (Ahora hay electricidad en el primer piso y ya no llueve dentro)
+*Cambio de vallas en diferentes sitios que no permitían ver al jugador hacia afuera.
+*Agregado baños (Se sacrificaron dos containers de la version anterior.)
+
+Changelog V-3.1 (Build 41) - Requiere Custom Map Bridge 3.24:
+*Agregados mas detalles (Bolsas Hesco)
+
+Changelog V-3.0 (Build 41) - Requiere Custom Map Bridge 3.0:
+Agregadas persianas de garages que se pueden abrir y cerrar.
+Readaptación de tablas de loot para Build 41.
+Agregado sistema custom de spawn de zombies (Militares, Medicos, etc) segun zonas.
+*Agregado sistema de lectura de algunos tiles custom.
+
+Changelog V-2.8 (Build 40) - Requiere Custom Map Bridge 1.9:
+Agregados detalles al hospital.
+Agregadas heladeras de laboratorio e incubadoras.
+Reparada pared en el patio de comidas que no permitia acceder a la cocina.
+
+Changelog V-2.7 (Build 40):
+Cambio de definiciones de rooms.
+Agregadas nuevas furnitures custom.
+Agregadas nuevas propiedades custom a los tiles.
+Cambios en tablas de loot.
+
+Changelog V-2.6 (Build 40):
+*Reparado y agregado camino de tierra que conecta con otra parte del mapa base en esta build.
+*Agregados algunos detalles.
+
+Changelog V-2.5:
+*Agregadas cajas de madera Army.
+*Agregado requerimiento del mod CutomMapBridge.
+*Agregados barriles militares.
+*Agregados overlays.
+*Cambio en tablas de loot.
+*Agregada torre vigía de hierro.
+*Agregados graffitis custom.
+*Agregado puesto de seguridad en la entrada.
+
+Changelog V-2.4:
+*Agrandamiento de playas de estacionamiento (Desde la build 39.64 cambia la manera en que spawnean los vehiculos)
+*Agregados radares del juego base.
+*Agregados detalles.
+
+Changelog V-2.3:
+*Reparacion de loot en la torre de control de la pista de aterrizaje.
+*Agregados detalles al Helipuerto.
+*Detalles de suciedad y cracks en los caminos y la pista de aterrizaje.
+*Agregados detalles en la base militar y hospital militar.
+*Agregados 2 spawn extras de vehiculos.
+*Agregadas radios al mapa.
+*Cambios en la room del campo de entrenamiento.
+*Reparado archivo de translate en ES y AR.
+
+Changelog V-2.2:
+*Quitados televisores en donde van realmente computadoras.
+*Agregadas algunas zonas mas de townzone.
+*Corregidos algunos detalles.
+
+Changelog V-2.1:
+*Agregadas tablas de loot para ciertas habitaciones que no estaban bien configuradas.
+*Reparados errores de placing a floor tile on level 0 if there isn't already one.
+*Quitados algunos tiles que no tienen definiciones.
+*Arreglos en zonas de rebuscar (El sistema de objects del juego base en la nueva versión ha cambiado).
+*Agregado nuevo spawn de vehículo en un estacionamiento no configurado.
+
+Changelog V-2.0:
+*Agregados estacionamientos (Compatible con build de vehiculos)
+*Agregadas rooms de spawn de items de mecánica.
+*Actualizados los techos a la nueva versión de renderización de los mismos.
+*Reparadas las vigas de los hangares.
+*Agrandamiento de calles y cambio de zonas para spawn de choques de vehiculos etc.
+*Mas detalles.
+*Ahora cada hangar es diferente a los otros.
+*Reparados detalles visuales.
+
+Changelog V-1.2:
+*Conversion de tablas de loot para la build de vehiculos (IWBUMS 41.2)
+
+Changelog V-1.1:
+*Agregado aeropuerto y base militar (Construcciones hechas por Sieben y reparadas por Snake).
+
+Changelog V-1.0:
+*Agregada base militar y hospital militar (Construcciones hechas por Sieben y reparadas por Snake).
+*Agregado campo de entrenamiento detrás de la base militar.
+*Agregados dos lagos y una pequeña casa de Spawnpoint.
+*El mapa cuenta con opciones para rebuscar/cazar.
+*Incluye loot personalizado.
+*Overlays de contenedores (Como Visuals Mod).
+*Se han reparado ambas construcciones en temas de loot.

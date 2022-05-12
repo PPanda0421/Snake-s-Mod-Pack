@@ -1,0 +1,67 @@
+Changelog Ammo Maker Reloaded V0.50 (Build 41)
+*Tablas de loot actualizadas para Build 41.54
+*Nuevas recetas para desmantelar casquillos (Categoría munición) - Proximamente se trasladarán hacia la mesa de recarga.
+*Cambio de volumen en sonidos.
+*Armas de fuego actualizadas.
+*Agregado al subir de nivel 4 de recarga ganamos el rasgo reciclador de munición (Si el personaje no tiene rasgos negativos de audición).
+
+Changelog Ammo Maker Reloaded V0.49 (Build 41)
+*Tablas de loot actualizadas compatibilidad para build 41.52
+*Agregada nueva habilidad Artilleria.
+*Cambio de recetas que requerían recarga ahora requieren habilidad Artilleria.
+*Ahora fabricar munición en la mesa de recarga requiere habilidad Artilleria.
+*Cambio en rasgos ahora algunos dan habilidad de Artilleria.
+*Agregados libros de Artilleria para obtener potenciadores.
+*Cambio de xp al fabricar munición.
+*Cambio de habilidad a Artillería para perder y ganar rasgos del mod.
+
+Changelog Ammo Maker Reloaded V0.48 (Build 41)
+*Tablas de loot actualizadas compatibilidad para build 41.51
+
+Changelog Ammo Maker Reloaded V0.47 (Build 41)
+*Agregadas opciones de desmantelar armas de fuego con la mesa de recarga.
+*Agregadas revistas de ensamblaje de armas de fuego en base a lo conseguido al desmantelar armas de fuego.
+*Partes de armas antiguas seteadas como obsoletas (Desaparecerán del juego)
+*Cambio en las descripciones de los rasgos unicos del mod, adicionadas las recetas gratis de ensamblado a ellos.
+
+Changelog Ammo Maker Reloaded V0.46 (Build 41)
+*Agregados accesorios para AK-47.
+*Agregada nuevo modelo y textura para la AK-47.
+*Agregada la receta de reparación de AK-47.
+
+Changelog Ammo Maker Reloaded V0.45 (Build 41)
+Rehabilitada AK-47.
+Rehabilitado sistema de fabricación de munición, desarmado de munición, fabricación de proyectiles para la AK-47.
+Agregada nueva revista de municiones para aprender a fabricar los cartuchos para la AK-47.
+Rehabilitadas las recetas otorgadas de AK-47 al crear un personaje con la profesión maestro armero.
+Rehabilitada la recarga rapida de munición para la AK-47 teniendo la profesión de maestro armero.
+Rehabilitado el drop de casquillos al disparar una AK-47.
+
+Changelog Ammo Maker Reloaded V0.44 (Build 41)
+*Agregado rasgo oído militar
+*Reactivada función de recarga rapida de armas militares (Maestro Armero y Veterano)
+
+Changelog Ammo Maker Reloaded V0.43 (Build 41)
+*Agregado texto informativo cuando se atasca un arma y pretendemos dispararla.
+
+Changelog Ammo Maker Reloaded V0.42 (Build 41)
+*Cambio en las recetas para desmantelar las cajas de herramientas y los maletines extraños: Ahora otorgan chapa metálica pequeña.
+
+Changelog Ammo Maker Reloaded V0.41 (Build 41)
+*Agregadas tablas de loot para spawn del rifle de asalto M14 en todos los mapas custom y juego base.
+
+Changelog Ammo Maker Reloaded V0.4 (Build 41)
+*Adaptación de traducciones (Build 41.40).
+
+Changelog Ammo Maker Reloaded V0.3 (Build 41)
+*Compatibilidad con Build 41.39
+
+Changelog Ammo Maker Reloaded V0.2 (Build 41)
+*Reparada acción de desarmar munición desde la mesa de recarga.
+
+Changelog Ammo Maker Reloaded V0.1 (Build 41)
+*Tablas de loot modificadas para Build41.
+*Eliminada M249, AK47 y M16 Cammo.
+*Eliminadas partes de M16 y trasladadas a WPA mod.
+*Reescritura de codigo en aspectos para fabricar y desarmar munición.
+*Agregada compatibilidad para los diferentes calibres que se agregaron en esta build.

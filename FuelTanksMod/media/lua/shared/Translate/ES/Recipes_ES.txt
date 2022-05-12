@@ -1,0 +1,5 @@
+Recipe_ES = {
+
+  Recipe_Craft_Fuel_Tanks = "Fabricar tanques de combustible",
+
+}

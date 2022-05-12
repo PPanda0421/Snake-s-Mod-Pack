@@ -1,0 +1,8 @@
+ContextMenu_RU = {
+
+	ContextMenu_RechargeTank = "Пополнить баллон с пропаном",
+	ContextMenu_RechargeTankTT = "Требуется: Баллон с пропаном",
+	ContextMenu_TankContains = "Содержит: ",
+	ContextMenu_PropaneNonFull = "неполный.",
+
+}

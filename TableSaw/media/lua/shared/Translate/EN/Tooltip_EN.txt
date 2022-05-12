@@ -1,0 +1,13 @@
+Tooltip_EN = {
+	
+	Tooltip_craft_TableSawDesc = "It allows sawing logs 50% faster and obtaining more planks from them.",
+	Tooltip_SawEngine = "This old engine still seems functional.",
+	Tooltip_Sawblade = "A circular, very sharp sawing blade perfect for a table saw.",
+	Tooltip_Craft Table Saw = "Make saw table",
+	Tooltip_needrecipe = "Recipe Needed: ",
+	Tooltip_StickStacks = "Contains 24 wooden sticks",
+	Tooltip_item_RainFromGround2 = "It can be used to collect rainwater when placed on the ground outdoors. <br> The water that can accumulate this container cannot be potabilized if it is not cleaned correctly.",
+	Tooltip_ItemDye = "Can be used to craft dyes.",
+	Tooltip_ItemPaint = "Can be used to make paint.",
+	Tooltip_MetalSpikes = "Increases weapon damage.",
+}

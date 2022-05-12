@@ -1,0 +1,13 @@
+ItemName_EN = {
+	ItemName_Base.CMBSecretKey1 = "Golden Key",
+	ItemName_Base.ZMChip1 = "Roulette Chip ($1)",
+	ItemName_Base.ZMChip2 = "Roulette Chip ($2)",
+	ItemName_Base.ZMChip3 = "Roulette Chip ($5)",
+	ItemName_Base.ZMChip4 = "Roulette Chip ($10)",
+	ItemName_Base.ZMChip5 = "Roulette Chip ($20)",
+	ItemName_Base.ZMChip6 = "Roulette Chip ($50)",
+	ItemName_Base.ZMChip7 = "Roulette Chip ($100)",
+	ItemName_Base.ZMChip8 = "Roulette Chip ($500)",
+	ItemName_Base.ZMChip9 = "Roulette Chip ($1000)",
+	ItemName_Base.RouletteStick = "Croupier Stick",
+}

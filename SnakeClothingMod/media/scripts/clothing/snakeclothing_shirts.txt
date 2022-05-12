@@ -1,0 +1,412 @@
+module Base
+{
+    item Bracelet_BangleRightBatman
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Batman Bangle,
+		ClothingItem = Bracelet_BangleRightBatman,
+		BodyLocation = RightWrist,
+		Icon = BraceletBatman,
+		Weight = 0.1,
+        ClothingItemExtra = Bracelet_BangleLeftBatman,
+        ClothingItemExtraOption = LeftWrist,
+        clothingExtraSubmenu = RightWrist,
+		Cosmetic = TRUE,
+	}
+    item Bracelet_BangleLeftBatman
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Batman Bangle,
+		ClothingItem = Bracelet_BangleLeftBatman,
+		BodyLocation = LeftWrist,
+		Icon = BraceletBatman,
+		Weight = 0.1,
+        ClothingItemExtra = Bracelet_BangleRightBatman,
+        ClothingItemExtraOption = RightWrist,
+        clothingExtraSubmenu = LeftWrist,
+		Cosmetic = TRUE,
+	}
+
+    item Hat_Batman
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Batman Helmet,
+		ClothingItem = Hat_Batman,
+		BodyLocation = Hat,
+		Icon = HelmetBatman,
+		CanHaveHoles = false,
+		BloodLocation = Head,
+		BiteDefense = 100,
+		ScratchDefense = 100,
+		ChanceToFall = 10,
+		Insulation = 0.25,
+		WaterResistance = 0.2,
+	}
+
+    item Boilersuit_Batman
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Batman Suit,
+        ClothingItem = Boilersuit_Batman,
+        BodyLocation = FullSuit,
+        Icon = BoilerSuitBatman,
+        BloodLocation = Trousers;Jumper,
+		RunSpeedModifier = 0.8,
+        ScratchDefense = 20,
+        BiteDefense = 10,
+        Insulation = 0.5,
+        WindResistance = 0.9,
+		WorldStaticModel = BoilerSuit_Batman_Ground,
+    }
+    model BoilerSuit_Batman_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_BoilerSuitBatman_Ground,
+		texture = Clothes/BolierSuit/BatmanSuit,
+        scale = 0.004,
+    }
+
+	item Gloves_Batman
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Batman Gloves,
+		ClothingItem = Gloves_Batman,
+		BodyLocation = Hands,
+		BloodLocation = Hands,
+		Icon = GlovesBatman,
+		ScratchDefense = 35,
+        BiteDefense = 20,
+        Weight = 0.15,
+        Insulation = 0.80,
+        WindResistance = 0.80,
+		WorldStaticModel = Gloves_Batman_Ground,
+    }
+    model Gloves_Batman_Ground
+    {
+        mesh = WorldItems/Clothing/GlovesLong_Ground,
+		texture = Clothes/Gloves/GlovesBatman,
+        scale = 0.33,
+    }
+
+    item Tshirt_Batman
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = T-Shirt Batman,
+        ClothingItem = Tshirt_Batman,
+        BodyLocation = Tshirt,
+        Icon = TshirtBatman,
+        BloodLocation = Shirt,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+		WorldStaticModel = Tshirt_Batman_Ground,
+    }
+    model Tshirt_Batman_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_TShirt_Ground,
+		texture = Clothes/Shirt_Tshirt_Textures/TShirt_Batman,
+        scale = 0.33,
+    }
+
+    item TShirt_SportARGDECAL
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = T-Shirt,
+        ClothingItem = TShirt_SportARGDECAL,
+        BodyLocation = Tshirt,
+        Icon = TshirtArg,
+        BloodLocation = Shirt,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+		WorldStaticModel = TShirt_SportARGDECAL_Ground,
+    }
+    model TShirt_SportARGDECAL_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_TShirt_Ground,
+		texture = TShirt_SportARG,
+        scale = 0.33,
+    }
+
+    item Tshirt_SportBarcDECAL
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = T-Shirt,
+        ClothingItem = Tshirt_SportBarcDECAL,
+        BodyLocation = Tshirt,
+        Icon = TshirtBarcelona,
+        BloodLocation = Shirt,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+		WorldStaticModel = TShirt_SportBarcDECAL_Ground,
+    }
+    model TShirt_SportBarcDECAL_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_TShirt_Ground,
+		texture = TShirt_SportBarcelona,
+        scale = 0.33,
+    }
+
+    item Shorts_ShortSportBarc
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sport Shorts,
+        ClothingItem = Shorts_ShortSportBarc,
+        BodyLocation = Pants,
+        Icon = ShortSportBarc,
+        BloodLocation = ShortsShort,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+		WorldStaticModel = ShortSportBarc_Ground,
+    }
+
+    model ShortSportBarc_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_ShortShorts_Ground,
+		texture = Clothes/Shorts_Textures/ShortShorts_SportBarcelona,
+        scale = 0.33,
+    }
+
+    item Shorts_ShortSportArg
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Sport Shorts,
+        ClothingItem = Shorts_ShortSportArg,
+        BodyLocation = Pants,
+        Icon = ShortSportArg,
+        BloodLocation = ShortsShort,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        FabricType = Cotton,
+		WorldStaticModel = ShortSportArg_Ground,
+    }
+
+    model ShortSportArg_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_ShortShorts_Ground,
+		texture = Clothes/Shorts_Textures/ShortShorts_SportArgentina,
+        scale = 0.33,
+    }
+
+	item Socks_LongBarc
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Long Socks,
+		ClothingItem = Socks_LongBarc,
+		BodyLocation = Socks,
+		Icon = SocksBarc,
+		BloodLocation = Shoes,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        Weight = 0.1,
+        FabricType = Cotton,
+		WorldStaticModel = Socks_LongBarc_Ground,
+	}
+    model Socks_LongBarc_Ground
+    {
+        mesh = WorldItems/Clothing/Socks_Long,
+		texture = Clothes/Shoes_Socks_Textres/BarcSocks_Long,
+        scale = 0.4,
+    }
+
+	item Socks_LongArg
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Long Socks,
+		ClothingItem = Socks_LongArg,
+		BodyLocation = Socks,
+		Icon = SocksArg,
+		BloodLocation = Shoes,
+        Insulation = 0.15,
+        WindResistance = 0.05,
+        Weight = 0.1,
+        FabricType = Cotton,
+		WorldStaticModel = Socks_LongArg_Ground,
+	}
+    model Socks_LongArg_Ground
+    {
+        mesh = WorldItems/Clothing/Socks_Long,
+		texture = Clothes/Shoes_Socks_Textres/ArgSocks_Long,
+        scale = 0.4,
+    }
+
+	item Shoes_TrainerBarcelona
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Sneakers,
+		ClothingItem = Shoes_TrainerBarcelona,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Shoes_TrainerBarcelona,
+		StompPower = 1.8,
+		ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        RunSpeedModifier = 1.1,
+        RemoveOnBroken = false,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.35,
+		WorldStaticModel = Shoes_TrainerBarcelona_Ground,
+	}
+    model Shoes_TrainerBarcelona_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Ground,
+		texture = Clothes/Shoes_Socks_Textres/Trainers_Barcelona,
+        scale = 0.33,
+    }
+
+	item Shoes_TrainerArgentina
+	{
+		DisplayCategory = Clothing,
+		Type = Clothing,
+		DisplayName = Sneakers,
+		ClothingItem = Shoes_TrainerArgentina,
+		BodyLocation = Shoes,
+		BloodLocation = Shoes,
+		Icon = Shoes_TrainerArgentina,
+		StompPower = 1.8,
+		ConditionLowerChanceOneIn = 10,
+        ConditionMax = 24,
+        RunSpeedModifier = 1.1,
+        RemoveOnBroken = false,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.35,
+		WorldStaticModel = Shoes_TrainerArgentina_Ground,
+	}
+    model Shoes_TrainerArgentina_Ground
+    {
+        mesh = WorldItems/Clothing/Shoes_Ground,
+		texture = Clothes/Shoes_Socks_Textres/Trainers_Argentina,
+        scale = 0.33,
+    }
+
+	item Hat_BarcelonaCap
+	{
+		DisplayCategory = Accessory,
+		Type = Clothing,
+		DisplayName = Baseball Cap,
+		ClothingItem = Hat_BarcelonaCap,
+		ClothingItemExtra = Hat_BarcelonaCap_Reverse,
+        ClothingItemExtraOption = ReverseCap,
+        clothingExtraSubmenu = ForwardCap,
+		BodyLocation = Hat,
+		CanHaveHoles = false,
+		ChanceToFall = 80,
+		Insulation = 0.10,
+		Icon = Hat_BarcelonaCap,
+	}
+	item Hat_BarcelonaCap_Reverse
+    {
+		DisplayCategory = Accessory,
+        Type = Clothing,
+        DisplayName = Baseball Cap,
+        ClothingItem = Hat_BarcelonaCap_Reverse,
+        ClothingItemExtra = Hat_BarcelonaCap,
+        ClothingItemExtraOption = ForwardCap,
+        clothingExtraSubmenu = ReverseCap,
+        BodyLocation = Hat,
+        CanHaveHoles = false,
+        Insulation = 0.10,
+		Icon = Hat_BarcelonaCap,
+    }
+	
+    item DitoHoodieDOWN_WhiteTINT
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Hoodie,
+        ClothingItem = DitoHoodieDOWN_WhiteTINT,
+        ClothingItemExtra = DitoHoodieUP_WhiteTINT,
+        ClothingItemExtraOption = UpHoodie,
+        clothingExtraSubmenu = DownHoodie,
+        BodyLocation = Sweater,
+        BloodLocation = Jumper,
+        Icon = DitoHoodieWhite,
+        ScratchDefense = 10,
+        NeckProtectionModifier = 0.5,
+        Insulation = 0.6,
+        WindResistance = 0.25,
+        FabricType = Cotton,
+		WorldStaticModel = DitoHoodie_Ground,
+    }
+    item DitoHoodieUP_WhiteTINT
+    {
+		DisplayCategory = Clothing,
+        Type = Clothing,
+        DisplayName = Hoodie,
+        ClothingItem = DitoHoodieUP_WhiteTINT,
+        ClothingItemExtra = DitoHoodieDOWN_WhiteTINT,
+        ClothingItemExtraOption = DownHoodie,
+        clothingExtraSubmenu = UpHoodie,
+        BodyLocation = SweaterHat,
+        BloodLocation = Jumper;FullHelmet,
+        Icon = DitoHoodieWhite,
+        ScratchDefense = 10,
+        Insulation = 0.55,
+        WindResistance = 0.2,
+        FabricType = Cotton,
+		WorldStaticModel = DitoHoodie_Ground,
+    }
+	model DitoHoodie_Ground
+    {
+        mesh = WorldItems/Clothing/Bob_Hoodie_Ground,
+		texture = Clothes/Hoodie/DitoHoodieUP_White,
+        scale = 0.33,
+    }
+
+	item AlicePackDito
+	{
+		DisplayCategory = Bag,
+        Tooltip 	    = 	Tooltip_DitoPack,
+		WeightReduction	=	95,
+		CanBeEquipped = Back,
+		ClothingItem = Bag_ALICEpack_Dito,
+		Weight			=	1,
+		Type			=	Container,
+		Capacity		=	35,
+		DisplayName		=	Alice BackPack Dito,
+		Icon			=	ALICEpack_Dito,
+        OpenSound   	=   OpenCloseAlice,
+        CloseSound   	=   OpenCloseAlice,
+        PutInSound   	=   PutItemInBag,
+		BloodLocation = Bag,
+		RunSpeedModifier = 0.94,
+		CanHaveHoles = false,
+		AttachmentReplacement = Bag,
+        ReplaceInSecondHand = Bag_ALICEpack_Dito_LHand holdingbagleft,
+        ReplaceInPrimaryHand = Bag_ALICEpack_Dito_RHand holdingbagright,
+		WorldStaticModel = AlicePackDito_Ground,
+	}
+    model AlicePackDito_Ground
+    {
+        mesh = WorldItems/Clothing/ALICE_Pack_Ground,
+		texture = ALICEpack_Dito,
+        scale = 0.4,
+    }
+
+    /************** DitoFlag **************/
+	item DitoFlag
+	{
+		DisplayCategory = Furniture,
+		Weight	=	3,
+		Type	=	Moveable,
+		DisplayName	=	Dito Flag,
+		Icon	=	DitoFlag,
+		WorldObjectSprite	= furniture_military_02_24,
+	}
+}

@@ -1,0 +1,9 @@
+Tooltip_RU = {
+	
+	Tooltip_Craft Fuel Tanks = "Построить бак для топлива",
+	Tooltip_needrecipe = "Требуется рецепт: ",
+	Tooltip_craft_FuelTankDesc = "Может быть использован для хранения топлива.      ",
+	Tooltip_ftalreadyknownrecipe = " (Уже известен)",
+	Tooltip_FuelMeter = "Его можно использовать для измерения оставшегося топлива в бензоколонке.",
+	Tooltip_FAmount = "Единиц топлива осталось: ",
+}

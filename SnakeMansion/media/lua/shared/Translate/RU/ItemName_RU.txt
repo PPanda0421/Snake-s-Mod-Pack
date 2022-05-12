@@ -1,0 +1,13 @@
+ItemName_RU = {
+	ItemName_Base.CMBSecretKey1 = "Золотой ключ",
+	ItemName_Base.ZMChip1 = "Фишка для рулетки ($1)",
+	ItemName_Base.ZMChip2 = "Фишка для рулетки ($2)",
+	ItemName_Base.ZMChip3 = "Фишка для рулетки ($5)",
+	ItemName_Base.ZMChip4 = "Фишка для рулетки ($10)",
+	ItemName_Base.ZMChip5 = "Фишка для рулетки ($20)",
+	ItemName_Base.ZMChip6 = "Фишка для рулетки ($50)",
+	ItemName_Base.ZMChip7 = "Фишка для рулетки ($100)",
+	ItemName_Base.ZMChip8 = "Фишка для рулетки ($500)",
+	ItemName_Base.ZMChip9 = "Фишка для рулетки ($1000)",
+	ItemName_Base.RouletteStick = "Стик крупье",
+}
